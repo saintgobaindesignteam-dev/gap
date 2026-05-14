@@ -1,0 +1,7 @@
+.env
+.env.local
+node_modules/
+.DS_Store
+dist/
+# Optional: products.json if you want to force Supabase usage only
+# products.json

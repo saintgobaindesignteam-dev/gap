@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SG Gap Analysis Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    
+    <header>
+        <div class="logo">
+            <span class="highlight">SG</span> GAP ANALYSIS
+        </div>
+        <div class="stats-bar" id="summary-stats">
+            <!-- Stats will be injected here -->
+        </div>
+    </header>
+
+    <main>
+        <section class="filters">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search product or brand...">
+            </div>
+            <div class="filter-chips" id="brand-filters">
+                <button class="chip active" data-brand="all">All Brands</button>
+                <button class="chip" data-brand="Guardian">Guardian</button>
+                <button class="chip" data-brand="Asahi">Asahi</button>
+            </div>
+        </section>
+
+        <section class="gap-grid" id="gap-container">
+            <!-- Gap cards will be injected here -->
+            <div class="loader">Analyzing Market Gaps...</div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
