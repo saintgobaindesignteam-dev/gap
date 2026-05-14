@@ -94,9 +94,9 @@ foreach ($target in $competitionProducts) {
     }
 
     $t_shgc_adj = if ([double]$target.SHGC -eq 0) { 1 } else { [double]$target.SHGC }
-    $tRatio = ([double]$target.VLT) / $t_shgc_adj
+    $tRatio = ([double]$target.VLT / 100) / $t_shgc_adj
     $p_shgc_adj = if ([double]$bestMatch.SHGC -eq 0) { 1 } else { [double]$bestMatch.SHGC }
-    $pRatio = ([double]$bestMatch.VLT) / $p_shgc_adj
+    $pRatio = ([double]$bestMatch.VLT / 100) / $p_shgc_adj
     $ratioDiff = $pRatio - $tRatio
 
     $cat = "Weakness"
