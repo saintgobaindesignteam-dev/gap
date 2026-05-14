@@ -5,10 +5,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     const allChips = document.querySelectorAll('.chip');
 
     let allItems = [];
-    let filters = {
-        brand: 'all',
-        swot: 'all'
-    };
+    let filters = { brand: 'all', swot: 'all', shade: 'all' };
+    let charts = {};
 
     async function loadData() {
         try {
@@ -16,7 +14,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             const data = await response.json();
             allItems = data.items;
             renderSummary(data.summary);
-            renderItems(allItems);
+            renderCharts(data.summary, allItems);
+            filterData(); // Initial render with ranking
         } catch (err) {
             gapContainer.innerHTML = `<div class="loader">Failed to load SWOT data. Please run analyze.ps1 first.</div>`;
             console.error(err);
@@ -26,22 +25,70 @@ document.addEventListener('DOMContentLoaded', async () => {
     function renderSummary(summary) {
         summaryStats.innerHTML = `
             <div class="stat-item">
-                <span class="stat-val strength-color">${summary.strengths}</span>
+                <span class="stat-val strength-color">${summary.strengths || 0}</span>
                 <span class="stat-label">Strengths</span>
             </div>
             <div class="stat-item">
-                <span class="stat-val weakness-color">${summary.weaknesses}</span>
+                <span class="stat-val weakness-color">${summary.weaknesses || 0}</span>
                 <span class="stat-label">Weaknesses</span>
             </div>
             <div class="stat-item">
-                <span class="stat-val opportunity-color">${summary.opportunities}</span>
+                <span class="stat-val opportunity-color">${summary.opportunities || 0}</span>
                 <span class="stat-label">Opportunities</span>
             </div>
             <div class="stat-item">
-                <span class="stat-val threat-color">${summary.threats}</span>
+                <span class="stat-val threat-color">${summary.threats || 0}</span>
                 <span class="stat-label">Threats</span>
             </div>
         `;
+    }
+
+    function renderCharts(summary, items) {
+        const swotCtx = document.getElementById('swotChart').getContext('2d');
+        if (charts.swot) charts.swot.destroy();
+        charts.swot = new Chart(swotCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Strengths', 'Weaknesses', 'Opportunities', 'Threats'],
+                datasets: [{
+                    data: [summary.strengths || 0, summary.weaknesses || 0, summary.opportunities || 0, summary.threats || 0],
+                    backgroundColor: ['#10b981', '#ef4444', '#3b82f6', '#f59e0b'],
+                    borderWidth: 0,
+                    hoverOffset: 10
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: { position: 'bottom', labels: { color: '#94a3b8', font: { family: 'Outfit' } } }
+                }
+            }
+        });
+
+        const brands = [...new Set(items.map(i => i.Brand))];
+        const brandGaps = brands.map(b => items.filter(i => i.Brand === b && (i.SWOT === 'Threat' || i.SWOT === 'Weakness')).length);
+        
+        const brandCtx = document.getElementById('brandChart').getContext('2d');
+        if (charts.brand) charts.brand.destroy();
+        charts.brand = new Chart(brandCtx, {
+            type: 'bar',
+            data: {
+                labels: brands,
+                datasets: [{
+                    label: 'Critical Gaps',
+                    data: brandGaps,
+                    backgroundColor: 'rgba(59, 130, 246, 0.6)',
+                    borderColor: '#3b82f6',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } },
+                    x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+                },
+                plugins: { legend: { display: false } }
+            }
+        });
     }
 
     function renderItems(items) {
@@ -91,14 +138,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function filterData() {
         const searchTerm = searchInput.value.toLowerCase();
-        const filtered = allItems.filter(item => {
+        let filtered = allItems.filter(item => {
             const matchesSearch = item.Product.toLowerCase().includes(searchTerm) || 
                                 item.Brand.toLowerCase().includes(searchTerm) ||
                                 item.SWOT.toLowerCase().includes(searchTerm);
             const matchesBrand = filters.brand === 'all' || item.Brand === filters.brand;
             const matchesSwot = filters.swot === 'all' || item.SWOT === filters.swot;
-            return matchesSearch && matchesBrand && matchesSwot;
+            const matchesShade = filters.shade === 'all' || item.Target.Shade === filters.shade;
+            return matchesSearch && matchesBrand && matchesSwot && matchesShade;
         });
+
+        // Ranking Logic: Sort by Selectivity Difference (Biggest Gaps/Threats first)
+        filtered.sort((a, b) => a.Diff - b.Diff);
+
         renderItems(filtered);
     }
 
@@ -108,12 +160,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         chip.addEventListener('click', () => {
             const filterType = chip.dataset.filter;
             const filterVal = chip.dataset.val;
-
-            // Update UI
             document.querySelectorAll(`.chip[data-filter="${filterType}"]`).forEach(c => c.classList.remove('active'));
             chip.classList.add('active');
-
-            // Update State
             filters[filterType] = filterVal;
             filterData();
         });

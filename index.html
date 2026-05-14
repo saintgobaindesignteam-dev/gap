@@ -6,13 +6,14 @@
     <title>SG Gap Analysis Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="glass-bg"></div>
     
     <header>
         <div class="logo">
-            <span class="highlight">SG</span> GAP ANALYSIS
+            <span class="highlight">SG</span> STRATEGIC SWOT
         </div>
         <div class="stats-bar" id="summary-stats">
             <!-- Stats will be injected here -->
@@ -20,6 +21,21 @@
     </header>
 
     <main>
+        <section class="hero-intro">
+            <h1>Market Gap & SWOT Analysis</h1>
+            <p>Strategic overview of Saint-Gobain's competitive position against AIS and Guardian ranges. This dashboard identifies critical technical gaps, market opportunities, and competitive threats based on range-specific bridge logic.</p>
+        </section>
+
+        <section class="overview-charts">
+            <div class="chart-card glass-card">
+                <h3>SWOT Distribution</h3>
+                <canvas id="swotChart"></canvas>
+            </div>
+            <div class="chart-card glass-card">
+                <h3>Brand Performance Gap</h3>
+                <canvas id="brandChart"></canvas>
+            </div>
+        </section>
         <section class="filters">
             <div class="search-box">
                 <input type="text" id="search" placeholder="Search product, brand or SWOT category...">
@@ -35,6 +51,14 @@
                 <button class="chip weakness" data-filter="swot" data-val="Weakness">Weaknesses</button>
                 <button class="chip opportunity" data-filter="swot" data-val="Opportunity">Opportunities</button>
                 <button class="chip threat" data-filter="swot" data-val="Threat">Threats</button>
+            </div>
+            <div class="filter-chips" id="shade-filters">
+                <button class="chip active" data-filter="shade" data-val="all">All Shades</button>
+                <button class="chip" data-filter="shade" data-val="Blue">Blue</button>
+                <button class="chip" data-filter="shade" data-val="Green">Green</button>
+                <button class="chip" data-filter="shade" data-val="Grey">Grey</button>
+                <button class="chip" data-filter="shade" data-val="Neutral">Neutral</button>
+                <button class="chip" data-filter="shade" data-val="Bronze">Bronze</button>
             </div>
         </section>
 
