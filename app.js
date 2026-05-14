@@ -161,56 +161,59 @@ document.addEventListener('DOMContentLoaded', async () => {
             chartInstances.rangeGap.updateSeries([{ data: avgGaps }]);
         }
 
-        // --- NEW PRODUCT AVAILABILITY CHART (Focused on SF) ---
-        const getBrandVal = (b) => b === 'Guardian' ? 3 : (b === 'Asahi' ? 2 : 1);
-        
-        const standardSF = items.filter(i => i.SWOT !== 'Threat').map(i => ({ x: i.Target.SHGC, y: getBrandVal(i.Brand) }));
-        const threatSF = items.filter(i => i.SWOT === 'Threat').map(i => ({ x: i.Target.SHGC, y: getBrandVal(i.Brand) }));
+        // --- PERFORMANCE FRONTIER: VLT vs SF (By Company + Outliers) ---
+        const guardianData = items.filter(i => i.Brand === 'Guardian').map(i => ({ x: i.Target.SHGC, y: i.Target.VLT, brand: 'Guardian', name: i.Product }));
+        const asahiData = items.filter(i => i.Brand === 'Asahi').map(i => ({ x: i.Target.SHGC, y: i.Target.VLT, brand: 'Asahi', name: i.Product }));
+        const threatData = items.filter(i => i.SWOT === 'Threat').map(i => ({ x: i.Target.SHGC, y: i.Target.VLT, brand: i.Brand, name: i.Product }));
         
         const filteredSg = allSgItems.filter(i => filters.shade === 'all' || i.Shade === filters.shade);
-        const sgSF = sgToggle.checked ? filteredSg.map(i => ({ x: i.SHGC, y: 1 })) : [];
+        const sgData = sgToggle.checked ? filteredSg.map(i => ({ x: i.SHGC, y: i.VLT, brand: 'Saint-Gobain', name: i.ProductName })) : [];
 
-        const sfAvailabilitySeries = [
-            { name: 'Standard Competitor', data: standardSF },
-            { name: 'Competitor Threats', data: threatSF },
-            { name: 'Saint-Gobain Catalog', data: sgSF }
+        const frontierSeries = [
+            { name: 'Saint-Gobain', data: sgData },
+            { name: 'Guardian', data: guardianData },
+            { name: 'Asahi', data: asahiData },
+            { name: 'Market Outliers (Threats)', data: threatData }
         ];
 
         if (!chartInstances.frontier) {
             chartInstances.frontier = new ApexCharts(document.querySelector("#frontierChart"), {
                 chart: { type: 'scatter', height: 350, zoom: { enabled: true, type: 'xy' } },
-                colors: ['#3b82f6', '#ef4444', '#10b981'],
+                colors: ['#10b981', '#3b82f6', '#8b5cf6', '#ef4444'],
                 xaxis: { 
-                    title: { text: 'Solar Factor (SF)' }, 
+                    title: { text: 'Solar Factor (SF / SHGC)' }, 
                     labels: { style: { colors: '#94a3b8' } },
-                    min: 0, max: 0.8
+                    tickAmount: 10
                 },
                 yaxis: { 
-                    title: { text: 'Market Presence' }, 
-                    labels: { 
-                        style: { colors: '#94a3b8' },
-                        formatter: val => val === 3 ? 'Guardian' : (val === 2 ? 'Asahi' : (val === 1 ? 'Saint-Gobain' : ''))
-                    },
-                    min: 0.5, max: 3.5, tickAmount: 3
+                    title: { text: 'Visible Light Transmission (VLT %)' }, 
+                    labels: { style: { colors: '#94a3b8' } },
+                    min: 0, max: 100
                 },
-                markers: { size: [6, 8, 5], shape: ["circle", "circle", "square"] },
+                markers: { 
+                    size: [5, 5, 5, 8], 
+                    strokeWidth: 0,
+                    hover: { size: 10 }
+                },
                 theme: { mode: 'dark' },
-                legend: { labels: { colors: '#94a3b8' } },
+                legend: { position: 'top', labels: { colors: '#94a3b8' } },
                 tooltip: {
-                    custom: function({series, seriesIndex, dataPointIndex}) {
-                        let item;
-                        if (seriesIndex === 0) item = items.filter(i => i.SWOT !== 'Threat')[dataPointIndex].Target;
-                        else if (seriesIndex === 1) item = items.filter(i => i.SWOT === 'Threat')[dataPointIndex].Target;
-                        else item = filteredSg[dataPointIndex];
-                        if (!item) return '';
-                        return `<div class="chart-tooltip"><b>${item.ProductName || item.Product}</b><br>Solar Factor: ${item.SHGC}<br>VLT: ${item.VLT}%</div>`;
+                    custom: function({series, seriesIndex, dataPointIndex, w}) {
+                        const point = w.config.series[seriesIndex].data[dataPointIndex];
+                        return `
+                        <div class="chart-tooltip" style="padding: 10px; background: #1e293b; border: 1px solid #334155; border-radius: 8px;">
+                            <div style="font-weight: 800; color: #fff; margin-bottom: 4px;">${point.name}</div>
+                            <div style="font-size: 0.75rem; color: #94a3b8;">Brand: ${point.brand}</div>
+                            <div style="font-size: 0.75rem; color: #3b82f6;">Solar Factor: ${point.x}</div>
+                            <div style="font-size: 0.75rem; color: #10b981;">VLT: ${point.y}%</div>
+                        </div>`;
                     }
                 },
-                series: sfAvailabilitySeries
+                series: frontierSeries
             });
             chartInstances.frontier.render();
         } else {
-            chartInstances.frontier.updateSeries(sfAvailabilitySeries);
+            chartInstances.frontier.updateSeries(frontierSeries);
         }
     }
 
