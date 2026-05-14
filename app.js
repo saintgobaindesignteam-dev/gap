@@ -238,6 +238,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <div class="grid-header comp-color">${item.Brand}</div>
                     <div class="grid-header sg-color">Saint-Gobain</div>
                     
+                    <div class="grid-label">Matched Product</div>
+                    <div class="grid-val" style="font-size: 0.6rem; color: var(--text-muted)">Current Product</div>
+                    <div class="grid-val highlight-val" style="font-size: 0.75rem">${item.BestMatch ? item.BestMatch.ProductName : 'NO MATCH'}</div>
+
                     <div class="grid-label">VLT</div>
                     <div class="grid-val-group">
                         <div class="grid-val">${item.Target.VLT}%</div>
