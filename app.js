@@ -1,13 +1,15 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const gapContainer = document.getElementById('gap-container');
-    const innovationContainer = document.getElementById('innovation-targets');
     const summaryStats = document.getElementById('summary-stats');
     const sgToggle = document.getElementById('toggle-sg');
     const allChips = document.querySelectorAll('.chip');
     
+    // KPI elements
     const leadershipEl = document.getElementById('leadership-index');
-    const vulnerabilityEl = document.getElementById('vulnerability-score');
-    const avgGapEl = document.getElementById('avg-gap');
+    const coverageEl = document.getElementById('portfolio-coverage');
+    const coverageDescEl = document.getElementById('coverage-desc');
+    const strongestAssetEl = document.getElementById('strongest-asset');
+    const assetDescEl = document.getElementById('asset-desc');
 
     let allItems = [];
     let sgCatalog = [];
@@ -20,7 +22,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             const data = await response.json();
             allItems = data.items;
             sgCatalog = data.sgCatalog || [];
-            renderInnovationRoadmap(allItems);
             filterData();
         } catch (err) {
             gapContainer.innerHTML = `<div class="loader">Failed to load SWOT data. Please run analyze.ps1 first.</div>`;
@@ -28,40 +29,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    function renderInnovationRoadmap(items) {
-        // Top 3 threats by worst selectivity diff
-        const topThreats = items
-            .filter(i => i.SWOT === 'Threat')
-            .sort((a, b) => a.Diff - b.Diff)
-            .slice(0, 3);
-
-        innovationContainer.innerHTML = topThreats.map(item => `
-            <div class="roadmap-card">
-                <span class="brand-tag">${item.Brand}</span>
-                <h4 class="product-name" style="margin: 0.5rem 0">${item.Product}</h4>
-                <div class="comparison-grid" style="margin-bottom: 0">
-                    <div class="grid-header">Metric</div>
-                    <div class="grid-header">Target</div>
-                    <div class="grid-header">SG Best</div>
-                    
-                    <div class="grid-label">VLT</div>
-                    <div class="grid-val">${item.Target.VLT}%</div>
-                    <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.VLT + '%' : '-'}</div>
-
-                    <div class="grid-label">SHGC</div>
-                    <div class="grid-val">${item.Target.SHGC}</div>
-                    <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.SHGC : '-'}</div>
-                    
-                    <div class="grid-label">U-Value</div>
-                    <div class="grid-val">${item.Target.UValue}</div>
-                    <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.UValue : '-'}</div>
-                </div>
-                <div class="recommendation-box" style="background: rgba(245, 158, 11, 0.1); border-color: var(--threat)">
-                    <span class="rec-title" style="color: var(--threat)">R&D TARGET</span>
-                    Competitive advantage of ${Math.abs(item.Diff)}%. Urgent requirement for high-selectivity ${item.Range} development in ${item.Target.Shade} shade.
-                </div>
-            </div>
-        `).join('');
+    function getRangeUpgrade(currentRange) {
+        if (!currentRange) return "ET";
+        if (currentRange.includes("ST")) return "ET Range";
+        if (currentRange.includes("ET") || currentRange.includes("SCN")) return "KT/KS Range";
+        if (currentRange.includes("KT") || currentRange.includes("KS") || currentRange.includes("PLT")) return "SKN Range";
+        if (currentRange.includes("SKN")) return "SKN Elite / Custom Solutions";
+        return "next-tier coating";
     }
 
     function getRecommendation(item) {
@@ -69,23 +43,67 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (item.SWOT === 'Opportunity') return "Identify potential project specifications where this competitor range is used and propose a custom SG solution.";
         
         if (item.SWOT === 'Threat' || item.SWOT === 'Weakness') {
+            const upgrade = getRangeUpgrade(item.Range);
             if (item.BestMatch && item.BestMatch.SHGC > item.Target.SHGC) {
-                return `Strategic Action: Propose a range upgrade (e.g. SKN) to meet the thermal requirement, or highlight SG's superior U-Value if applicable.`;
+                const shgcDiff = (item.BestMatch.SHGC - item.Target.SHGC).toFixed(2);
+                return `Strategic Action: Match is ${shgcDiff} higher in SHGC. Recommend practical upgrade to ${upgrade} to meet thermal targets.`;
             }
-            return `Strategic Action: Focus on aesthetics or lead-time benefits while R&D bridge is assessed for the ${item.Range} range.`;
+            return `Strategic Action: Technical gap identified. Focus on lead-time or project-specific benefits while ${upgrade} alternatives are explored.`;
         }
         return "Monitor competitor performance trends in this segment.";
     }
 
+    function getReasoning(item) {
+        if (item.SWOT === 'Strength') return 'SG range has equal or superior efficiency.';
+        if (item.SWOT === 'Opportunity') return 'SG currently unrepresented in this bridged range segment.';
+        if (!item.BestMatch) return 'No compatible SG range found.';
+        
+        const reasons = [];
+        if (item.BestMatch.SHGC > item.Target.SHGC) {
+            const diff = (item.BestMatch.SHGC - item.Target.SHGC).toFixed(2);
+            reasons.push(`SHGC is ${diff} too high`);
+        }
+        if (item.BestMatch.VLT < item.Target.VLT - 5) {
+            reasons.push(`VLT is ${Math.round(item.Target.VLT - item.BestMatch.VLT)}% lower`);
+        }
+        
+        return reasons.length > 0 ? reasons.join(' and ') + '.' : item.Reason;
+    }
+
     function updateKPIs(filteredItems) {
         const total = filteredItems.length || 1;
-        const strengths = filteredItems.filter(i => i.SWOT === 'Strength').length;
-        const threats = filteredItems.filter(i => i.SWOT === 'Threat').length;
-        const avgGap = filteredItems.reduce((acc, curr) => acc + curr.Diff, 0) / total;
+        const strengths = filteredItems.filter(i => i.SWOT === 'Strength');
+        const opportunities = filteredItems.filter(i => i.SWOT === 'Opportunity').length;
+        
+        // 1. Market Leadership
+        leadershipEl.innerText = Math.round((strengths.length / total) * 100) + '%';
 
-        leadershipEl.innerText = Math.round((strengths / total) * 100) + '%';
-        vulnerabilityEl.innerText = Math.round((threats / total) * 100) + '%';
-        avgGapEl.innerText = (avgGap > 0 ? '+' : '') + Math.round(avgGap) + '%';
+        // 2. Portfolio Coverage
+        const matchedItems = filteredItems.filter(i => i.BestMatch !== null).length;
+        const coverage = Math.round((matchedItems / total) * 100);
+        coverageEl.innerText = coverage + '%';
+        coverageDescEl.innerText = `We have suitable matches for ${matchedItems} out of ${total} competitor products.`;
+
+        // 3. Strongest Asset
+        const rangeWins = {};
+        strengths.forEach(s => {
+            const range = s.Range || 'Generic';
+            rangeWins[range] = (rangeWins[range] || 0) + 1;
+        });
+
+        let bestRange = 'N/A';
+        let maxWins = 0;
+        for (const r in rangeWins) {
+            if (rangeWins[r] > maxWins) {
+                maxWins = rangeWins[r];
+                bestRange = r;
+            }
+        }
+
+        strongestAssetEl.innerText = bestRange;
+        assetDescEl.innerText = bestRange !== 'N/A' 
+            ? `${bestRange} is your strongest asset, dominating in ${maxWins} technical segments.`
+            : "No dominant technical lead identified in this segment.";
     }
 
     function updateSummary(filteredItems) {
@@ -198,18 +216,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
-    function getReasoning(item) {
-        if (item.SWOT === 'Strength') return 'SG range has equal or superior efficiency.';
-        if (item.SWOT === 'Opportunity') return 'SG currently unrepresented in this bridged range segment.';
-        if (!item.BestMatch) return 'No compatible SG range found.';
-        
-        const reasons = [];
-        if (item.BestMatch.SHGC > item.Target.SHGC + 0.05) reasons.push(`SHGC is ${Math.round((item.BestMatch.SHGC - item.Target.SHGC)*100)} pts too high`);
-        if (item.BestMatch.VLT < item.Target.VLT - 5) reasons.push(`VLT is ${Math.round(item.Target.VLT - item.BestMatch.VLT)}% lower`);
-        
-        return reasons.length > 0 ? reasons.join(' and ') + '.' : item.Reason;
-    }
-
     function renderItems(items) {
         if (items.length === 0) {
             gapContainer.innerHTML = `<div class="loader">No items found matching your criteria.</div>`;
@@ -221,6 +227,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             const recommendation = getRecommendation(item);
             const tSel = (item.Target.VLT/100) / (item.Target.SHGC || 1);
             const pSel = item.BestMatch ? (item.BestMatch.VLT/100) / (item.BestMatch.SHGC || 1) : 0;
+            const getFillLabel = (u) => (u < 2.0) ? "Argon Fill" : "Air Fill";
+            const compFill = getFillLabel(item.Target.UValue);
+            const sgFill = item.BestMatch ? getFillLabel(item.BestMatch.UValue) : "-";
+            const isUWin = item.BestMatch && (item.BestMatch.UValue < item.Target.UValue);
 
             return `
             <div class="gap-card ${item.SWOT.toLowerCase()}-card">
@@ -239,8 +249,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <div class="grid-header sg-color">Saint-Gobain</div>
                     
                     <div class="grid-label">Matched Product</div>
-                    <div class="grid-val" style="font-size: 0.6rem; color: var(--text-muted)">Current Product</div>
+                    <div class="grid-val" style="font-size: 0.6rem; opacity: 0.7">Competitor Target</div>
                     <div class="grid-val highlight-val" style="font-size: 0.75rem">${item.BestMatch ? item.BestMatch.ProductName : 'NO MATCH'}</div>
+
+                    <div class="grid-label">Filling</div>
+                    <div class="grid-val" style="font-size: 0.65rem">${compFill}</div>
+                    <div class="grid-val" style="font-size: 0.65rem; color: var(--accent-blue)">${sgFill}</div>
 
                     <div class="grid-label">VLT</div>
                     <div class="grid-val-group">
@@ -264,7 +278,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                     <div class="grid-label">U-Value</div>
                     <div class="grid-val">${item.Target.UValue}</div>
-                    <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.UValue : '-'}</div>
+                    <div class="grid-val highlight-val ${isUWin ? 'strength-color' : ''}" style="${isUWin ? 'font-weight: 900; background: rgba(16,185,129,0.1); border-radius: 4px;' : ''}">
+                        ${item.BestMatch ? item.BestMatch.UValue : '-'}
+                        ${isUWin ? '<span style="font-size: 0.5rem; display: block;">TECHNICAL WIN</span>' : ''}
+                    </div>
 
                     <div class="grid-label">Selectivity</div>
                     <div class="grid-val">${tSel.toFixed(2)}</div>
