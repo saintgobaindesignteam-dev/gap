@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const gapContainer = document.getElementById('gap-container');
     const summaryStats = document.getElementById('summary-stats');
     const searchInput = document.getElementById('search');
+    const sgToggle = document.getElementById('toggle-sg');
     const allChips = document.querySelectorAll('.chip');
 
     let allItems = [];
@@ -15,7 +16,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             const data = await response.json();
             allItems = data.items;
             sgCatalog = data.sgCatalog || [];
-            renderCharts(allItems, sgCatalog);
             filterData();
         } catch (err) {
             gapContainer.innerHTML = `<div class="loader">Failed to load SWOT data. Please run analyze.ps1 first.</div>`;
@@ -51,30 +51,31 @@ document.addEventListener('DOMContentLoaded', async () => {
         `;
     }
 
-    function renderCharts(items, sgItems) {
-        // 1. SWOT by Shade Stacked Chart
+    function updateCharts(items, allSgItems) {
+        // 1. SWOT by Shade Stacked Chart (Uses all segment items regardless of SWOT filter)
         const shades = ['Blue', 'Green', 'Grey', 'Neutral', 'Bronze'];
-        const series = [
+        const swotSeries = [
             { name: 'Strengths', data: shades.map(s => items.filter(i => i.Target.Shade === s && i.SWOT === 'Strength').length), color: '#10b981' },
             { name: 'Weaknesses', data: shades.map(s => items.filter(i => i.Target.Shade === s && i.SWOT === 'Weakness').length), color: '#ef4444' },
             { name: 'Opportunities', data: shades.map(s => items.filter(i => i.Target.Shade === s && i.SWOT === 'Opportunity').length), color: '#3b82f6' },
             { name: 'Threats', data: shades.map(s => items.filter(i => i.Target.Shade === s && i.SWOT === 'Threat').length), color: '#f59e0b' }
         ];
 
-        const swotShadeOptions = {
-            series: series,
-            chart: { type: 'bar', height: 250, stacked: true, toolbar: { show: false }, background: 'transparent' },
-            plotOptions: { bar: { horizontal: false, borderRadius: 4 } },
-            xaxis: { categories: shades, labels: { style: { colors: '#94a3b8', fontFamily: 'Outfit' } } },
-            yaxis: { labels: { style: { colors: '#94a3b8' } } },
-            legend: { position: 'top', horizontalAlign: 'right', labels: { colors: '#94a3b8' } },
-            theme: { mode: 'dark' },
-            grid: { borderColor: 'rgba(255,255,255,0.05)' }
-        };
-
-        if (chartInstances.swotShade) chartInstances.swotShade.destroy();
-        chartInstances.swotShade = new ApexCharts(document.querySelector("#swotShadeChart"), swotShadeOptions);
-        chartInstances.swotShade.render();
+        if (!chartInstances.swotShade) {
+            chartInstances.swotShade = new ApexCharts(document.querySelector("#swotShadeChart"), {
+                chart: { type: 'bar', height: 250, stacked: true, toolbar: { show: false } },
+                plotOptions: { bar: { horizontal: false, borderRadius: 4 } },
+                xaxis: { categories: shades, labels: { style: { colors: '#94a3b8' } } },
+                yaxis: { labels: { style: { colors: '#94a3b8' } } },
+                legend: { position: 'top', horizontalAlign: 'right', labels: { colors: '#94a3b8' } },
+                theme: { mode: 'dark' },
+                grid: { borderColor: 'rgba(255,255,255,0.05)' },
+                series: swotSeries
+            });
+            chartInstances.swotShade.render();
+        } else {
+            chartInstances.swotShade.updateSeries(swotSeries);
+        }
 
         // 2. Selectivity Gap by Range
         const ranges = ['ST', 'ET|SCN', 'KT|KS|PLT', 'SKN'];
@@ -85,75 +86,59 @@ document.addEventListener('DOMContentLoaded', async () => {
             return Math.round(sum / rangeItems.length);
         });
 
-        const rangeGapOptions = {
-            series: [{ name: 'Avg Selectivity Diff %', data: avgGaps }],
-            chart: { type: 'bar', height: 250, toolbar: { show: false } },
-            plotOptions: { 
-                bar: { 
-                    horizontal: true, 
-                    borderRadius: 4,
-                    colors: { ranges: [{ from: -100, to: 0, color: '#ef4444' }, { from: 1, to: 100, color: '#10b981' }] }
-                } 
-            },
-            dataLabels: { enabled: true, formatter: val => val + '%' },
-            xaxis: { categories: ranges, labels: { style: { colors: '#94a3b8' } } },
-            theme: { mode: 'dark' },
-            grid: { borderColor: 'rgba(255,255,255,0.05)' }
-        };
+        if (!chartInstances.rangeGap) {
+            chartInstances.rangeGap = new ApexCharts(document.querySelector("#rangeGapChart"), {
+                chart: { type: 'bar', height: 250, toolbar: { show: false } },
+                plotOptions: { bar: { horizontal: true, borderRadius: 4, colors: { ranges: [{ from: -100, to: 0, color: '#ef4444' }, { from: 1, to: 100, color: '#10b981' }] } } },
+                dataLabels: { enabled: true, formatter: val => val + '%' },
+                xaxis: { categories: ranges, labels: { style: { colors: '#94a3b8' } } },
+                theme: { mode: 'dark' },
+                series: [{ name: 'Avg Selectivity Diff %', data: avgGaps }]
+            });
+            chartInstances.rangeGap.render();
+        } else {
+            chartInstances.rangeGap.updateSeries([{ data: avgGaps }]);
+        }
 
-        if (chartInstances.rangeGap) chartInstances.rangeGap.destroy();
-        chartInstances.rangeGap = new ApexCharts(document.querySelector("#rangeGapChart"), rangeGapOptions);
-        chartInstances.rangeGap.render();
-
-        // 3. Performance Frontier Scatter Plot (VLT vs SHGC)
+        // 3. Performance Frontier Scatter Plot (Filtered)
         const standardData = items.filter(i => i.SWOT !== 'Threat').map(i => ({ x: i.Target.VLT, y: i.Target.SHGC }));
         const outlierData = items.filter(i => i.SWOT === 'Threat').map(i => ({ x: i.Target.VLT, y: i.Target.SHGC }));
-        const sgData = sgItems.map(i => ({ x: i.VLT, y: i.SHGC }));
+        
+        // Filter SG catalog by current shade if specified
+        const filteredSg = allSgItems.filter(i => filters.shade === 'all' || i.Shade === filters.shade);
+        const sgData = sgToggle.checked ? filteredSg.map(i => ({ x: i.VLT, y: i.SHGC })) : [];
 
-        const frontierOptions = {
-            series: [
-                { name: 'Standard Performance', data: standardData },
-                { name: 'Market Outliers (Threats)', data: outlierData },
-                { name: 'Saint-Gobain Catalog', data: sgData }
-            ],
-            chart: { type: 'scatter', height: 350, zoom: { enabled: true, type: 'xy' }, toolbar: { show: true } },
-            colors: ['#3b82f6', '#ef4444', '#10b981'],
-            xaxis: { 
-                title: { text: 'Visible Light Transmission (VLT %)', style: { color: '#94a3b8' } },
-                labels: { style: { colors: '#94a3b8' } }
-            },
-            yaxis: { 
-                title: { text: 'Solar Factor (SHGC / SF)', style: { color: '#94a3b8' } },
-                labels: { style: { colors: '#94a3b8' } }
-            },
-            markers: { 
-                size: [6, 8, 5], 
-                strokeWidth: 1, 
-                hover: { sizeOffset: 2 },
-                shape: ["circle", "circle", "square"] 
-            },
-            legend: { position: 'top', labels: { colors: '#94a3b8' } },
-            theme: { mode: 'dark' },
-            tooltip: {
-                custom: function({series, seriesIndex, dataPointIndex, w}) {
-                    let item;
-                    if (seriesIndex === 0) item = items.filter(i => i.SWOT !== 'Threat')[dataPointIndex].Target;
-                    else if (seriesIndex === 1) item = items.filter(i => i.SWOT === 'Threat')[dataPointIndex].Target;
-                    else item = sgItems[dataPointIndex];
+        const frontierSeries = [
+            { name: 'Standard Performance', data: standardData },
+            { name: 'Market Outliers (Threats)', data: outlierData },
+            { name: 'Saint-Gobain Catalog', data: sgData }
+        ];
 
-                    return '<div class="chart-tooltip">' +
-                        '<span><b>' + (item.ProductName || item.Product) + '</b></span><br>' +
-                        '<span>Brand: ' + item.Brand + '</span><br>' +
-                        '<span>VLT: ' + item.VLT + '%</span><br>' +
-                        '<span>SHGC: ' + item.SHGC + '</span>' +
-                        '</div>'
-                }
-            }
-        };
-
-        if (chartInstances.frontier) chartInstances.frontier.destroy();
-        chartInstances.frontier = new ApexCharts(document.querySelector("#frontierChart"), frontierOptions);
-        chartInstances.frontier.render();
+        if (!chartInstances.frontier) {
+            chartInstances.frontier = new ApexCharts(document.querySelector("#frontierChart"), {
+                chart: { type: 'scatter', height: 350, zoom: { enabled: true, type: 'xy' } },
+                colors: ['#3b82f6', '#ef4444', '#10b981'],
+                xaxis: { title: { text: 'VLT %' }, labels: { style: { colors: '#94a3b8' } } },
+                yaxis: { title: { text: 'SHGC / SF' }, labels: { style: { colors: '#94a3b8' } } },
+                markers: { size: [6, 8, 5], shape: ["circle", "circle", "square"] },
+                theme: { mode: 'dark' },
+                legend: { labels: { colors: '#94a3b8' } },
+                tooltip: {
+                    custom: function({series, seriesIndex, dataPointIndex}) {
+                        let item;
+                        if (seriesIndex === 0) item = items.filter(i => i.SWOT !== 'Threat')[dataPointIndex].Target;
+                        else if (seriesIndex === 1) item = items.filter(i => i.SWOT === 'Threat')[dataPointIndex].Target;
+                        else item = filteredSg[dataPointIndex];
+                        if (!item) return '';
+                        return `<div class="chart-tooltip"><b>${item.ProductName || item.Product}</b><br>VLT: ${item.VLT}% | SHGC: ${item.SHGC}</div>`;
+                    }
+                },
+                series: frontierSeries
+            });
+            chartInstances.frontier.render();
+        } else {
+            chartInstances.frontier.updateSeries(frontierSeries);
+        }
     }
 
     function renderItems(items) {
@@ -203,15 +188,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function filterData() {
         const searchTerm = searchInput.value.toLowerCase();
+        
+        // 1. Filter segment for summary and charts
         const segmentItems = allItems.filter(item => {
             const matchesBrand = filters.brand === 'all' || item.Brand === filters.brand;
             const matchesShade = filters.shade === 'all' || item.Target.Shade === filters.shade;
-            const matchesSearch = item.Product.toLowerCase().includes(searchTerm);
+            const matchesSearch = item.Product.toLowerCase().includes(searchTerm) || item.Brand.toLowerCase().includes(searchTerm);
             return matchesBrand && matchesShade && matchesSearch;
         });
 
         updateSummary(segmentItems);
+        updateCharts(segmentItems, sgCatalog);
 
+        // 2. Filter for visible cards
         let visibleItems = segmentItems.filter(item => {
             return filters.swot === 'all' || item.SWOT === filters.swot;
         });
@@ -221,6 +210,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     searchInput.addEventListener('input', filterData);
+    sgToggle.addEventListener('change', filterData);
 
     allChips.forEach(chip => {
         chip.addEventListener('click', () => {
