@@ -61,12 +61,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const swotShadeOptions = {
             series: series,
-            chart: { type: 'bar', height: 300, stacked: true, toolbar: { show: false }, background: 'transparent' },
+            chart: { type: 'bar', height: 250, stacked: true, toolbar: { show: false }, background: 'transparent' },
             plotOptions: { bar: { horizontal: false, borderRadius: 4 } },
             xaxis: { categories: shades, labels: { style: { colors: '#94a3b8', fontFamily: 'Outfit' } } },
             yaxis: { labels: { style: { colors: '#94a3b8' } } },
             legend: { position: 'top', horizontalAlign: 'right', labels: { colors: '#94a3b8' } },
-            fill: { opacity: 1 },
             theme: { mode: 'dark' },
             grid: { borderColor: 'rgba(255,255,255,0.05)' }
         };
@@ -86,19 +85,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const rangeGapOptions = {
             series: [{ name: 'Avg Selectivity Diff %', data: avgGaps }],
-            chart: { type: 'bar', height: 300, toolbar: { show: false } },
+            chart: { type: 'bar', height: 250, toolbar: { show: false } },
             plotOptions: { 
                 bar: { 
                     horizontal: true, 
                     borderRadius: 4,
-                    colors: {
-                        ranges: [{ from: -100, to: 0, color: '#ef4444' }, { from: 1, to: 100, color: '#10b981' }]
-                    }
+                    colors: { ranges: [{ from: -100, to: 0, color: '#ef4444' }, { from: 1, to: 100, color: '#10b981' }] }
                 } 
             },
             dataLabels: { enabled: true, formatter: val => val + '%' },
             xaxis: { categories: ranges, labels: { style: { colors: '#94a3b8' } } },
-            yaxis: { labels: { style: { colors: '#94a3b8' } } },
             theme: { mode: 'dark' },
             grid: { borderColor: 'rgba(255,255,255,0.05)' }
         };
@@ -106,6 +102,46 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (chartInstances.rangeGap) chartInstances.rangeGap.destroy();
         chartInstances.rangeGap = new ApexCharts(document.querySelector("#rangeGapChart"), rangeGapOptions);
         chartInstances.rangeGap.render();
+
+        // 3. Performance Frontier Scatter Plot (VLT vs SHGC)
+        const standardData = items.filter(i => i.SWOT !== 'Threat').map(i => ({ x: i.Target.VLT, y: i.Target.SHGC }));
+        const outlierData = items.filter(i => i.SWOT === 'Threat').map(i => ({ x: i.Target.VLT, y: i.Target.SHGC }));
+
+        const frontierOptions = {
+            series: [
+                { name: 'Standard Performance', data: standardData },
+                { name: 'Market Outliers (Threats)', data: outlierData }
+            ],
+            chart: { type: 'scatter', height: 350, zoom: { enabled: true, type: 'xy' }, toolbar: { show: true } },
+            colors: ['#3b82f6', '#ef4444'],
+            xaxis: { 
+                title: { text: 'Visible Light Transmission (VLT %)', style: { color: '#94a3b8' } },
+                labels: { style: { colors: '#94a3b8' } },
+                tickAmount: 10
+            },
+            yaxis: { 
+                title: { text: 'Solar Factor (SHGC / SF)', style: { color: '#94a3b8' } },
+                labels: { style: { colors: '#94a3b8' } }
+            },
+            markers: { size: 6, strokeWidth: 1, hover: { size: 8 } },
+            legend: { position: 'top', labels: { colors: '#94a3b8' } },
+            theme: { mode: 'dark' },
+            tooltip: {
+                custom: function({series, seriesIndex, dataPointIndex, w}) {
+                    const item = (seriesIndex === 0) ? items.filter(i => i.SWOT !== 'Threat')[dataPointIndex] : items.filter(i => i.SWOT === 'Threat')[dataPointIndex];
+                    return '<div class="chart-tooltip">' +
+                        '<span><b>' + item.Product + '</b></span><br>' +
+                        '<span>Brand: ' + item.Brand + '</span><br>' +
+                        '<span>VLT: ' + item.Target.VLT + '%</span><br>' +
+                        '<span>SHGC: ' + item.Target.SHGC + '</span>' +
+                        '</div>'
+                }
+            }
+        };
+
+        if (chartInstances.frontier) chartInstances.frontier.destroy();
+        chartInstances.frontier = new ApexCharts(document.querySelector("#frontierChart"), frontierOptions);
+        chartInstances.frontier.render();
     }
 
     function renderItems(items) {

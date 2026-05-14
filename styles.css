@@ -49,6 +49,7 @@ header {
 
 .overview-charts { display: grid; grid-template-columns: 1fr 1.5fr; gap: 1.5rem; padding: 2rem 5%; }
 .chart-card { background: var(--card-bg); border: 1px solid var(--card-border); padding: 1.5rem; border-radius: 20px; backdrop-filter: blur(10px); }
+.chart-card.full-width { grid-column: 1 / -1; }
 .chart-card h3 { font-size: 0.9rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 1.5rem; letter-spacing: 1px; }
 .chart-card canvas { max-height: 250px; }
 
