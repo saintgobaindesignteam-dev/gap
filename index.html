@@ -23,41 +23,11 @@
     <main>
         <section class="hero-intro">
             <h1>Market Gap Intelligence</h1>
-            <p>Advanced competitive benchmarking and strategic SWOT analysis. Highlighting performance deltas between Saint-Gobain and key market players across all technical ranges.</p>
+            <p>Advanced competitive benchmarking and strategic SWOT analysis. Highlighting performance deltas between Saint-Gobain and key market players.</p>
         </section>
 
-        <section class="filters">
-            <div class="filter-chips" id="brand-filters">
-                <button class="chip active" data-filter="brand" data-val="all">All Brands</button>
-                <button class="chip" data-filter="brand" data-val="Guardian">Guardian</button>
-                <button class="chip" data-filter="brand" data-val="Asahi">Asahi</button>
-            </div>
-            <div class="filter-chips" id="swot-filters">
-                <button class="chip active" data-filter="swot" data-val="all">All SWOT</button>
-                <button class="chip strength" data-filter="swot" data-val="Strength">Strengths</button>
-                <button class="chip weakness" data-filter="swot" data-val="Weakness">Weaknesses</button>
-                <button class="chip opportunity" data-filter="swot" data-val="Opportunity">Opportunities</button>
-                <button class="chip threat" data-filter="swot" data-val="Threat">Threats</button>
-            </div>
-            <div class="filter-chips" id="shade-filters">
-                <button class="chip active" data-filter="shade" data-val="all">All Shades</button>
-                <button class="chip" data-filter="shade" data-val="Blue">Blue</button>
-                <button class="chip" data-filter="shade" data-val="Green">Green</button>
-                <button class="chip" data-filter="shade" data-val="Grey">Grey</button>
-                <button class="chip" data-filter="shade" data-val="Neutral">Neutral</button>
-                <button class="chip" data-filter="shade" data-val="Bronze">Bronze</button>
-                
-                <div class="toggle-container">
-                    <label class="switch">
-                        <input type="checkbox" id="toggle-sg" checked>
-                        <span class="slider round"></span>
-                    </label>
-                    <span class="toggle-label">Show SG Catalog</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="overview-charts">
+        <!-- General Market Overview (Non-filtered or general stats) -->
+        <section class="overview-charts top-charts">
             <div class="chart-card glass-card">
                 <h3>SWOT Distribution by Shade</h3>
                 <div id="swotShadeChart"></div>
@@ -66,6 +36,46 @@
                 <h3>Selectivity Gap by Range</h3>
                 <div id="rangeGapChart"></div>
             </div>
+        </section>
+
+        <!-- Filter specifically positioned above the Performance Frontier -->
+        <section class="filters section-divider">
+            <div class="filter-header">
+                <h3>Segment Deep Dive</h3>
+                <p>Filter the Performance Frontier and Gap Cards by Brand, SWOT, or Shade</p>
+            </div>
+            <div class="filter-row">
+                <div class="filter-chips" id="brand-filters">
+                    <button class="chip active" data-filter="brand" data-val="all">All Brands</button>
+                    <button class="chip" data-filter="brand" data-val="Guardian">Guardian</button>
+                    <button class="chip" data-filter="brand" data-val="Asahi">Asahi</button>
+                </div>
+                <div class="filter-chips" id="swot-filters">
+                    <button class="chip active" data-filter="swot" data-val="all">All SWOT</button>
+                    <button class="chip strength" data-filter="swot" data-val="Strength">Strengths</button>
+                    <button class="chip weakness" data-filter="swot" data-val="Weakness">Weaknesses</button>
+                    <button class="chip opportunity" data-filter="swot" data-val="Opportunity">Opportunities</button>
+                    <button class="chip threat" data-filter="swot" data-val="Threat">Threats</button>
+                </div>
+                <div class="filter-chips" id="shade-filters">
+                    <button class="chip active" data-filter="shade" data-val="all">All Shades</button>
+                    <button class="chip" data-filter="shade" data-val="Blue">Blue</button>
+                    <button class="chip" data-filter="shade" data-val="Green">Green</button>
+                    <button class="chip" data-filter="shade" data-val="Grey">Grey</button>
+                    <button class="chip" data-filter="shade" data-val="Neutral">Neutral</button>
+                    <button class="chip" data-filter="shade" data-val="Bronze">Bronze</button>
+                </div>
+                <div class="toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-sg" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="toggle-label">SG Catalog</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="overview-charts frontier-section">
             <div class="chart-card glass-card full-width">
                 <h3>Performance Frontier (VLT vs SHGC)</h3>
                 <div id="frontierChart"></div>
