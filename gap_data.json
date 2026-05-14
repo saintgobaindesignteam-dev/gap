@@ -4,7 +4,7 @@
                     "opportunities":  0,
                     "weaknesses":  42,
                     "total":  125,
-                    "timestamp":  "2026-05-14 22:27:52",
+                    "timestamp":  "2026-05-14 23:17:00",
                     "strengths":  59
                 },
     "sgCatalog":  [
@@ -1483,7 +1483,7 @@
                       {
                           "ProductName":  "SCN 125",
                           "VLT":  26.0,
-                          "SHGC":  0,
+                          "SHGC":  0.25,
                           "UValue":  2.5,
                           "Shade":  "Grey",
                           "Brand":  "Saint-Gobain"

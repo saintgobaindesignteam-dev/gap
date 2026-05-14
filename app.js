@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const summaryStats = document.getElementById('summary-stats');
     const sgToggle = document.getElementById('toggle-sg');
     const sfSearch = document.getElementById('sf-search');
+    const resultsCountEl = document.getElementById('results-count');
     const allChips = document.querySelectorAll('.chip');
     
     // KPI elements
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     let allItems = [];
     let sgCatalog = [];
-    let filters = { brand: 'all', swot: 'all', shade: 'all', sf: null };
+    let filters = { brand: 'all', swot: 'all', shade: 'all', standard: 'all', sf: null };
     let chartInstances = {};
 
     async function loadData() {
@@ -117,22 +118,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             { name: 'Threats', data: shades.map(s => items.filter(i => i.Target.Shade === s && i.SWOT === 'Threat').length), color: '#f59e0b' }
         ];
 
-        const chartEvents = {
-            dataPointSelection: (event, chartContext, config) => {
-                const shade = shades[config.dataPointIndex];
-                applyFilter('shade', shade);
-            }
-        };
-
         if (!chartInstances.swotShade) {
             chartInstances.swotShade = new ApexCharts(document.querySelector("#swotShadeChart"), {
-                chart: { type: 'bar', height: 250, stacked: true, toolbar: { show: false }, events: chartEvents },
-                plotOptions: { bar: { horizontal: false, borderRadius: 4 } },
+                chart: { type: 'bar', height: 250, stacked: true, toolbar: { show: false } },
                 xaxis: { categories: shades, labels: { style: { colors: '#94a3b8' } } },
                 yaxis: { labels: { style: { colors: '#94a3b8' } } },
                 legend: { position: 'top', horizontalAlign: 'right', labels: { colors: '#94a3b8' } },
                 theme: { mode: 'dark' },
-                grid: { borderColor: 'rgba(255,255,255,0.05)' },
                 series: swotSeries
             });
             chartInstances.swotShade.render();
@@ -152,7 +144,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             chartInstances.rangeGap = new ApexCharts(document.querySelector("#rangeGapChart"), {
                 chart: { type: 'bar', height: 250, toolbar: { show: false } },
                 plotOptions: { bar: { horizontal: true, borderRadius: 4, colors: { ranges: [{ from: -100, to: 0, color: '#ef4444' }, { from: 1, to: 100, color: '#10b981' }] } } },
-                dataLabels: { enabled: true, formatter: val => val + '%' },
                 xaxis: { categories: ranges, labels: { style: { colors: '#94a3b8' } } },
                 theme: { mode: 'dark' },
                 series: [{ name: 'Avg Selectivity Diff %', data: avgGaps }]
@@ -167,7 +158,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         const asahiData = items.filter(i => i.Brand === 'Asahi').map(i => ({ x: i.Target.SHGC, y: i.Target.VLT, brand: 'Asahi', name: i.Product }));
         const threatData = items.filter(i => i.SWOT === 'Threat').map(i => ({ x: i.Target.SHGC, y: i.Target.VLT, brand: i.Brand, name: i.Product }));
         
-        const filteredSg = allSgItems.filter(i => filters.shade === 'all' || i.Shade === filters.shade);
+        const filteredSg = allSgItems.filter(i => {
+            const matchesShade = filters.shade === 'all' || i.Shade === filters.shade;
+            const matchesStd = filters.standard === 'all' || i.Standard === filters.standard;
+            return matchesShade && matchesStd;
+        });
         const sgData = sgToggle.checked ? filteredSg.map(i => ({ x: i.SHGC, y: i.VLT, brand: 'Saint-Gobain', name: i.ProductName })) : [];
 
         const frontierSeries = [
@@ -193,7 +188,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 tooltip: {
                     custom: function({series, seriesIndex, dataPointIndex, w}) {
                         const point = w.config.series[seriesIndex].data[dataPointIndex];
-                        return `<div class="chart-tooltip"><b>${point.name}</b><br>Brand: ${point.brand}<br>SF: ${point.x}<br>VLT: ${point.y}%</div>`;
+                        return `<div class="chart-tooltip" style="padding:10px; background: #1e293b; border: 1px solid #334155; border-radius: 8px;">
+                            <div style="font-weight: 800;">${point.name}</div>
+                            <div style="font-size: 0.7rem; opacity: 0.7">${point.brand}</div>
+                            <div style="color: #3b82f6">SF: ${point.x}</div>
+                            <div style="color: #10b981">VLT: ${point.y}%</div>
+                        </div>`;
                     }
                 },
                 series: frontierSeries
@@ -210,13 +210,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             return;
         }
 
-        // Rank counters
         const ranks = { Threat: 0, Weakness: 0, Strength: 0, Opportunity: 0 };
 
         gapContainer.innerHTML = items.map(item => {
             ranks[item.SWOT]++;
             const currentRank = ranks[item.SWOT];
-            
             const reasoning = getReasoning(item);
             const recommendation = getRecommendation(item);
             const tSel = (item.Target.VLT/100) / (item.Target.SHGC || 1);
@@ -232,7 +230,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     </div>
                     <span class="swot-badge swot-${item.SWOT.toLowerCase()}">${item.SWOT.toUpperCase()} #${currentRank}</span>
                 </div>
-                <h3 class="product-name">${item.Product}</h3>
+                <h3 class="product-name">${item.Product} <span style="font-size: 0.6rem; opacity: 0.5">(${item.Standard})</span></h3>
                 
                 <div class="comparison-grid">
                     <div class="grid-header">Metric</div>
@@ -246,28 +244,23 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <div class="grid-label">VLT</div>
                     <div class="grid-val-group">
                         <div class="grid-val">${item.Target.VLT}%</div>
-                        <div class="spec-bar-container"><div class="spec-bar comp" style="width: ${item.Target.VLT}%"></div></div>
                     </div>
                     <div class="grid-val-group">
                         <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.VLT + '%' : '-'}</div>
-                        <div class="spec-bar-container"><div class="spec-bar sg" style="width: ${item.BestMatch ? item.BestMatch.VLT : 0}%"></div></div>
                     </div>
 
                     <div class="grid-label">SHGC (SF)</div>
                     <div class="grid-val-group">
                         <div class="grid-val">${item.Target.SHGC}</div>
-                        <div class="spec-bar-container"><div class="spec-bar comp" style="width: ${item.Target.SHGC * 100}%"></div></div>
                     </div>
                     <div class="grid-val-group">
                         <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.SHGC : '-'}</div>
-                        <div class="spec-bar-container"><div class="spec-bar sg" style="width: ${item.BestMatch ? item.BestMatch.SHGC * 100 : 0}%"></div></div>
                     </div>
 
                     <div class="grid-label">U-Value</div>
                     <div class="grid-val">${item.Target.UValue}</div>
-                    <div class="grid-val highlight-val ${isUWin ? 'strength-color' : ''}" style="${isUWin ? 'font-weight: 900; background: rgba(16,185,129,0.1); border-radius: 4px;' : ''}">
+                    <div class="grid-val highlight-val ${isUWin ? 'strength-color' : ''}">
                         ${item.BestMatch ? item.BestMatch.UValue : '-'}
-                        ${isUWin ? '<span style="font-size: 0.5rem; display: block;">TECHNICAL WIN</span>' : ''}
                     </div>
 
                     <div class="grid-label">Selectivity</div>
@@ -304,9 +297,17 @@ document.addEventListener('DOMContentLoaded', async () => {
         const segmentItems = allItems.filter(item => {
             const matchesBrand = filters.brand === 'all' || item.Brand === filters.brand;
             const matchesShade = filters.shade === 'all' || item.Target.Shade === filters.shade;
-            const matchesSF = !filters.sf || (Math.abs(item.Target.SHGC - filters.sf) <= 0.05);
-            return matchesBrand && matchesShade && matchesSF;
+            const matchesStd = filters.standard === 'all' || item.Standard === filters.standard;
+            const matchesSF = !filters.sf || (Math.abs(item.Target.SHGC - filters.sf) <= 0.02); // Tighter tolerance for direct count
+            return matchesBrand && matchesShade && matchesStd && matchesSF;
         });
+
+        // Update Results Count
+        if (filters.sf !== null) {
+            resultsCountEl.innerText = `${segmentItems.length} items at SF ${filters.sf.toFixed(2)} (±0.02)`;
+        } else {
+            resultsCountEl.innerText = '';
+        }
 
         updateSummary(segmentItems);
         updateKPIs(segmentItems);
@@ -316,10 +317,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             return filters.swot === 'all' || item.SWOT === filters.swot;
         });
 
-        // Smart sorting for ranking
         visibleItems.sort((a, b) => {
-            // For negative SWOT (Threat/Weakness), most negative (lowest Diff) is #1
-            // For positive SWOT (Strength), most positive (highest Diff) is #1
             if (a.SWOT === b.SWOT) {
                 if (a.SWOT === 'Strength') return b.Diff - a.Diff;
                 return a.Diff - b.Diff;

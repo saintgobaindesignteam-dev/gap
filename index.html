@@ -83,11 +83,17 @@
                     <button class="chip" data-filter="shade" data-val="Neutral">Neutral</button>
                     <button class="chip" data-filter="shade" data-val="Bronze">Bronze</button>
                 </div>
+                <div class="filter-chips" id="standard-filters">
+                    <button class="chip active" data-filter="standard" data-val="all">All Standards</button>
+                    <button class="chip" data-filter="standard" data-val="EN">EN</button>
+                    <button class="chip" data-filter="standard" data-val="NFRC">NFRC</button>
+                </div>
                 <div class="toggle-container">
                     <div class="input-group">
                         <label for="sf-search">Target SF</label>
                         <input type="number" id="sf-search" step="0.01" placeholder="e.g. 0.23">
                     </div>
+                    <div id="results-count" style="font-size: 0.7rem; color: #94a3b8; margin-top: 4px; font-weight: 600;"></div>
                 </div>
                 <div class="toggle-container">
                     <label class="switch">
