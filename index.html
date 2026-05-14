@@ -6,14 +6,14 @@
     <title>SG Gap Analysis Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
 <body>
     <div class="glass-bg"></div>
     
     <header>
         <div class="logo">
-            <span class="highlight">SG</span> STRATEGIC SWOT
+            <span class="highlight">SG</span> STRATEGIC INTELLIGENCE
         </div>
         <div class="stats-bar" id="summary-stats">
             <!-- Stats will be injected here -->
@@ -22,18 +22,18 @@
 
     <main>
         <section class="hero-intro">
-            <h1>Market Gap & SWOT Analysis</h1>
-            <p>Strategic overview of Saint-Gobain's competitive position against AIS and Guardian ranges. This dashboard identifies critical technical gaps, market opportunities, and competitive threats based on range-specific bridge logic.</p>
+            <h1>Market Gap Intelligence</h1>
+            <p>Advanced competitive benchmarking and strategic SWOT analysis. Highlighting performance deltas between Saint-Gobain and key market players across all technical ranges.</p>
         </section>
 
         <section class="overview-charts">
             <div class="chart-card glass-card">
-                <h3>SWOT Distribution</h3>
-                <canvas id="swotChart"></canvas>
+                <h3>SWOT Distribution by Shade</h3>
+                <div id="swotShadeChart"></div>
             </div>
             <div class="chart-card glass-card">
-                <h3>Brand Performance Gap</h3>
-                <canvas id="brandChart"></canvas>
+                <h3>Selectivity Gap by Range</h3>
+                <div id="rangeGapChart"></div>
             </div>
         </section>
         <section class="filters">

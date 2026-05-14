@@ -6,15 +6,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     let allItems = [];
     let filters = { brand: 'all', swot: 'all', shade: 'all' };
-    let charts = {};
+    let chartInstances = {};
 
     async function loadData() {
         try {
             const response = await fetch('gap_data.json');
             const data = await response.json();
             allItems = data.items;
-            // Summary will now be handled dynamically by filterData
-            renderCharts(data.summary, allItems);
+            renderCharts(allItems);
             filterData();
         } catch (err) {
             gapContainer.innerHTML = `<div class="loader">Failed to load SWOT data. Please run analyze.ps1 first.</div>`;
@@ -50,52 +49,63 @@ document.addEventListener('DOMContentLoaded', async () => {
         `;
     }
 
-    function renderCharts(summary, items) {
-        const swotCtx = document.getElementById('swotChart').getContext('2d');
-        if (charts.swot) charts.swot.destroy();
-        charts.swot = new Chart(swotCtx, {
-            type: 'doughnut',
-            data: {
-                labels: ['Strengths', 'Weaknesses', 'Opportunities', 'Threats'],
-                datasets: [{
-                    data: [summary.strengths || 0, summary.weaknesses || 0, summary.opportunities || 0, summary.threats || 0],
-                    backgroundColor: ['#10b981', '#ef4444', '#3b82f6', '#f59e0b'],
-                    borderWidth: 0,
-                    hoverOffset: 10
-                }]
-            },
-            options: {
-                plugins: {
-                    legend: { position: 'bottom', labels: { color: '#94a3b8', font: { family: 'Outfit' } } }
-                }
-            }
+    function renderCharts(items) {
+        // 1. SWOT by Shade Stacked Chart
+        const shades = ['Blue', 'Green', 'Grey', 'Neutral', 'Bronze'];
+        const series = [
+            { name: 'Strengths', data: shades.map(s => items.filter(i => i.Target.Shade === s && i.SWOT === 'Strength').length), color: '#10b981' },
+            { name: 'Weaknesses', data: shades.map(s => items.filter(i => i.Target.Shade === s && i.SWOT === 'Weakness').length), color: '#ef4444' },
+            { name: 'Opportunities', data: shades.map(s => items.filter(i => i.Target.Shade === s && i.SWOT === 'Opportunity').length), color: '#3b82f6' },
+            { name: 'Threats', data: shades.map(s => items.filter(i => i.Target.Shade === s && i.SWOT === 'Threat').length), color: '#f59e0b' }
+        ];
+
+        const swotShadeOptions = {
+            series: series,
+            chart: { type: 'bar', height: 300, stacked: true, toolbar: { show: false }, background: 'transparent' },
+            plotOptions: { bar: { horizontal: false, borderRadius: 4 } },
+            xaxis: { categories: shades, labels: { style: { colors: '#94a3b8', fontFamily: 'Outfit' } } },
+            yaxis: { labels: { style: { colors: '#94a3b8' } } },
+            legend: { position: 'top', horizontalAlign: 'right', labels: { colors: '#94a3b8' } },
+            fill: { opacity: 1 },
+            theme: { mode: 'dark' },
+            grid: { borderColor: 'rgba(255,255,255,0.05)' }
+        };
+
+        if (chartInstances.swotShade) chartInstances.swotShade.destroy();
+        chartInstances.swotShade = new ApexCharts(document.querySelector("#swotShadeChart"), swotShadeOptions);
+        chartInstances.swotShade.render();
+
+        // 2. Selectivity Gap by Range
+        const ranges = ['ST', 'ET|SCN', 'KT|KS|PLT', 'SKN'];
+        const avgGaps = ranges.map(r => {
+            const rangeItems = items.filter(i => i.Range === r && i.Diff !== 0);
+            if (rangeItems.length === 0) return 0;
+            const sum = rangeItems.reduce((acc, curr) => acc + curr.Diff, 0);
+            return Math.round(sum / rangeItems.length);
         });
 
-        const brands = [...new Set(items.map(i => i.Brand))];
-        const brandGaps = brands.map(b => items.filter(i => i.Brand === b && (i.SWOT === 'Threat' || i.SWOT === 'Weakness')).length);
-        
-        const brandCtx = document.getElementById('brandChart').getContext('2d');
-        if (charts.brand) charts.brand.destroy();
-        charts.brand = new Chart(brandCtx, {
-            type: 'bar',
-            data: {
-                labels: brands,
-                datasets: [{
-                    label: 'Critical Gaps',
-                    data: brandGaps,
-                    backgroundColor: 'rgba(59, 130, 246, 0.6)',
-                    borderColor: '#3b82f6',
-                    borderWidth: 1
-                }]
+        const rangeGapOptions = {
+            series: [{ name: 'Avg Selectivity Diff %', data: avgGaps }],
+            chart: { type: 'bar', height: 300, toolbar: { show: false } },
+            plotOptions: { 
+                bar: { 
+                    horizontal: true, 
+                    borderRadius: 4,
+                    colors: {
+                        ranges: [{ from: -100, to: 0, color: '#ef4444' }, { from: 1, to: 100, color: '#10b981' }]
+                    }
+                } 
             },
-            options: {
-                scales: {
-                    y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94a3b8' } },
-                    x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
-                },
-                plugins: { legend: { display: false } }
-            }
-        });
+            dataLabels: { enabled: true, formatter: val => val + '%' },
+            xaxis: { categories: ranges, labels: { style: { colors: '#94a3b8' } } },
+            yaxis: { labels: { style: { colors: '#94a3b8' } } },
+            theme: { mode: 'dark' },
+            grid: { borderColor: 'rgba(255,255,255,0.05)' }
+        };
+
+        if (chartInstances.rangeGap) chartInstances.rangeGap.destroy();
+        chartInstances.rangeGap = new ApexCharts(document.querySelector("#rangeGapChart"), rangeGapOptions);
+        chartInstances.rangeGap.render();
     }
 
     function renderItems(items) {
@@ -145,8 +155,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function filterData() {
         const searchTerm = searchInput.value.toLowerCase();
-        
-        // 1. First, filter by Brand and Shade to update the summary counts for that segment
         const segmentItems = allItems.filter(item => {
             const matchesBrand = filters.brand === 'all' || item.Brand === filters.brand;
             const matchesShade = filters.shade === 'all' || item.Target.Shade === filters.shade;
@@ -154,17 +162,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             return matchesBrand && matchesShade && matchesSearch;
         });
 
-        // Update the dynamic summary numbers based on the segment (before SWOT filter)
         updateSummary(segmentItems);
 
-        // 2. Then apply the SWOT filter for the visible cards
         let visibleItems = segmentItems.filter(item => {
             return filters.swot === 'all' || item.SWOT === filters.swot;
         });
 
-        // Ranking Logic: Sort by Selectivity Difference (Worst first)
         visibleItems.sort((a, b) => a.Diff - b.Diff);
-
         renderItems(visibleItems);
     }
 
