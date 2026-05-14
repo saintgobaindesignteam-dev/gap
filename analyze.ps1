@@ -15,103 +15,84 @@ function Is-ShadeMatch($s1, $s2) {
 
 function Compute-Score($p, $t) {
     $shadePenalty = if (Is-ShadeMatch $p.Shade $t.Shade) { 0 } else { 500000 }
-    
-    $p_shgc = if ($null -ne $p.SHGC) { [double]$p.SHGC } else { 0 }
-    $t_shgc = if ($null -ne $t.SHGC) { [double]$t.SHGC } else { 0 }
-    $shgcDev = [Math]::Abs($p_shgc - $t_shgc) * 10000
-    
-    $p_vlt = if ($null -ne $p.VLT) { [double]$p.VLT } else { 0 }
-    $t_vlt = if ($null -ne $t.VLT) { [double]$t.VLT } else { 0 }
-    $vltDev = [Math]::Abs($p_vlt - $t_vlt) * 500
-    
-    $p_u = if ($null -ne $p.UValue) { [double]$p.UValue } else { 0 }
-    $t_u = if ($null -ne $t.UValue) { [double]$t.UValue } else { 0 }
-    $uDev = [Math]::Abs($p_u - $t_u) * 2000
-    
-    $p_er = if ($null -ne $p.ER) { [double]$p.ER } else { 0 }
-    $t_er = if ($null -ne $t.ER) { [double]$t.ER } else { 0 }
-    $erDev = [Math]::Abs($p_er - $t_er) * 100
-    
-    $p_ir = if ($null -ne $p.IR) { [double]$p.IR } else { 0 }
-    $t_ir = if ($null -ne $t.IR) { [double]$t.IR } else { 0 }
-    $irDev = [Math]::Abs($p_ir - $t_ir) * 100
-    
-    return $shadePenalty + $shgcDev + $vltDev + $uDev + $erDev + $irDev
+    $shgc_p = [double]$p.SHGC; $shgc_t = [double]$t.SHGC
+    $vlt_p = [double]$p.VLT; $vlt_t = [double]$t.VLT
+    $u_p = [double]$p.UValue; $u_t = [double]$t.UValue
+    $shgcDev = [Math]::Abs($shgc_p - $shgc_t) * 10000
+    $vltDev = [Math]::Abs($vlt_p - $vlt_t) * 500
+    $uDev = [Math]::Abs($u_p - $u_t) * 2000
+    return $shadePenalty + $shgcDev + $vltDev + $uDev
 }
 
-$gaps = @()
+$results = New-Object System.Collections.Generic.List[PSObject]
+
 foreach ($target in $competitionProducts) {
     $pool = $sgProducts | Where-Object { $_.GlazingType -eq $target.GlazingType -and $_.Standard -eq $target.Standard }
     
-    if ($pool.Count -eq 0) {
-        $gaps += [PSCustomObject]@{
+    if ($null -eq $pool -or $pool.Count -eq 0) {
+        $results.Add([PSCustomObject]@{
             Brand = $target.Brand
             Product = $target.ProductName
-            Type = "Mismatch"
-            Reason = "No SG products for $($target.GlazingType) / $($target.Standard)"
+            SWOT = "Opportunity"
+            Reason = "No SG products in this segment ($($target.GlazingType)/$($target.Standard))."
             Target = $target
             BestMatch = $null
-            Score = 1000000
             Diff = 0
-        }
+        })
         continue
     }
 
     $bestMatch = $null
     $bestScore = 1000000000
-    
     foreach ($p in $pool) {
         $score = Compute-Score $p $target
-        if ($score -lt $bestScore) {
-            $bestScore = $score
-            $bestMatch = $p
-        }
+        if ($score -lt $bestScore) { $bestScore = $score; $bestMatch = $p }
     }
 
-    $targetVLT = if ($null -ne $target.VLT) { [double]$target.VLT } else { 0 }
-    $targetSHGC = if ($null -ne $target.SHGC -and [double]$target.SHGC -ne 0) { [double]$target.SHGC } else { 1 }
-    $tRatio = $targetVLT / $targetSHGC
-    
-    $bestVLT = if ($null -ne $bestMatch.VLT) { [double]$bestMatch.VLT } else { 0 }
-    $bestSHGC = if ($null -ne $bestMatch.SHGC -and [double]$bestMatch.SHGC -ne 0) { [double]$bestMatch.SHGC } else { 1 }
-    $pRatio = $bestVLT / $bestSHGC
-    
+    $t_shgc_adj = if ([double]$target.SHGC -eq 0) { 1 } else { [double]$target.SHGC }
+    $tRatio = ([double]$target.VLT) / $t_shgc_adj
+    $p_shgc_adj = if ([double]$bestMatch.SHGC -eq 0) { 1 } else { [double]$bestMatch.SHGC }
+    $pRatio = ([double]$bestMatch.VLT) / $p_shgc_adj
     $ratioDiff = $pRatio - $tRatio
 
-    $isGap = $false
-    $gapReason = ""
+    $cat = "Weakness"
+    $res = "SG performance is lower than competition."
 
-    if ($bestScore -gt 25000) {
-        $isGap = $true
-        $gapReason = "No SG product closely matches these technical specifications."
+    if ($bestScore -gt 100000) {
+        $cat = "Threat"
+        $res = "Critical Gap: High technical deviation or shade mismatch."
+    } elseif ($ratioDiff -ge 0.00) {
+        $cat = "Strength"
+        $res = "SG product matches or outperforms competition selectivity."
     } elseif ($ratioDiff -lt -0.15) {
-        $isGap = $true
-        $gapReason = "SG lacks a product with comparable selectivity (VLT/SHGC)."
+        $cat = "Threat"
+        $res = "Significant performance gap (>15% selectivity difference)."
     }
 
-    if ($isGap) {
-        $gaps += [PSCustomObject]@{
-            Brand = $target.Brand
-            Product = $target.ProductName
-            Type = "Technical"
-            Reason = $gapReason
-            Target = $target
-            BestMatch = $bestMatch
-            Score = [Math]::Round($bestScore)
-            Diff = [Math]::Round($ratioDiff * 100, 1)
-        }
-    }
+    $results.Add([PSCustomObject]@{
+        Brand = $target.Brand
+        Product = $target.ProductName
+        SWOT = $cat
+        Reason = $res
+        Target = $target
+        BestMatch = $bestMatch
+        Diff = [Math]::Round($ratioDiff * 100, 1)
+    })
+}
+
+$summary = @{
+    total = $results.Count
+    strengths = ($results | Where-Object { $_.SWOT -eq "Strength" }).Count
+    weaknesses = ($results | Where-Object { $_.SWOT -eq "Weakness" }).Count
+    opportunities = ($results | Where-Object { $_.SWOT -eq "Opportunity" }).Count
+    threats = ($results | Where-Object { $_.SWOT -eq "Threat" }).Count
+    timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 }
 
 $jsonOutput = @{
-    summary = @{
-        totalCompetitors = $competitionProducts.Count
-        totalSG = $sgProducts.Count
-        totalGaps = $gaps.Count
-        timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-    }
-    gaps = $gaps
+    summary = $summary
+    items = $results
 }
 
 $jsonOutput | ConvertTo-Json -Depth 5 | Out-File -FilePath "c:\Users\K7813444\OneDrive - Saint-Gobain\Desktop\2026\ACE\gap\gap_data.json" -Encoding utf8
-Write-Host "Analysis complete. JSON saved."
+Write-Host "SWOT Analysis complete."

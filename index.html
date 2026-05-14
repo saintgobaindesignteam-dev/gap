@@ -22,12 +22,19 @@
     <main>
         <section class="filters">
             <div class="search-box">
-                <input type="text" id="search" placeholder="Search product or brand...">
+                <input type="text" id="search" placeholder="Search product, brand or SWOT category...">
             </div>
             <div class="filter-chips" id="brand-filters">
-                <button class="chip active" data-brand="all">All Brands</button>
-                <button class="chip" data-brand="Guardian">Guardian</button>
-                <button class="chip" data-brand="Asahi">Asahi</button>
+                <button class="chip active" data-filter="brand" data-val="all">All Brands</button>
+                <button class="chip" data-filter="brand" data-val="Guardian">Guardian</button>
+                <button class="chip" data-filter="brand" data-val="Asahi">Asahi</button>
+            </div>
+            <div class="filter-chips" id="swot-filters">
+                <button class="chip active" data-filter="swot" data-val="all">All SWOT</button>
+                <button class="chip strength" data-filter="swot" data-val="Strength">Strengths</button>
+                <button class="chip weakness" data-filter="swot" data-val="Weakness">Weaknesses</button>
+                <button class="chip opportunity" data-filter="swot" data-val="Opportunity">Opportunities</button>
+                <button class="chip threat" data-filter="swot" data-val="Threat">Threats</button>
             </div>
         </section>
 

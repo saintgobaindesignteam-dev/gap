@@ -2,20 +2,23 @@ document.addEventListener('DOMContentLoaded', async () => {
     const gapContainer = document.getElementById('gap-container');
     const summaryStats = document.getElementById('summary-stats');
     const searchInput = document.getElementById('search');
-    const brandChips = document.querySelectorAll('.chip');
+    const allChips = document.querySelectorAll('.chip');
 
-    let allGaps = [];
-    let activeBrand = 'all';
+    let allItems = [];
+    let filters = {
+        brand: 'all',
+        swot: 'all'
+    };
 
     async function loadData() {
         try {
             const response = await fetch('gap_data.json');
             const data = await response.json();
-            allGaps = data.gaps;
+            allItems = data.items;
             renderSummary(data.summary);
-            renderGaps(allGaps);
+            renderItems(allItems);
         } catch (err) {
-            gapContainer.innerHTML = `<div class="loader">Failed to load gap data. Please run analyze.ps1 first.</div>`;
+            gapContainer.innerHTML = `<div class="loader">Failed to load SWOT data. Please run analyze.ps1 first.</div>`;
             console.error(err);
         }
     }
@@ -23,53 +26,61 @@ document.addEventListener('DOMContentLoaded', async () => {
     function renderSummary(summary) {
         summaryStats.innerHTML = `
             <div class="stat-item">
-                <span class="stat-val">${summary.totalGaps}</span>
-                <span class="stat-label">Total Gaps</span>
+                <span class="stat-val strength-color">${summary.strengths}</span>
+                <span class="stat-label">Strengths</span>
             </div>
             <div class="stat-item">
-                <span class="stat-val">${summary.totalCompetitors}</span>
-                <span class="stat-label">Competitors</span>
+                <span class="stat-val weakness-color">${summary.weaknesses}</span>
+                <span class="stat-label">Weaknesses</span>
             </div>
             <div class="stat-item">
-                <span class="stat-val">${summary.totalSG}</span>
-                <span class="stat-label">SG Catalog</span>
+                <span class="stat-val opportunity-color">${summary.opportunities}</span>
+                <span class="stat-label">Opportunities</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-val threat-color">${summary.threats}</span>
+                <span class="stat-label">Threats</span>
             </div>
         `;
     }
 
-    function renderGaps(gaps) {
-        if (gaps.length === 0) {
-            gapContainer.innerHTML = `<div class="loader">No gaps found matching your criteria.</div>`;
+    function renderItems(items) {
+        if (items.length === 0) {
+            gapContainer.innerHTML = `<div class="loader">No items found matching your criteria.</div>`;
             return;
         }
 
-        gapContainer.innerHTML = gaps.map(gap => `
-            <div class="gap-card">
+        gapContainer.innerHTML = items.map(item => `
+            <div class="gap-card ${item.SWOT.toLowerCase()}-card">
                 <div class="card-header">
-                    <span class="brand-tag">${gap.Brand}</span>
-                    <span class="diff-badge">${gap.Diff < 0 ? gap.Diff + '%' : ''}</span>
+                    <span class="brand-tag">${item.Brand}</span>
+                    <span class="swot-badge swot-${item.SWOT.toLowerCase()}">${item.SWOT}</span>
                 </div>
-                <h3 class="product-name">${gap.Product}</h3>
+                <h3 class="product-name">${item.Product}</h3>
                 
-                <div class="metrics">
-                    <div class="metric">
-                        <span class="metric-label">VLT</span>
-                        <span class="metric-val">${gap.Target.VLT}%</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-label">SHGC</span>
-                        <span class="metric-val">${gap.Target.SHGC}</span>
-                    </div>
-                    <div class="metric">
-                        <span class="metric-label">U-Value</span>
-                        <span class="metric-val">${gap.Target.UValue}</span>
-                    </div>
+                <div class="comparison-grid">
+                    <div class="grid-header"></div>
+                    <div class="grid-header comp-color">${item.Brand}</div>
+                    <div class="grid-header sg-color">Saint-Gobain</div>
+                    
+                    <div class="grid-label">VLT</div>
+                    <div class="grid-val">${item.Target.VLT}%</div>
+                    <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.VLT + '%' : '-'}</div>
+
+                    <div class="grid-label">SHGC</div>
+                    <div class="grid-val">${item.Target.SHGC}</div>
+                    <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.SHGC : '-'}</div>
+
+                    <div class="grid-label">U-Value</div>
+                    <div class="grid-val">${item.Target.UValue}</div>
+                    <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.UValue : '-'}</div>
                 </div>
 
                 <div class="comparison">
                     <div class="comp-label">BEST SG MATCH</div>
-                    <div class="match-product">${gap.BestMatch ? gap.BestMatch.ProductName : 'NO MATCH'}</div>
-                    <div class="gap-indicator">${gap.Reason}</div>
+                    <div class="match-product">${item.BestMatch ? item.BestMatch.ProductName : 'NO MATCH'}</div>
+                    <div class="gap-indicator swot-${item.SWOT.toLowerCase()}">${item.Reason}</div>
+                    <div class="diff-info">Selectivity Diff: ${item.Diff > 0 ? '+' : ''}${item.Diff}%</div>
                 </div>
             </div>
         `).join('');
@@ -77,22 +88,30 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function filterData() {
         const searchTerm = searchInput.value.toLowerCase();
-        const filtered = allGaps.filter(gap => {
-            const matchesSearch = gap.Product.toLowerCase().includes(searchTerm) || 
-                                gap.Brand.toLowerCase().includes(searchTerm);
-            const matchesBrand = activeBrand === 'all' || gap.Brand === activeBrand;
-            return matchesSearch && matchesBrand;
+        const filtered = allItems.filter(item => {
+            const matchesSearch = item.Product.toLowerCase().includes(searchTerm) || 
+                                item.Brand.toLowerCase().includes(searchTerm) ||
+                                item.SWOT.toLowerCase().includes(searchTerm);
+            const matchesBrand = filters.brand === 'all' || item.Brand === filters.brand;
+            const matchesSwot = filters.swot === 'all' || item.SWOT === filters.swot;
+            return matchesSearch && matchesBrand && matchesSwot;
         });
-        renderGaps(filtered);
+        renderItems(filtered);
     }
 
     searchInput.addEventListener('input', filterData);
 
-    brandChips.forEach(chip => {
+    allChips.forEach(chip => {
         chip.addEventListener('click', () => {
-            brandChips.forEach(c => c.classList.remove('active'));
+            const filterType = chip.dataset.filter;
+            const filterVal = chip.dataset.val;
+
+            // Update UI
+            document.querySelectorAll(`.chip[data-filter="${filterType}"]`).forEach(c => c.classList.remove('active'));
             chip.classList.add('active');
-            activeBrand = chip.dataset.brand;
+
+            // Update State
+            filters[filterType] = filterVal;
             filterData();
         });
     });
