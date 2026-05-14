@@ -26,24 +26,7 @@
             <p>Advanced competitive benchmarking and strategic SWOT analysis. Highlighting performance deltas between Saint-Gobain and key market players across all technical ranges.</p>
         </section>
 
-        <section class="overview-charts">
-            <div class="chart-card glass-card">
-                <h3>SWOT Distribution by Shade</h3>
-                <div id="swotShadeChart"></div>
-            </div>
-            <div class="chart-card glass-card">
-                <h3>Selectivity Gap by Range</h3>
-                <div id="rangeGapChart"></div>
-            </div>
-            <div class="chart-card glass-card full-width">
-                <h3>Performance Frontier (VLT vs SHGC) - Highlighting Outliers</h3>
-                <div id="frontierChart"></div>
-            </div>
-        </section>
         <section class="filters">
-            <div class="search-box">
-                <input type="text" id="search" placeholder="Search product, brand or SWOT category...">
-            </div>
             <div class="filter-chips" id="brand-filters">
                 <button class="chip active" data-filter="brand" data-val="all">All Brands</button>
                 <button class="chip" data-filter="brand" data-val="Guardian">Guardian</button>
@@ -74,18 +57,25 @@
             </div>
         </section>
 
+        <section class="overview-charts">
+            <div class="chart-card glass-card">
+                <h3>SWOT Distribution by Shade</h3>
+                <div id="swotShadeChart"></div>
+            </div>
+            <div class="chart-card glass-card">
+                <h3>Selectivity Gap by Range</h3>
+                <div id="rangeGapChart"></div>
+            </div>
+            <div class="chart-card glass-card full-width">
+                <h3>Performance Frontier (VLT vs SHGC)</h3>
+                <div id="frontierChart"></div>
+            </div>
+        </section>
+
         <section class="gap-grid" id="gap-container">
-            <!-- Gap cards will be injected here -->
-            <div class="loader">Analyzing Market Gaps...</div>
+            <div class="loader">Loading intelligence data...</div>
         </section>
     </main>
-
-    <div id="modal" class="modal">
-        <div class="modal-content glass-card">
-            <span class="close">&times;</span>
-            <div id="modal-body"></div>
-        </div>
-    </div>
 
     <script src="app.js"></script>
 </body>

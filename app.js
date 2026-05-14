@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const gapContainer = document.getElementById('gap-container');
     const summaryStats = document.getElementById('summary-stats');
-    const searchInput = document.getElementById('search');
     const sgToggle = document.getElementById('toggle-sg');
     const allChips = document.querySelectorAll('.chip');
 
@@ -52,7 +51,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     function updateCharts(items, allSgItems) {
-        // 1. SWOT by Shade Stacked Chart (Uses all segment items regardless of SWOT filter)
         const shades = ['Blue', 'Green', 'Grey', 'Neutral', 'Bronze'];
         const swotSeries = [
             { name: 'Strengths', data: shades.map(s => items.filter(i => i.Target.Shade === s && i.SWOT === 'Strength').length), color: '#10b981' },
@@ -77,7 +75,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             chartInstances.swotShade.updateSeries(swotSeries);
         }
 
-        // 2. Selectivity Gap by Range
         const ranges = ['ST', 'ET|SCN', 'KT|KS|PLT', 'SKN'];
         const avgGaps = ranges.map(r => {
             const rangeItems = items.filter(i => i.Range === r && i.Diff !== 0);
@@ -100,11 +97,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             chartInstances.rangeGap.updateSeries([{ data: avgGaps }]);
         }
 
-        // 3. Performance Frontier Scatter Plot (Filtered)
         const standardData = items.filter(i => i.SWOT !== 'Threat').map(i => ({ x: i.Target.VLT, y: i.Target.SHGC }));
         const outlierData = items.filter(i => i.SWOT === 'Threat').map(i => ({ x: i.Target.VLT, y: i.Target.SHGC }));
-        
-        // Filter SG catalog by current shade if specified
         const filteredSg = allSgItems.filter(i => filters.shade === 'all' || i.Shade === filters.shade);
         const sgData = sgToggle.checked ? filteredSg.map(i => ({ x: i.VLT, y: i.SHGC })) : [];
 
@@ -126,9 +120,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                 tooltip: {
                     custom: function({series, seriesIndex, dataPointIndex}) {
                         let item;
-                        if (seriesIndex === 0) item = items.filter(i => i.SWOT !== 'Threat')[dataPointIndex].Target;
-                        else if (seriesIndex === 1) item = items.filter(i => i.SWOT === 'Threat')[dataPointIndex].Target;
-                        else item = filteredSg[dataPointIndex];
+                        if (seriesIndex === 0) {
+                            const list = items.filter(i => i.SWOT !== 'Threat');
+                            item = list[dataPointIndex] ? list[dataPointIndex].Target : null;
+                        } else if (seriesIndex === 1) {
+                            const list = items.filter(i => i.SWOT === 'Threat');
+                            item = list[dataPointIndex] ? list[dataPointIndex].Target : null;
+                        } else {
+                            item = filteredSg[dataPointIndex];
+                        }
                         if (!item) return '';
                         return `<div class="chart-tooltip"><b>${item.ProductName || item.Product}</b><br>VLT: ${item.VLT}% | SHGC: ${item.SHGC}</div>`;
                     }
@@ -187,20 +187,15 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     function filterData() {
-        const searchTerm = searchInput.value.toLowerCase();
-        
-        // 1. Filter segment for summary and charts
         const segmentItems = allItems.filter(item => {
             const matchesBrand = filters.brand === 'all' || item.Brand === filters.brand;
             const matchesShade = filters.shade === 'all' || item.Target.Shade === filters.shade;
-            const matchesSearch = item.Product.toLowerCase().includes(searchTerm) || item.Brand.toLowerCase().includes(searchTerm);
-            return matchesBrand && matchesShade && matchesSearch;
+            return matchesBrand && matchesShade;
         });
 
         updateSummary(segmentItems);
         updateCharts(segmentItems, sgCatalog);
 
-        // 2. Filter for visible cards
         let visibleItems = segmentItems.filter(item => {
             return filters.swot === 'all' || item.SWOT === filters.swot;
         });
@@ -209,7 +204,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderItems(visibleItems);
     }
 
-    searchInput.addEventListener('input', filterData);
     sgToggle.addEventListener('change', filterData);
 
     allChips.forEach(chip => {
