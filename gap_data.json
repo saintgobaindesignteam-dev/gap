@@ -1,18 +1,18 @@
 ﻿{
     "summary":  {
-                    "threats":  56,
+                    "threats":  65,
                     "opportunities":  0,
                     "weaknesses":  null,
                     "total":  125,
-                    "timestamp":  "2026-05-14 21:57:02",
-                    "strengths":  68
+                    "timestamp":  "2026-05-14 22:06:22",
+                    "strengths":  59
                 },
     "items":  [
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Blue 27",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -37,13 +37,14 @@
                                         "SHGC":  0.33,
                                         "UValue":  3.2
                                     },
-                      "Diff":  -3279.2
+                      "Diff":  -3279.2,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Green 27",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -68,13 +69,14 @@
                                         "SHGC":  0.34,
                                         "UValue":  3.2
                                     },
-                      "Diff":  -1407.6
+                      "Diff":  -1407.6,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Grey 27",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -99,13 +101,14 @@
                                         "SHGC":  0.33,
                                         "UValue":  3.0
                                     },
-                      "Diff":  -1158
+                      "Diff":  -1158,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Neutral 27",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -130,13 +133,14 @@
                                         "SHGC":  0.33,
                                         "UValue":  3.0
                                     },
-                      "Diff":  -1158
+                      "Diff":  -1158,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Tru Blue 40",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -154,20 +158,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Blue",
                                         "GlazingType":  "SGU",
-                                        "ProductName":  "ST 767",
-                                        "VLT":  42.0,
-                                        "ER":  10.0,
-                                        "IR":  18.0,
-                                        "SHGC":  0.51,
-                                        "UValue":  5.2
+                                        "ProductName":  "ET 751",
+                                        "VLT":  32.0,
+                                        "ER":  8.0,
+                                        "IR":  7.0,
+                                        "SHGC":  0.38,
+                                        "UValue":  3.6
                                     },
-                      "Diff":  -3343.7
+                      "Diff":  -3157.9,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Clear 65",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -185,20 +190,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Neutral",
                                         "GlazingType":  "SGU",
-                                        "ProductName":  "ST 167",
-                                        "VLT":  67.0,
-                                        "ER":  19.0,
-                                        "IR":  19.0,
-                                        "SHGC":  0.7,
-                                        "UValue":  5.2
+                                        "ProductName":  "ET 151",
+                                        "VLT":  51.0,
+                                        "ER":  13.0,
+                                        "IR":  8.0,
+                                        "SHGC":  0.45,
+                                        "UValue":  3.6
                                     },
-                      "Diff":  -2836
+                      "Diff":  -1074.1,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Light Blue 50",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -216,20 +222,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Blue",
                                         "GlazingType":  "SGU",
-                                        "ProductName":  "ST 767",
-                                        "VLT":  42.0,
-                                        "ER":  10.0,
-                                        "IR":  18.0,
-                                        "SHGC":  0.51,
-                                        "UValue":  5.2
+                                        "ProductName":  "ET 751",
+                                        "VLT":  32.0,
+                                        "ER":  8.0,
+                                        "IR":  7.0,
+                                        "SHGC":  0.38,
+                                        "UValue":  3.6
                                     },
-                      "Diff":  -3907.6
+                      "Diff":  -3721.8,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Silver Grey 35",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -254,13 +261,14 @@
                                         "SHGC":  0.38,
                                         "UValue":  3.2
                                     },
-                      "Diff":  -3240.1
+                      "Diff":  -3240.1,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Green 50",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -278,20 +286,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Green",
                                         "GlazingType":  "SGU",
-                                        "ProductName":  "ST 467",
-                                        "VLT":  55.0,
-                                        "ER":  14.0,
-                                        "IR":  18.0,
-                                        "SHGC":  0.54,
-                                        "UValue":  5.2
+                                        "ProductName":  "ET 451",
+                                        "VLT":  42.0,
+                                        "ER":  11.0,
+                                        "IR":  7.0,
+                                        "SHGC":  0.4,
+                                        "UValue":  3.6
                                     },
-                      "Diff":  -2087.5
+                      "Diff":  -1772.7,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Neutral 45",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -316,13 +325,14 @@
                                         "SHGC":  0.47,
                                         "UValue":  4.4
                                     },
-                      "Diff":  -3209.7
+                      "Diff":  -3209.7,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Sea Green 35",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -347,13 +357,14 @@
                                         "SHGC":  0.4,
                                         "UValue":  3.6
                                     },
-                      "Diff":  -642.9
+                      "Diff":  -642.9,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Grey 33",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -378,13 +389,14 @@
                                         "SHGC":  0.47,
                                         "UValue":  5.0
                                     },
-                      "Diff":  915.8
+                      "Diff":  915.8,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Light Blue 52",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -409,13 +421,14 @@
                                         "SHGC":  0.51,
                                         "UValue":  5.2
                                     },
-                      "Diff":  -408.8
+                      "Diff":  -408.8,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Neutral 34",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -440,13 +453,14 @@
                                         "SHGC":  0.47,
                                         "UValue":  5.0
                                     },
-                      "Diff":  -1377.7
+                      "Diff":  -1377.7,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Neutral 67",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -471,13 +485,14 @@
                                         "SHGC":  0.7,
                                         "UValue":  5.2
                                     },
-                      "Diff":  6.2
+                      "Diff":  6.2,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Royal Blue 20",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -502,13 +517,14 @@
                                         "SHGC":  0.38,
                                         "UValue":  4.7
                                     },
-                      "Diff":  -681.1
+                      "Diff":  -681.1,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Silver 20",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -533,13 +549,14 @@
                                         "SHGC":  0.33,
                                         "UValue":  4.6
                                     },
-                      "Diff":  -606.1
+                      "Diff":  -606.1,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Silver Grey 32",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -557,20 +574,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Grey",
                                         "GlazingType":  "SGU",
-                                        "ProductName":  "SCN 125",
-                                        "VLT":  29.0,
-                                        "ER":  35.0,
-                                        "IR":  6.0,
-                                        "SHGC":  0.34,
-                                        "UValue":  4.2
+                                        "ProductName":  "ST 136",
+                                        "VLT":  37.0,
+                                        "ER":  22.0,
+                                        "IR":  18.0,
+                                        "SHGC":  0.47,
+                                        "UValue":  5.0
                                     },
-                      "Diff":  1087.6
+                      "Diff":  430.5,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Silver Grey 40",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -595,13 +613,14 @@
                                         "SHGC":  0.47,
                                         "UValue":  5.0
                                     },
-                      "Diff":  29.2
+                      "Diff":  29.2,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard High Performance Gold 31",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -626,13 +645,14 @@
                                         "SHGC":  0.23,
                                         "UValue":  1.6
                                     },
-                      "Diff":  -4782.6
+                      "Diff":  -4782.6,
+                      "Range":  "KT|KS|PLT"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard High Performance Neutral 40",
-                      "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "SWOT":  "Strength",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -650,20 +670,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "ET 125",
-                                        "VLT":  25.0,
-                                        "ER":  29.0,
-                                        "IR":  15.0,
-                                        "SHGC":  0.26,
-                                        "UValue":  2.0
+                                        "ProductName":  "KS 130",
+                                        "VLT":  30.0,
+                                        "ER":  43.0,
+                                        "IR":  19.0,
+                                        "SHGC":  0.21,
+                                        "UValue":  1.6
                                     },
-                      "Diff":  -769.2
+                      "Diff":  3901.1,
+                      "Range":  "KT|KS|PLT"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard High Performance Neutral 60",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -688,13 +709,14 @@
                                         "SHGC":  0.46,
                                         "UValue":  1.9
                                     },
-                      "Diff":  -1023.3
+                      "Diff":  -1023.3,
+                      "Range":  "KT|KS|PLT"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard High Performance Neutral 70",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -712,20 +734,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Neutral",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "SKN 176",
-                                        "VLT":  69.0,
-                                        "ER":  13.0,
-                                        "IR":  15.0,
-                                        "SHGC":  0.34,
-                                        "UValue":  1.5
+                                        "ProductName":  "PLTT",
+                                        "VLT":  75.0,
+                                        "ER":  12.0,
+                                        "IR":  12.0,
+                                        "SHGC":  0.55,
+                                        "UValue":  1.8
                                     },
-                      "Diff":  7024.9
+                      "Diff":  367.1,
+                      "Range":  "KT|KS|PLT"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard High Performance Neutral Plus 50",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -750,13 +773,14 @@
                                         "SHGC":  0.26,
                                         "UValue":  1.8
                                     },
-                      "Diff":  137.4
+                      "Diff":  137.4,
+                      "Range":  "KT|KS|PLT"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard High Performance Royal Blue 40",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -774,20 +798,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Blue",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "SKN 765",
-                                        "VLT":  38.0,
-                                        "ER":  9.0,
+                                        "ProductName":  "KBT 140",
+                                        "VLT":  36.0,
+                                        "ER":  24.0,
                                         "IR":  17.0,
-                                        "SHGC":  0.25,
-                                        "UValue":  1.6
+                                        "SHGC":  0.31,
+                                        "UValue":  1.9
                                     },
-                      "Diff":  2096.6
+                      "Diff":  -1490.5,
+                      "Range":  "KT|KS|PLT"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard High Performance Silver 35",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -812,13 +837,14 @@
                                         "SHGC":  0.22,
                                         "UValue":  1.7
                                     },
-                      "Diff":  454.5
+                      "Diff":  454.5,
+                      "Range":  "KT|KS|PLT"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard High Performance Silver 40",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -836,20 +862,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "SKN 146",
-                                        "VLT":  40.0,
-                                        "ER":  11.0,
-                                        "IR":  11.0,
-                                        "SHGC":  0.25,
-                                        "UValue":  1.6
+                                        "ProductName":  "KT 140",
+                                        "VLT":  37.0,
+                                        "ER":  23.0,
+                                        "IR":  12.0,
+                                        "SHGC":  0.29,
+                                        "UValue":  1.8
                                     },
-                      "Diff":  2551.7
+                      "Diff":  -689.7,
+                      "Range":  "KT|KS|PLT"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Double Silver Aquamarine 35",
                       "SWOT":  "Threat",
-                      "Reason":  "Critical Gap: High technical deviation or shade mismatch.",
+                      "Reason":  "Critical Gap: High deviation within the bridged SG range (SKN).",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -874,13 +901,14 @@
                                         "SHGC":  0.22,
                                         "UValue":  1.6
                                     },
-                      "Diff":  454.5
+                      "Diff":  454.5,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Double Silver Blue 30",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -905,13 +933,14 @@
                                         "SHGC":  0.21,
                                         "UValue":  1.6
                                     },
-                      "Diff":  952.4
+                      "Diff":  952.4,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Double Silver Blue 40",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -936,13 +965,14 @@
                                         "SHGC":  0.25,
                                         "UValue":  1.6
                                     },
-                      "Diff":  -633.3
+                      "Diff":  -633.3,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Double Silver Blue 50",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -960,20 +990,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Blue",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "PLT TB",
-                                        "VLT":  48.0,
-                                        "ER":  7.0,
-                                        "IR":  11.0,
-                                        "SHGC":  0.35,
-                                        "UValue":  1.8
+                                        "ProductName":  "SKN 776",
+                                        "VLT":  44.0,
+                                        "ER":  8.0,
+                                        "IR":  13.0,
+                                        "SHGC":  0.27,
+                                        "UValue":  1.5
                                     },
-                      "Diff":  -2837.4
+                      "Diff":  -255.4,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Double Silver Green 30",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -998,13 +1029,14 @@
                                         "SHGC":  0.22,
                                         "UValue":  1.6
                                     },
-                      "Diff":  1287.9
+                      "Diff":  1287.9,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Double Silver Green 40",
-                      "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "SWOT":  "Strength",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1022,20 +1054,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Green",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 455",
-                                        "VLT":  39.0,
-                                        "ER":  13.0,
-                                        "IR":  10.0,
-                                        "SHGC":  0.29,
-                                        "UValue":  1.8
+                                        "ProductName":  "SKN 452",
+                                        "VLT":  41.0,
+                                        "ER":  14.0,
+                                        "IR":  14.0,
+                                        "SHGC":  0.24,
+                                        "UValue":  1.6
                                     },
-                      "Diff":  -2151.7
+                      "Diff":  1483.3,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Double Silver Neutral 30",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1060,13 +1093,14 @@
                                         "SHGC":  0.2,
                                         "UValue":  1.6
                                     },
-                      "Diff":  263.2
+                      "Diff":  263.2,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Double Silver Netural 40",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1084,20 +1118,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KS 138",
-                                        "VLT":  36.0,
-                                        "ER":  38.0,
-                                        "IR":  20.0,
+                                        "ProductName":  "SKN 146",
+                                        "VLT":  40.0,
+                                        "ER":  11.0,
+                                        "IR":  11.0,
                                         "SHGC":  0.25,
                                         "UValue":  1.6
                                     },
-                      "Diff":  -2121.7
+                      "Diff":  -521.7,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Double Silver Netural 50",
-                      "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "SWOT":  "Strength",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1113,22 +1148,23 @@
                       "BestMatch":  {
                                         "Brand":  "Saint-Gobain",
                                         "Standard":  "NFRC",
-                                        "Shade":  "Grey",
+                                        "Shade":  "Neutral",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KS 146",
-                                        "VLT":  42.0,
-                                        "ER":  33.0,
-                                        "IR":  19.0,
-                                        "SHGC":  0.28,
+                                        "ProductName":  "SKN 152",
+                                        "VLT":  49.0,
+                                        "ER":  18.0,
+                                        "IR":  14.0,
+                                        "SHGC":  0.25,
                                         "UValue":  1.6
                                     },
-                      "Diff":  -1666.7
+                      "Diff":  2933.3,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Blue 27",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1146,20 +1182,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Blue",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 740",
-                                        "VLT":  24.0,
-                                        "ER":  12.0,
-                                        "IR":  12.0,
-                                        "SHGC":  0.22,
-                                        "UValue":  1.8
+                                        "ProductName":  "SCN 745",
+                                        "VLT":  25.0,
+                                        "ER":  13.0,
+                                        "IR":  13.0,
+                                        "SHGC":  0.28,
+                                        "UValue":  2.6
                                     },
-                      "Diff":  -519.5
+                      "Diff":  -2500,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Green 27",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1184,13 +1221,14 @@
                                         "SHGC":  0.24,
                                         "UValue":  2.1
                                     },
-                      "Diff":  -1011.9
+                      "Diff":  -1011.9,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Grey 27",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1208,20 +1246,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 125",
-                                        "VLT":  24.0,
-                                        "ER":  23.0,
-                                        "IR":  16.0,
-                                        "SHGC":  0.22,
-                                        "UValue":  1.7
+                                        "ProductName":  "ET 125",
+                                        "VLT":  25.0,
+                                        "ER":  29.0,
+                                        "IR":  15.0,
+                                        "SHGC":  0.26,
+                                        "UValue":  2.0
                                     },
-                      "Diff":  -519.5
+                      "Diff":  -1813.2,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Neutral 27",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1239,20 +1278,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 125",
-                                        "VLT":  24.0,
-                                        "ER":  23.0,
-                                        "IR":  16.0,
-                                        "SHGC":  0.22,
-                                        "UValue":  1.7
+                                        "ProductName":  "ET 125",
+                                        "VLT":  25.0,
+                                        "ER":  29.0,
+                                        "IR":  15.0,
+                                        "SHGC":  0.26,
+                                        "UValue":  2.0
                                     },
-                      "Diff":  -519.5
+                      "Diff":  -1813.2,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Tru Blue 40",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1270,20 +1310,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Blue",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "SKN 765",
-                                        "VLT":  38.0,
+                                        "ProductName":  "ET 751",
+                                        "VLT":  29.0,
                                         "ER":  9.0,
-                                        "IR":  17.0,
-                                        "SHGC":  0.25,
-                                        "UValue":  1.6
+                                        "IR":  14.0,
+                                        "SHGC":  0.27,
+                                        "UValue":  2.3
                                     },
-                      "Diff":  2200
+                      "Diff":  -2259.3,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Clear 65",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1301,20 +1342,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Neutral",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 164",
-                                        "VLT":  57.0,
-                                        "ER":  14.0,
-                                        "IR":  10.0,
-                                        "SHGC":  0.46,
-                                        "UValue":  1.9
+                                        "ProductName":  "ET 151",
+                                        "VLT":  46.0,
+                                        "ER":  16.0,
+                                        "IR":  14.0,
+                                        "SHGC":  0.36,
+                                        "UValue":  2.3
                                     },
-                      "Diff":  -434.8
+                      "Diff":  -48.3,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Light Blue 50",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1332,20 +1374,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Blue",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "PLT TB",
-                                        "VLT":  48.0,
-                                        "ER":  7.0,
-                                        "IR":  11.0,
-                                        "SHGC":  0.35,
-                                        "UValue":  1.8
+                                        "ProductName":  "ET 751",
+                                        "VLT":  29.0,
+                                        "ER":  9.0,
+                                        "IR":  14.0,
+                                        "SHGC":  0.27,
+                                        "UValue":  2.3
                                     },
-                      "Diff":  857.1
+                      "Diff":  -2116.4,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Silver Grey 35",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1363,20 +1406,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KS 138",
-                                        "VLT":  36.0,
-                                        "ER":  38.0,
-                                        "IR":  20.0,
-                                        "SHGC":  0.25,
-                                        "UValue":  1.6
+                                        "ProductName":  "ET 135",
+                                        "VLT":  31.0,
+                                        "ER":  24.0,
+                                        "IR":  14.0,
+                                        "SHGC":  0.3,
+                                        "UValue":  2.1
                                     },
-                      "Diff":  800
+                      "Diff":  -3266.7,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Green 50",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1394,20 +1438,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Green",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 464",
-                                        "VLT":  47.0,
-                                        "ER":  11.0,
-                                        "IR":  10.0,
-                                        "SHGC":  0.34,
-                                        "UValue":  1.9
+                                        "ProductName":  "ET 451",
+                                        "VLT":  38.0,
+                                        "ER":  12.0,
+                                        "IR":  14.0,
+                                        "SHGC":  0.29,
+                                        "UValue":  2.3
                                     },
-                      "Diff":  850.6
+                      "Diff":  130.5,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Neutral 45",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1425,20 +1470,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 140",
-                                        "VLT":  37.0,
-                                        "ER":  23.0,
-                                        "IR":  12.0,
-                                        "SHGC":  0.29,
-                                        "UValue":  1.8
+                                        "ProductName":  "SCN 145",
+                                        "VLT":  40.0,
+                                        "ER":  26.0,
+                                        "IR":  14.0,
+                                        "SHGC":  0.38,
+                                        "UValue":  2.6
                                     },
-                      "Diff":  -689.7
+                      "Diff":  -2922,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar Plus Sea Green 35",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1456,20 +1502,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Green",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "SKN 444",
-                                        "VLT":  34.0,
-                                        "ER":  15.0,
-                                        "IR":  14.0,
-                                        "SHGC":  0.22,
-                                        "UValue":  1.6
+                                        "ProductName":  "SCN 445",
+                                        "VLT":  33.0,
+                                        "ER":  19.0,
+                                        "IR":  13.0,
+                                        "SHGC":  0.3,
+                                        "UValue":  2.6
                                     },
-                      "Diff":  3311.7
+                      "Diff":  -1142.9,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Grey 33",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1487,20 +1534,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "ET 135",
-                                        "VLT":  31.0,
-                                        "ER":  24.0,
-                                        "IR":  14.0,
-                                        "SHGC":  0.3,
-                                        "UValue":  2.1
+                                        "ProductName":  "ST 136",
+                                        "VLT":  34.0,
+                                        "ER":  23.0,
+                                        "IR":  23.0,
+                                        "SHGC":  0.37,
+                                        "UValue":  2.8
                                     },
-                      "Diff":  2047.6
+                      "Diff":  903.5,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Light Blue 52",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1518,20 +1566,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Blue",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "SKN 752",
-                                        "VLT":  31.0,
-                                        "ER":  10.0,
-                                        "IR":  13.0,
-                                        "SHGC":  0.21,
-                                        "UValue":  1.6
+                                        "ProductName":  "ST 750",
+                                        "VLT":  29.0,
+                                        "ER":  11.0,
+                                        "IR":  21.0,
+                                        "SHGC":  0.33,
+                                        "UValue":  2.8
                                     },
-                      "Diff":  5644.3
+                      "Diff":  -329.8,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Neutral 34",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1549,20 +1598,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 130",
-                                        "VLT":  31.0,
-                                        "ER":  22.0,
-                                        "IR":  14.0,
-                                        "SHGC":  0.26,
-                                        "UValue":  1.8
+                                        "ProductName":  "ST 136",
+                                        "VLT":  34.0,
+                                        "ER":  23.0,
+                                        "IR":  23.0,
+                                        "SHGC":  0.37,
+                                        "UValue":  2.8
                                     },
-                      "Diff":  1923.1
+                      "Diff":  -810.8,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Neutral 67",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1580,20 +1630,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Neutral",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 155",
-                                        "VLT":  47.0,
-                                        "ER":  17.0,
-                                        "IR":  11.0,
-                                        "SHGC":  0.37,
-                                        "UValue":  1.8
+                                        "ProductName":  "ST 150",
+                                        "VLT":  46.0,
+                                        "ER":  20.0,
+                                        "IR":  22.0,
+                                        "SHGC":  0.49,
+                                        "UValue":  2.8
                                     },
-                      "Diff":  2498.6
+                      "Diff":  -816.3,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Royal Blue 20",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1618,13 +1669,14 @@
                                         "SHGC":  0.27,
                                         "UValue":  2.8
                                     },
-                      "Diff":  0
+                      "Diff":  0,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Silver 20",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1649,13 +1701,14 @@
                                         "SHGC":  0.12,
                                         "UValue":  1.9
                                     },
-                      "Diff":  -980.4
+                      "Diff":  -980.4,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Silver Grey 32",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1673,20 +1726,21 @@
                                         "Standard":  "NFRC",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "ET 135",
-                                        "VLT":  31.0,
-                                        "ER":  24.0,
-                                        "IR":  14.0,
-                                        "SHGC":  0.3,
-                                        "UValue":  2.1
+                                        "ProductName":  "ST 136",
+                                        "VLT":  34.0,
+                                        "ER":  23.0,
+                                        "IR":  23.0,
+                                        "SHGC":  0.37,
+                                        "UValue":  2.8
                                     },
-                      "Diff":  1545.5
+                      "Diff":  401.3,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard Solar  Silver Grey 40",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1711,13 +1765,14 @@
                                         "SHGC":  0.37,
                                         "UValue":  2.8
                                     },
-                      "Diff":  408.7
+                      "Diff":  408.7,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard HD Bronze",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Critical Gap: High deviation within the bridged SG range (ST).",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1733,22 +1788,23 @@
                       "BestMatch":  {
                                         "Brand":  "Saint-Gobain",
                                         "Standard":  "NFRC",
-                                        "Shade":  "Bronze",
+                                        "Shade":  "Blue",
                                         "GlazingType":  "SGU",
-                                        "ProductName":  "SBRZ 130",
-                                        "VLT":  29.0,
-                                        "ER":  18.0,
-                                        "IR":  7.0,
-                                        "SHGC":  0.39,
-                                        "UValue":  4.6
+                                        "ProductName":  "STB 120",
+                                        "VLT":  22.0,
+                                        "ER":  21.0,
+                                        "IR":  29.0,
+                                        "SHGC":  0.38,
+                                        "UValue":  4.7
                                     },
-                      "Diff":  578.8
+                      "Diff":  -1067.7,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Guardian",
                       "Product":  "Sun Guard HD Bronze",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Critical Gap: High deviation within the bridged SG range (ST).",
                       "Target":  {
                                      "Brand":  "Guardian",
                                      "Standard":  "NFRC",
@@ -1764,22 +1820,23 @@
                       "BestMatch":  {
                                         "Brand":  "Saint-Gobain",
                                         "Standard":  "NFRC",
-                                        "Shade":  "Bronze",
+                                        "Shade":  "Blue",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "SBRZ 130",
-                                        "VLT":  26.0,
-                                        "ER":  19.0,
-                                        "IR":  13.0,
-                                        "SHGC":  0.29,
-                                        "UValue":  2.6
+                                        "ProductName":  "ST 736",
+                                        "VLT":  21.0,
+                                        "ER":  12.0,
+                                        "IR":  22.0,
+                                        "SHGC":  0.27,
+                                        "UValue":  2.8
                                     },
-                      "Diff":  1187.7
+                      "Diff":  0,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Spring Plus",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -1804,13 +1861,14 @@
                                         "SHGC":  0.68,
                                         "UValue":  5.6
                                     },
-                      "Diff":  0
+                      "Diff":  0,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Nimbus",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -1835,13 +1893,14 @@
                                         "SHGC":  0.56,
                                         "UValue":  5.6
                                     },
-                      "Diff":  -45.4
+                      "Diff":  -45.4,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Aura",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -1866,13 +1925,14 @@
                                         "SHGC":  0.56,
                                         "UValue":  5.6
                                     },
-                      "Diff":  -30.8
+                      "Diff":  -30.8,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Nectar",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -1897,13 +1957,14 @@
                                         "SHGC":  0.43,
                                         "UValue":  5.5
                                     },
-                      "Diff":  382.4
+                      "Diff":  382.4,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Dawn",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -1921,20 +1982,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Grey",
                                         "GlazingType":  "SGU",
-                                        "ProductName":  "SCN 125",
-                                        "VLT":  29.0,
-                                        "ER":  35.0,
-                                        "IR":  6.0,
-                                        "SHGC":  0.31,
-                                        "UValue":  4.8
+                                        "ProductName":  "ST 136",
+                                        "VLT":  37.0,
+                                        "ER":  22.0,
+                                        "IR":  18.0,
+                                        "SHGC":  0.43,
+                                        "UValue":  5.5
                                     },
-                      "Diff":  2610.7
+                      "Diff":  1860.5,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Ivory",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -1959,13 +2021,14 @@
                                         "SHGC":  0.29,
                                         "UValue":  5.2
                                     },
-                      "Diff":  131.8
+                      "Diff":  131.8,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Snow",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -1990,13 +2053,14 @@
                                         "SHGC":  0.29,
                                         "UValue":  5.2
                                     },
-                      "Diff":  843.9
+                      "Diff":  843.9,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Solaris",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2021,13 +2085,14 @@
                                         "SHGC":  0.14,
                                         "UValue":  3.6
                                     },
-                      "Diff":  714.3
+                      "Diff":  714.3,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Sky",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2052,13 +2117,14 @@
                                         "SHGC":  0.46,
                                         "UValue":  5.6
                                     },
-                      "Diff":  -642.3
+                      "Diff":  -642.3,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Oasis",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2076,20 +2142,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Blue",
                                         "GlazingType":  "SGU",
-                                        "ProductName":  "ET 750",
+                                        "ProductName":  "ST 750",
                                         "VLT":  32.0,
-                                        "ER":  8.0,
-                                        "IR":  10.0,
-                                        "SHGC":  0.36,
-                                        "UValue":  5.0
+                                        "ER":  10.0,
+                                        "IR":  16.0,
+                                        "SHGC":  0.4,
+                                        "UValue":  5.6
                                     },
-                      "Diff":  1571.8
+                      "Diff":  682.9,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Oceanic Blue Plus",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2114,13 +2181,14 @@
                                         "SHGC":  0.32,
                                         "UValue":  5.2
                                     },
-                      "Diff":  208.3
+                      "Diff":  208.3,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Meadow",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2145,13 +2213,14 @@
                                         "SHGC":  0.5,
                                         "UValue":  5.6
                                     },
-                      "Diff":  -666.7
+                      "Diff":  -666.7,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Eco",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2176,13 +2245,14 @@
                                         "SHGC":  0.5,
                                         "UValue":  5.6
                                     },
-                      "Diff":  1727.3
+                      "Diff":  1727.3,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Coral",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2207,13 +2277,14 @@
                                         "SHGC":  0.43,
                                         "UValue":  5.6
                                     },
-                      "Diff":  202.2
+                      "Diff":  202.2,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Zest",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2231,20 +2302,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Green",
                                         "GlazingType":  "SGU",
-                                        "ProductName":  "ET 450",
-                                        "VLT":  41.0,
-                                        "ER":  10.0,
-                                        "IR":  11.0,
-                                        "SHGC":  0.39,
-                                        "UValue":  5.0
+                                        "ProductName":  "ST 450",
+                                        "VLT":  42.0,
+                                        "ER":  14.0,
+                                        "IR":  17.0,
+                                        "SHGC":  0.43,
+                                        "UValue":  5.6
                                     },
-                      "Diff":  1363.9
+                      "Diff":  618.5,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Lime",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2269,13 +2341,14 @@
                                         "SHGC":  0.35,
                                         "UValue":  5.5
                                     },
-                      "Diff":  478.8
+                      "Diff":  478.8,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Fern",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2293,20 +2366,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Green",
                                         "GlazingType":  "SGU",
-                                        "ProductName":  "SCN 425",
-                                        "VLT":  24.0,
-                                        "ER":  25.0,
-                                        "IR":  6.0,
-                                        "SHGC":  0.28,
-                                        "UValue":  4.8
+                                        "ProductName":  "ST 436",
+                                        "VLT":  31.0,
+                                        "ER":  17.0,
+                                        "IR":  18.0,
+                                        "SHGC":  0.35,
+                                        "UValue":  5.5
                                     },
-                      "Diff":  1071.4
+                      "Diff":  1357.1,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Gold",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Critical Gap: High deviation within the bridged SG range (ST).",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2322,22 +2396,23 @@
                       "BestMatch":  {
                                         "Brand":  "Saint-Gobain",
                                         "Standard":  "EN",
-                                        "Shade":  "Gold",
+                                        "Shade":  "Neutral",
                                         "GlazingType":  "SGU",
-                                        "ProductName":  "STG 127",
-                                        "VLT":  27.0,
-                                        "ER":  27.0,
-                                        "IR":  10.0,
-                                        "SHGC":  0.33,
-                                        "UValue":  5.0
+                                        "ProductName":  "ST 150",
+                                        "VLT":  51.0,
+                                        "ER":  18.0,
+                                        "IR":  17.0,
+                                        "SHGC":  0.56,
+                                        "UValue":  5.6
                                     },
-                      "Diff":  -266.5
+                      "Diff":  658.9,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Spring Plus",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2362,13 +2437,14 @@
                                         "SHGC":  0.6,
                                         "UValue":  2.8
                                     },
-                      "Diff":  -169.5
+                      "Diff":  -169.5,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Aura",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2393,13 +2469,14 @@
                                         "SHGC":  0.47,
                                         "UValue":  2.8
                                     },
-                      "Diff":  -647.5
+                      "Diff":  -647.5,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Nimbus",
                       "SWOT":  "Weakness",
-                      "Reason":  "SG performance is lower than competition.",
+                      "Reason":  "SG performance in this range is lower than competition.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2424,13 +2501,14 @@
                                         "SHGC":  0.47,
                                         "UValue":  2.8
                                     },
-                      "Diff":  -4.4
+                      "Diff":  -4.4,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Nectar",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2455,13 +2533,14 @@
                                         "SHGC":  0.35,
                                         "UValue":  2.7
                                     },
-                      "Diff":  571.4
+                      "Diff":  571.4,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Dawn",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2479,20 +2558,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "SCN 125",
-                                        "VLT":  26.0,
-                                        "ER":  36.0,
-                                        "IR":  13.0,
-                                        "SHGC":  0.25,
-                                        "UValue":  2.5
+                                        "ProductName":  "ST 136",
+                                        "VLT":  34.0,
+                                        "ER":  23.0,
+                                        "IR":  0,
+                                        "SHGC":  0.35,
+                                        "UValue":  2.7
                                     },
-                      "Diff":  2521.2
+                      "Diff":  1835.5,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Snow",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2517,13 +2597,14 @@
                                         "SHGC":  0.21,
                                         "UValue":  2.6
                                     },
-                      "Diff":  1071.4
+                      "Diff":  1071.4,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Ivory",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2548,13 +2629,14 @@
                                         "SHGC":  0.21,
                                         "UValue":  2.6
                                     },
-                      "Diff":  571.4
+                      "Diff":  571.4,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Solaris",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2579,13 +2661,14 @@
                                         "SHGC":  0.1,
                                         "UValue":  1.9
                                     },
-                      "Diff":  222.2
+                      "Diff":  222.2,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Sky",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2610,13 +2693,14 @@
                                         "SHGC":  0.36,
                                         "UValue":  2.8
                                     },
-                      "Diff":  -326.8
+                      "Diff":  -326.8,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Oasis",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2634,20 +2718,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Blue",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "ET 750",
+                                        "ProductName":  "ST 750",
                                         "VLT":  29.0,
-                                        "ER":  9.0,
-                                        "IR":  16.0,
-                                        "SHGC":  0.27,
-                                        "UValue":  2.6
+                                        "ER":  11.0,
+                                        "IR":  21.0,
+                                        "SHGC":  0.29,
+                                        "UValue":  2.8
                                     },
-                      "Diff":  2031.1
+                      "Diff":  1290.3,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Oceanic Blue Plus",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2672,13 +2757,14 @@
                                         "SHGC":  0.24,
                                         "UValue":  2.7
                                     },
-                      "Diff":  350
+                      "Diff":  350,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Meadow",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2703,13 +2789,14 @@
                                         "SHGC":  0.4,
                                         "UValue":  2.8
                                     },
-                      "Diff":  -64.1
+                      "Diff":  -64.1,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Eco",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2734,13 +2821,14 @@
                                         "SHGC":  0.4,
                                         "UValue":  2.8
                                     },
-                      "Diff":  2272.7
+                      "Diff":  2272.7,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Coral",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2765,13 +2853,14 @@
                                         "SHGC":  0.33,
                                         "UValue":  2.8
                                     },
-                      "Diff":  372.3
+                      "Diff":  372.3,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Zest",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2796,13 +2885,14 @@
                                         "SHGC":  0.33,
                                         "UValue":  2.8
                                     },
-                      "Diff":  1515.2
+                      "Diff":  1515.2,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Lime",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2827,13 +2917,14 @@
                                         "SHGC":  0.26,
                                         "UValue":  2.7
                                     },
-                      "Diff":  384.6
+                      "Diff":  384.6,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Fern",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2858,13 +2949,14 @@
                                         "SHGC":  0.26,
                                         "UValue":  2.7
                                     },
-                      "Diff":  1880.3
+                      "Diff":  1880.3,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Enhance Gold",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Critical Gap: High deviation within the bridged SG range (ST).",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2880,22 +2972,23 @@
                       "BestMatch":  {
                                         "Brand":  "Saint-Gobain",
                                         "Standard":  "EN",
-                                        "Shade":  "Gold",
+                                        "Shade":  "Neutral",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "STG 127",
-                                        "VLT":  24.0,
-                                        "ER":  28.0,
-                                        "IR":  16.0,
-                                        "SHGC":  0.26,
-                                        "UValue":  2.6
+                                        "ProductName":  "ST 150",
+                                        "VLT":  46.0,
+                                        "ER":  20.0,
+                                        "IR":  22.0,
+                                        "SHGC":  0.47,
+                                        "UValue":  2.8
                                     },
-                      "Diff":  64.1
+                      "Diff":  620.6,
+                      "Range":  "ST"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Natura Plus",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2920,13 +3013,14 @@
                                         "SHGC":  0.45,
                                         "UValue":  5.0
                                     },
-                      "Diff":  -936.5
+                      "Diff":  -936.5,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Natura Advantage",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2951,13 +3045,14 @@
                                         "SHGC":  0.34,
                                         "UValue":  3.9
                                     },
-                      "Diff":  0
+                      "Diff":  0,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Natura",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -2982,13 +3077,14 @@
                                         "SHGC":  0.29,
                                         "UValue":  3.8
                                     },
-                      "Diff":  321.8
+                      "Diff":  321.8,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Natura Plus",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3013,13 +3109,14 @@
                                         "SHGC":  0.37,
                                         "UValue":  2.6
                                     },
-                      "Diff":  -1310.4
+                      "Diff":  -1310.4,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Natura Advantage",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3037,20 +3134,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 130",
+                                        "ProductName":  "ET 135",
                                         "VLT":  31.0,
-                                        "ER":  22.0,
+                                        "ER":  24.0,
                                         "IR":  14.0,
-                                        "SHGC":  0.25,
-                                        "UValue":  1.8
+                                        "SHGC":  0.28,
+                                        "UValue":  2.1
                                     },
-                      "Diff":  400
+                      "Diff":  -928.6,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Natura",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3075,13 +3173,14 @@
                                         "SHGC":  0.23,
                                         "UValue":  2.0
                                     },
-                      "Diff":  452.9
+                      "Diff":  452.9,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Natura Lite",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3099,20 +3198,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Neutral",
                                         "GlazingType":  "SGU",
-                                        "ProductName":  "ST 167",
-                                        "VLT":  67.0,
-                                        "ER":  19.0,
-                                        "IR":  19.0,
-                                        "SHGC":  0.68,
-                                        "UValue":  5.6
+                                        "ProductName":  "ET 151",
+                                        "VLT":  51.0,
+                                        "ER":  13.0,
+                                        "IR":  8.0,
+                                        "SHGC":  0.43,
+                                        "UValue":  4.3
                                     },
-                      "Diff":  -2147.1
+                      "Diff":  -139.5,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Natura Pro",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3137,13 +3237,14 @@
                                         "SHGC":  0.43,
                                         "UValue":  4.3
                                     },
-                      "Diff":  -639.5
+                      "Diff":  -639.5,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Natura Select",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3168,13 +3269,14 @@
                                         "SHGC":  0.43,
                                         "UValue":  4.3
                                     },
-                      "Diff":  -244.8
+                      "Diff":  -244.8,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Natura Lite",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3192,20 +3294,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Neutral",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 164",
-                                        "VLT":  57.0,
-                                        "ER":  14.0,
-                                        "IR":  10.0,
-                                        "SHGC":  0.47,
-                                        "UValue":  1.9
+                                        "ProductName":  "ET 151",
+                                        "VLT":  46.0,
+                                        "ER":  16.0,
+                                        "IR":  14.0,
+                                        "SHGC":  0.36,
+                                        "UValue":  2.3
                                     },
-                      "Diff":  -1281.4
+                      "Diff":  -631.3,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Natura Pro",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3223,20 +3326,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Neutral",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "SKN 152",
-                                        "VLT":  49.0,
-                                        "ER":  18.0,
+                                        "ProductName":  "ET 151",
+                                        "VLT":  46.0,
+                                        "ER":  16.0,
                                         "IR":  14.0,
-                                        "SHGC":  0.27,
-                                        "UValue":  1.6
+                                        "SHGC":  0.36,
+                                        "UValue":  2.3
                                     },
-                      "Diff":  3736.4
+                      "Diff":  -1634,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Natura Select",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3254,20 +3358,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KS 146",
-                                        "VLT":  42.0,
-                                        "ER":  33.0,
-                                        "IR":  19.0,
-                                        "SHGC":  0.29,
-                                        "UValue":  1.6
+                                        "ProductName":  "SCN 145",
+                                        "VLT":  40.0,
+                                        "ER":  26.0,
+                                        "IR":  14.0,
+                                        "SHGC":  0.37,
+                                        "UValue":  2.6
                                     },
-                      "Diff":  -160.1
+                      "Diff":  -3832,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Exceed Clear Lite Plus",
-                      "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "SWOT":  "Strength",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3285,20 +3390,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Neutral",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 164",
-                                        "VLT":  57.0,
-                                        "ER":  14.0,
-                                        "IR":  10.0,
-                                        "SHGC":  0.47,
-                                        "UValue":  1.9
+                                        "ProductName":  "SKN 152",
+                                        "VLT":  49.0,
+                                        "ER":  18.0,
+                                        "IR":  14.0,
+                                        "SHGC":  0.27,
+                                        "UValue":  1.6
                                     },
-                      "Diff":  -2082.9
+                      "Diff":  3937.6,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Exceed Clear Radiance",
-                      "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "SWOT":  "Strength",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3316,20 +3422,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Neutral",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 155",
-                                        "VLT":  47.0,
-                                        "ER":  17.0,
-                                        "IR":  11.0,
-                                        "SHGC":  0.38,
-                                        "UValue":  1.9
+                                        "ProductName":  "SKN 152",
+                                        "VLT":  49.0,
+                                        "ER":  18.0,
+                                        "IR":  14.0,
+                                        "SHGC":  0.27,
+                                        "UValue":  1.6
                                     },
-                      "Diff":  -1060.2
+                      "Diff":  4719.6,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Exceed Clear Vision Pro",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3354,13 +3461,14 @@
                                         "SHGC":  0.25,
                                         "UValue":  1.6
                                     },
-                      "Diff":  1714.3
+                      "Diff":  1714.3,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Exceed Clear Vision Plus",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3385,13 +3493,14 @@
                                         "SHGC":  0.25,
                                         "UValue":  1.6
                                     },
-                      "Diff":  2551.7
+                      "Diff":  2551.7,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Exceed Clear Brook Plus",
-                      "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "SWOT":  "Strength",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3409,20 +3518,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KS 130",
+                                        "ProductName":  "SKN 133",
                                         "VLT":  30.0,
-                                        "ER":  43.0,
-                                        "IR":  19.0,
-                                        "SHGC":  0.22,
+                                        "ER":  13.0,
+                                        "IR":  10.0,
+                                        "SHGC":  0.19,
                                         "UValue":  1.6
                                     },
-                      "Diff":  -1363.6
+                      "Diff":  789.5,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Exceed Clear Priva",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3440,20 +3550,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KS 130",
+                                        "ProductName":  "SKN 133",
                                         "VLT":  30.0,
-                                        "ER":  43.0,
-                                        "IR":  19.0,
-                                        "SHGC":  0.22,
+                                        "ER":  13.0,
+                                        "IR":  10.0,
+                                        "SHGC":  0.19,
                                         "UValue":  1.6
                                     },
-                      "Diff":  0
+                      "Diff":  2153.1,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Exceed Clear Comfort",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3471,20 +3582,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KS 130",
+                                        "ProductName":  "SKN 133",
                                         "VLT":  30.0,
-                                        "ER":  43.0,
-                                        "IR":  19.0,
-                                        "SHGC":  0.22,
+                                        "ER":  13.0,
+                                        "IR":  10.0,
+                                        "SHGC":  0.19,
                                         "UValue":  1.6
                                     },
-                      "Diff":  1136.4
+                      "Diff":  3289.5,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Exceed Clear Platina",
-                      "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "SWOT":  "Strength",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3502,20 +3614,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 125",
-                                        "VLT":  24.0,
-                                        "ER":  23.0,
-                                        "IR":  16.0,
-                                        "SHGC":  0.21,
-                                        "UValue":  1.7
+                                        "ProductName":  "SKN 133",
+                                        "VLT":  30.0,
+                                        "ER":  13.0,
+                                        "IR":  10.0,
+                                        "SHGC":  0.19,
+                                        "UValue":  1.6
                                     },
-                      "Diff":  -1428.6
+                      "Diff":  2932.3,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Exceed Tropic Blue",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3540,13 +3653,14 @@
                                         "SHGC":  0.26,
                                         "UValue":  1.5
                                     },
-                      "Diff":  3981.9
+                      "Diff":  3981.9,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Exceed Electric Blue",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3564,20 +3678,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Blue",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KBT 140",
-                                        "VLT":  36.0,
-                                        "ER":  24.0,
+                                        "ProductName":  "SKN 765",
+                                        "VLT":  38.0,
+                                        "ER":  9.0,
                                         "IR":  17.0,
-                                        "SHGC":  0.3,
-                                        "UValue":  1.8
+                                        "SHGC":  0.24,
+                                        "UValue":  1.5
                                     },
-                      "Diff":  387.1
+                      "Diff":  4220.4,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Exceed Blue Berry Plus",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3595,20 +3710,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Blue",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KBT 130",
-                                        "VLT":  25.0,
-                                        "ER":  21.0,
-                                        "IR":  22.0,
-                                        "SHGC":  0.22,
-                                        "UValue":  1.7
+                                        "ProductName":  "SKN 744",
+                                        "VLT":  26.0,
+                                        "ER":  11.0,
+                                        "IR":  14.0,
+                                        "SHGC":  0.18,
+                                        "UValue":  1.6
                                     },
-                      "Diff":  0
+                      "Diff":  3080.8,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Exceed Aurelia",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Critical Gap: High deviation within the bridged SG range (SKN).",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3624,22 +3740,23 @@
                       "BestMatch":  {
                                         "Brand":  "Saint-Gobain",
                                         "Standard":  "EN",
-                                        "Shade":  "Gold",
+                                        "Shade":  "Grey",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KG 122",
-                                        "VLT":  22.0,
-                                        "ER":  23.0,
-                                        "IR":  34.0,
-                                        "SHGC":  0.22,
+                                        "ProductName":  "SKN 133",
+                                        "VLT":  30.0,
+                                        "ER":  13.0,
+                                        "IR":  10.0,
+                                        "SHGC":  0.19,
                                         "UValue":  1.6
                                     },
-                      "Diff":  -2500
+                      "Diff":  3289.5,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Spectra Spectra",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3664,13 +3781,14 @@
                                         "SHGC":  0.25,
                                         "UValue":  1.6
                                     },
-                      "Diff":  0
+                      "Diff":  0,
+                      "Range":  "SKN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Essence Clear Essence Plus",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3695,13 +3813,14 @@
                                         "SHGC":  0.57,
                                         "UValue":  1.8
                                     },
-                      "Diff":  -238.3
+                      "Diff":  -238.3,
+                      "Range":  "KT|KS|PLT"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Chroma Lite",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3719,20 +3838,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Green",
                                         "GlazingType":  "SGU",
-                                        "ProductName":  "ST 467",
-                                        "VLT":  55.0,
-                                        "ER":  14.0,
-                                        "IR":  18.0,
-                                        "SHGC":  0.5,
-                                        "UValue":  5.6
+                                        "ProductName":  "ET 451",
+                                        "VLT":  42.0,
+                                        "ER":  11.0,
+                                        "IR":  7.0,
+                                        "SHGC":  0.35,
+                                        "UValue":  4.3
                                     },
-                      "Diff":  -1857.1
+                      "Diff":  -857.1,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Chroma Pro",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3757,13 +3877,14 @@
                                         "SHGC":  0.35,
                                         "UValue":  4.3
                                     },
-                      "Diff":  -857.1
+                      "Diff":  -857.1,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Chroma Select",
                       "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "Reason":  "SG range match is technically equivalent or superior.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3788,13 +3909,14 @@
                                         "SHGC":  0.35,
                                         "UValue":  4.3
                                     },
-                      "Diff":  125
+                      "Diff":  125,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Chroma Lite",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3812,20 +3934,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Green",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 464",
-                                        "VLT":  47.0,
-                                        "ER":  11.0,
-                                        "IR":  10.0,
-                                        "SHGC":  0.33,
-                                        "UValue":  1.9
+                                        "ProductName":  "ET 450",
+                                        "VLT":  37.0,
+                                        "ER":  12.0,
+                                        "IR":  17.0,
+                                        "SHGC":  0.3,
+                                        "UValue":  2.6
                                     },
-                      "Diff":  124.8
+                      "Diff":  -1784.3,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Chroma Pro",
-                      "SWOT":  "Strength",
-                      "Reason":  "SG product matches or outperforms competition selectivity.",
+                      "SWOT":  "Threat",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3843,20 +3966,21 @@
                                         "Standard":  "EN",
                                         "Shade":  "Green",
                                         "GlazingType":  "DGU",
-                                        "ProductName":  "KT 455",
-                                        "VLT":  39.0,
-                                        "ER":  13.0,
-                                        "IR":  10.0,
+                                        "ProductName":  "ET 451",
+                                        "VLT":  38.0,
+                                        "ER":  12.0,
+                                        "IR":  14.0,
                                         "SHGC":  0.27,
-                                        "UValue":  1.9
+                                        "UValue":  2.3
                                     },
-                      "Diff":  158.7
+                      "Diff":  -211.6,
+                      "Range":  "ET|SCN"
                   },
                   {
                       "Brand":  "Asahi",
                       "Product":  "Ecoscense Edge Chroma Select",
                       "SWOT":  "Threat",
-                      "Reason":  "Significant performance gap (\u003e15% selectivity difference).",
+                      "Reason":  "Significant performance gap within the bridged range.",
                       "Target":  {
                                      "Brand":  "Asahi",
                                      "Standard":  "EN",
@@ -3881,7 +4005,8 @@
                                         "SHGC":  0.27,
                                         "UValue":  2.6
                                     },
-                      "Diff":  -1944.4
+                      "Diff":  -1944.4,
+                      "Range":  "ET|SCN"
                   }
               ]
 }

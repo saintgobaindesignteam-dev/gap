@@ -53,7 +53,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         gapContainer.innerHTML = items.map(item => `
             <div class="gap-card ${item.SWOT.toLowerCase()}-card">
                 <div class="card-header">
-                    <span class="brand-tag">${item.Brand}</span>
+                    <div class="header-left">
+                        <span class="brand-tag">${item.Brand}</span>
+                        <span class="range-tag">${item.Range || 'Generic'}</span>
+                    </div>
                     <span class="swot-badge swot-${item.SWOT.toLowerCase()}">${item.SWOT}</span>
                 </div>
                 <h3 class="product-name">${item.Product}</h3>

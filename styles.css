@@ -85,7 +85,9 @@ main { padding: 2rem 5%; }
 .gap-card:hover { transform: translateY(-3px); border-color: rgba(255,255,255,0.2); }
 
 .card-header { display: flex; justify-content: space-between; align-items: center; }
+.header-left { display: flex; align-items: center; gap: 0.8rem; }
 .brand-tag { font-size: 0.65rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; }
+.range-tag { font-size: 0.55rem; font-weight: 800; color: var(--accent-purple); background: rgba(139, 92, 246, 0.1); padding: 0.2rem 0.5rem; border-radius: 4px; text-transform: uppercase; border: 1px solid rgba(139, 92, 246, 0.2); }
 .swot-badge { font-size: 0.65rem; padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 800; text-transform: uppercase; }
 
 .swot-strength { background: rgba(16, 185, 129, 0.15); color: var(--strength); border: 1px solid rgba(16, 185, 129, 0.3); }
