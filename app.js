@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     const summaryStats = document.getElementById('summary-stats');
     const sgToggle = document.getElementById('toggle-sg');
     const allChips = document.querySelectorAll('.chip');
+    
+    // KPI elements
+    const leadershipEl = document.getElementById('leadership-index');
+    const vulnerabilityEl = document.getElementById('vulnerability-score');
+    const avgGapEl = document.getElementById('avg-gap');
 
     let allItems = [];
     let sgCatalog = [];
@@ -20,6 +25,17 @@ document.addEventListener('DOMContentLoaded', async () => {
             gapContainer.innerHTML = `<div class="loader">Failed to load SWOT data. Please run analyze.ps1 first.</div>`;
             console.error(err);
         }
+    }
+
+    function updateKPIs(filteredItems) {
+        const total = filteredItems.length || 1;
+        const strengths = filteredItems.filter(i => i.SWOT === 'Strength').length;
+        const threats = filteredItems.filter(i => i.SWOT === 'Threat').length;
+        const avgGap = filteredItems.reduce((acc, curr) => acc + curr.Diff, 0) / total;
+
+        leadershipEl.innerText = Math.round((strengths / total) * 100) + '%';
+        vulnerabilityEl.innerText = Math.round((threats / total) * 100) + '%';
+        avgGapEl.innerText = (avgGap > 0 ? '+' : '') + Math.round(avgGap) + '%';
     }
 
     function updateSummary(filteredItems) {
@@ -59,9 +75,17 @@ document.addEventListener('DOMContentLoaded', async () => {
             { name: 'Threats', data: shades.map(s => items.filter(i => i.Target.Shade === s && i.SWOT === 'Threat').length), color: '#f59e0b' }
         ];
 
+        // Interaction: DataPointSelection
+        const chartEvents = {
+            dataPointSelection: (event, chartContext, config) => {
+                const shade = shades[config.dataPointIndex];
+                applyFilter('shade', shade);
+            }
+        };
+
         if (!chartInstances.swotShade) {
             chartInstances.swotShade = new ApexCharts(document.querySelector("#swotShadeChart"), {
-                chart: { type: 'bar', height: 250, stacked: true, toolbar: { show: false } },
+                chart: { type: 'bar', height: 250, stacked: true, toolbar: { show: false }, events: chartEvents },
                 plotOptions: { bar: { horizontal: false, borderRadius: 4 } },
                 xaxis: { categories: shades, labels: { style: { colors: '#94a3b8' } } },
                 yaxis: { labels: { style: { colors: '#94a3b8' } } },
@@ -117,22 +141,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 markers: { size: [6, 8, 5], shape: ["circle", "circle", "square"] },
                 theme: { mode: 'dark' },
                 legend: { labels: { colors: '#94a3b8' } },
-                tooltip: {
-                    custom: function({series, seriesIndex, dataPointIndex}) {
-                        let item;
-                        if (seriesIndex === 0) {
-                            const list = items.filter(i => i.SWOT !== 'Threat');
-                            item = list[dataPointIndex] ? list[dataPointIndex].Target : null;
-                        } else if (seriesIndex === 1) {
-                            const list = items.filter(i => i.SWOT === 'Threat');
-                            item = list[dataPointIndex] ? list[dataPointIndex].Target : null;
-                        } else {
-                            item = filteredSg[dataPointIndex];
-                        }
-                        if (!item) return '';
-                        return `<div class="chart-tooltip"><b>${item.ProductName || item.Product}</b><br>VLT: ${item.VLT}% | SHGC: ${item.SHGC}</div>`;
-                    }
-                },
                 series: frontierSeries
             });
             chartInstances.frontier.render();
@@ -141,13 +149,27 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
+    function getReasoning(item) {
+        if (item.SWOT === 'Strength') return 'SG range has equal or superior efficiency.';
+        if (item.SWOT === 'Opportunity') return 'SG currently unrepresented in this bridged range segment.';
+        if (!item.BestMatch) return 'No compatible SG range found.';
+        
+        const reasons = [];
+        if (item.BestMatch.SHGC > item.Target.SHGC + 0.05) reasons.push(`SHGC is ${Math.round((item.BestMatch.SHGC - item.Target.SHGC)*100)} points too high`);
+        if (item.BestMatch.VLT < item.Target.VLT - 5) reasons.push(`VLT is ${Math.round(item.Target.VLT - item.BestMatch.VLT)}% lower`);
+        
+        return reasons.length > 0 ? reasons.join(' and ') + '.' : item.Reason;
+    }
+
     function renderItems(items) {
         if (items.length === 0) {
             gapContainer.innerHTML = `<div class="loader">No items found matching your criteria.</div>`;
             return;
         }
 
-        gapContainer.innerHTML = items.map(item => `
+        gapContainer.innerHTML = items.map(item => {
+            const reasoning = getReasoning(item);
+            return `
             <div class="gap-card ${item.SWOT.toLowerCase()}-card">
                 <div class="card-header">
                     <div class="header-left">
@@ -164,26 +186,41 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <div class="grid-header sg-color">Saint-Gobain</div>
                     
                     <div class="grid-label">VLT</div>
-                    <div class="grid-val">${item.Target.VLT}%</div>
-                    <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.VLT + '%' : '-'}</div>
+                    <div class="grid-val-group">
+                        <div class="grid-val">${item.Target.VLT}%</div>
+                        <div class="spec-bar-container"><div class="spec-bar comp" style="width: ${item.Target.VLT}%"></div></div>
+                    </div>
+                    <div class="grid-val-group">
+                        <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.VLT + '%' : '-'}</div>
+                        <div class="spec-bar-container"><div class="spec-bar sg" style="width: ${item.BestMatch ? item.BestMatch.VLT : 0}%"></div></div>
+                    </div>
 
                     <div class="grid-label">SHGC</div>
-                    <div class="grid-val">${item.Target.SHGC}</div>
-                    <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.SHGC : '-'}</div>
-
-                    <div class="grid-label">U-Value</div>
-                    <div class="grid-val">${item.Target.UValue}</div>
-                    <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.UValue : '-'}</div>
+                    <div class="grid-val-group">
+                        <div class="grid-val">${item.Target.SHGC}</div>
+                        <div class="spec-bar-container"><div class="spec-bar comp" style="width: ${item.Target.SHGC * 100}%"></div></div>
+                    </div>
+                    <div class="grid-val-group">
+                        <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.SHGC : '-'}</div>
+                        <div class="spec-bar-container"><div class="spec-bar sg" style="width: ${item.BestMatch ? item.BestMatch.SHGC * 100 : 0}%"></div></div>
+                    </div>
                 </div>
 
                 <div class="comparison">
-                    <div class="comp-label">BEST SG MATCH</div>
-                    <div class="match-product">${item.BestMatch ? item.BestMatch.ProductName : 'NO MATCH'}</div>
-                    <div class="gap-indicator swot-${item.SWOT.toLowerCase()}">${item.Reason}</div>
-                    <div class="diff-info">Selectivity Diff: ${item.Diff > 0 ? '+' : ''}${item.Diff}%</div>
+                    <div class="comp-label">STRATEGIC ANALYSIS</div>
+                    <div class="gap-indicator swot-${item.SWOT.toLowerCase()}">${reasoning}</div>
+                    <div class="diff-info">Selectivity Delta: ${item.Diff > 0 ? '+' : ''}${item.Diff}%</div>
                 </div>
             </div>
-        `).join('');
+        `}).join('');
+    }
+
+    function applyFilter(type, val) {
+        document.querySelectorAll(`.chip[data-filter="${type}"]`).forEach(c => {
+            c.classList.toggle('active', c.dataset.val === val);
+        });
+        filters[type] = val;
+        filterData();
     }
 
     function filterData() {
@@ -194,6 +231,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
 
         updateSummary(segmentItems);
+        updateKPIs(segmentItems);
         updateCharts(segmentItems, sgCatalog);
 
         let visibleItems = segmentItems.filter(item => {
@@ -210,10 +248,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         chip.addEventListener('click', () => {
             const filterType = chip.dataset.filter;
             const filterVal = chip.dataset.val;
-            document.querySelectorAll(`.chip[data-filter="${filterType}"]`).forEach(c => c.classList.remove('active'));
-            chip.classList.add('active');
-            filters[filterType] = filterVal;
-            filterData();
+            applyFilter(filterType, filterVal);
         });
     });
 
