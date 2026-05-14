@@ -6,10 +6,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     // KPI elements
     const leadershipEl = document.getElementById('leadership-index');
-    const coverageEl = document.getElementById('portfolio-coverage');
-    const coverageDescEl = document.getElementById('coverage-desc');
-    const strongestAssetEl = document.getElementById('strongest-asset');
-    const assetDescEl = document.getElementById('asset-desc');
+    const threatEl = document.getElementById('threat-index');
+    const weaknessEl = document.getElementById('weakness-index');
 
     let allItems = [];
     let sgCatalog = [];
@@ -72,38 +70,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function updateKPIs(filteredItems) {
         const total = filteredItems.length || 1;
-        const strengths = filteredItems.filter(i => i.SWOT === 'Strength');
-        const opportunities = filteredItems.filter(i => i.SWOT === 'Opportunity').length;
+        const strengths = filteredItems.filter(i => i.SWOT === 'Strength').length;
+        const threats = filteredItems.filter(i => i.SWOT === 'Threat').length;
+        const weaknesses = filteredItems.filter(i => i.SWOT === 'Weakness').length;
         
-        // 1. Market Leadership
-        leadershipEl.innerText = Math.round((strengths.length / total) * 100) + '%';
-
-        // 2. Portfolio Coverage
-        const matchedItems = filteredItems.filter(i => i.BestMatch !== null).length;
-        const coverage = Math.round((matchedItems / total) * 100);
-        coverageEl.innerText = coverage + '%';
-        coverageDescEl.innerText = `We have suitable matches for ${matchedItems} out of ${total} competitor products.`;
-
-        // 3. Strongest Asset
-        const rangeWins = {};
-        strengths.forEach(s => {
-            const range = s.Range || 'Generic';
-            rangeWins[range] = (rangeWins[range] || 0) + 1;
-        });
-
-        let bestRange = 'N/A';
-        let maxWins = 0;
-        for (const r in rangeWins) {
-            if (rangeWins[r] > maxWins) {
-                maxWins = rangeWins[r];
-                bestRange = r;
-            }
-        }
-
-        strongestAssetEl.innerText = bestRange;
-        assetDescEl.innerText = bestRange !== 'N/A' 
-            ? `${bestRange} is your strongest asset, dominating in ${maxWins} technical segments.`
-            : "No dominant technical lead identified in this segment.";
+        leadershipEl.innerText = Math.round((strengths / total) * 100) + '%';
+        threatEl.innerText = Math.round((threats / total) * 100) + '%';
+        weaknessEl.innerText = Math.round((weaknesses / total) * 100) + '%';
     }
 
     function updateSummary(filteredItems) {
@@ -188,31 +161,56 @@ document.addEventListener('DOMContentLoaded', async () => {
             chartInstances.rangeGap.updateSeries([{ data: avgGaps }]);
         }
 
-        const standardData = items.filter(i => i.SWOT !== 'Threat').map(i => ({ x: i.Target.VLT, y: i.Target.SHGC }));
-        const outlierData = items.filter(i => i.SWOT === 'Threat').map(i => ({ x: i.Target.VLT, y: i.Target.SHGC }));
+        // --- NEW PRODUCT AVAILABILITY CHART (Focused on SF) ---
+        const getBrandVal = (b) => b === 'Guardian' ? 3 : (b === 'Asahi' ? 2 : 1);
+        
+        const standardSF = items.filter(i => i.SWOT !== 'Threat').map(i => ({ x: i.Target.SHGC, y: getBrandVal(i.Brand) }));
+        const threatSF = items.filter(i => i.SWOT === 'Threat').map(i => ({ x: i.Target.SHGC, y: getBrandVal(i.Brand) }));
+        
         const filteredSg = allSgItems.filter(i => filters.shade === 'all' || i.Shade === filters.shade);
-        const sgData = sgToggle.checked ? filteredSg.map(i => ({ x: i.VLT, y: i.SHGC })) : [];
+        const sgSF = sgToggle.checked ? filteredSg.map(i => ({ x: i.SHGC, y: 1 })) : [];
 
-        const frontierSeries = [
-            { name: 'Standard Performance', data: standardData },
-            { name: 'Market Outliers (Threats)', data: outlierData },
-            { name: 'Saint-Gobain Catalog', data: sgData }
+        const sfAvailabilitySeries = [
+            { name: 'Standard Competitor', data: standardSF },
+            { name: 'Competitor Threats', data: threatSF },
+            { name: 'Saint-Gobain Catalog', data: sgSF }
         ];
 
         if (!chartInstances.frontier) {
             chartInstances.frontier = new ApexCharts(document.querySelector("#frontierChart"), {
                 chart: { type: 'scatter', height: 350, zoom: { enabled: true, type: 'xy' } },
                 colors: ['#3b82f6', '#ef4444', '#10b981'],
-                xaxis: { title: { text: 'VLT %' }, labels: { style: { colors: '#94a3b8' } } },
-                yaxis: { title: { text: 'SHGC / SF' }, labels: { style: { colors: '#94a3b8' } } },
+                xaxis: { 
+                    title: { text: 'Solar Factor (SF)' }, 
+                    labels: { style: { colors: '#94a3b8' } },
+                    min: 0, max: 0.8
+                },
+                yaxis: { 
+                    title: { text: 'Market Presence' }, 
+                    labels: { 
+                        style: { colors: '#94a3b8' },
+                        formatter: val => val === 3 ? 'Guardian' : (val === 2 ? 'Asahi' : (val === 1 ? 'Saint-Gobain' : ''))
+                    },
+                    min: 0.5, max: 3.5, tickAmount: 3
+                },
                 markers: { size: [6, 8, 5], shape: ["circle", "circle", "square"] },
                 theme: { mode: 'dark' },
                 legend: { labels: { colors: '#94a3b8' } },
-                series: frontierSeries
+                tooltip: {
+                    custom: function({series, seriesIndex, dataPointIndex}) {
+                        let item;
+                        if (seriesIndex === 0) item = items.filter(i => i.SWOT !== 'Threat')[dataPointIndex].Target;
+                        else if (seriesIndex === 1) item = items.filter(i => i.SWOT === 'Threat')[dataPointIndex].Target;
+                        else item = filteredSg[dataPointIndex];
+                        if (!item) return '';
+                        return `<div class="chart-tooltip"><b>${item.ProductName || item.Product}</b><br>Solar Factor: ${item.SHGC}<br>VLT: ${item.VLT}%</div>`;
+                    }
+                },
+                series: sfAvailabilitySeries
             });
             chartInstances.frontier.render();
         } else {
-            chartInstances.frontier.updateSeries(frontierSeries);
+            chartInstances.frontier.updateSeries(sfAvailabilitySeries);
         }
     }
 
@@ -227,9 +225,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             const recommendation = getRecommendation(item);
             const tSel = (item.Target.VLT/100) / (item.Target.SHGC || 1);
             const pSel = item.BestMatch ? (item.BestMatch.VLT/100) / (item.BestMatch.SHGC || 1) : 0;
-            const getFillLabel = (u) => (u < 2.0) ? "Argon Fill" : "Air Fill";
-            const compFill = getFillLabel(item.Target.UValue);
-            const sgFill = item.BestMatch ? getFillLabel(item.BestMatch.UValue) : "-";
             const isUWin = item.BestMatch && (item.BestMatch.UValue < item.Target.UValue);
 
             return `
@@ -248,13 +243,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                     <div class="grid-header comp-color">${item.Brand}</div>
                     <div class="grid-header sg-color">Saint-Gobain</div>
                     
-                    <div class="grid-label">Matched Product</div>
-                    <div class="grid-val" style="font-size: 0.6rem; opacity: 0.7">Competitor Target</div>
+                    <div class="grid-label">Matched SG Product</div>
+                    <div class="grid-val" style="font-size: 0.6rem; opacity: 0.7">Benchmark</div>
                     <div class="grid-val highlight-val" style="font-size: 0.75rem">${item.BestMatch ? item.BestMatch.ProductName : 'NO MATCH'}</div>
-
-                    <div class="grid-label">Filling</div>
-                    <div class="grid-val" style="font-size: 0.65rem">${compFill}</div>
-                    <div class="grid-val" style="font-size: 0.65rem; color: var(--accent-blue)">${sgFill}</div>
 
                     <div class="grid-label">VLT</div>
                     <div class="grid-val-group">
