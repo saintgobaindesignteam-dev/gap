@@ -137,6 +137,7 @@ $summary = @{
 $jsonOutput = @{
     summary = $summary
     items = $results
+    sgCatalog = $sgProducts | Select-Object ProductName, VLT, SHGC, UValue, Shade, Brand
 }
 
 $jsonOutput | ConvertTo-Json -Depth 5 | Out-File -FilePath "c:\Users\K7813444\OneDrive - Saint-Gobain\Desktop\2026\ACE\gap\gap_data.json" -Encoding utf8

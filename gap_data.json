@@ -4,9 +4,2027 @@
                     "opportunities":  0,
                     "weaknesses":  42,
                     "total":  125,
-                    "timestamp":  "2026-05-14 22:21:05",
+                    "timestamp":  "2026-05-14 22:27:52",
                     "strengths":  59
                 },
+    "sgCatalog":  [
+                      {
+                          "ProductName":  "ET 125",
+                          "VLT":  25.0,
+                          "SHGC":  0.23,
+                          "UValue":  2.0,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 125",
+                          "VLT":  28.0,
+                          "SHGC":  0.29,
+                          "UValue":  3.8,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 135",
+                          "VLT":  31.0,
+                          "SHGC":  0.28,
+                          "UValue":  2.1,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 135",
+                          "VLT":  34.0,
+                          "SHGC":  0.34,
+                          "UValue":  3.9,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 150",
+                          "VLT":  45.0,
+                          "SHGC":  0.42,
+                          "UValue":  2.6,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 150",
+                          "VLT":  50.0,
+                          "SHGC":  0.5,
+                          "UValue":  5.0,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 151",
+                          "VLT":  46.0,
+                          "SHGC":  0.36,
+                          "UValue":  2.3,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 151",
+                          "VLT":  51.0,
+                          "SHGC":  0.43,
+                          "UValue":  4.3,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 425",
+                          "VLT":  21.0,
+                          "SHGC":  0.18,
+                          "UValue":  2.0,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 425",
+                          "VLT":  23.0,
+                          "SHGC":  0.25,
+                          "UValue":  3.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 435",
+                          "VLT":  25.0,
+                          "SHGC":  0.21,
+                          "UValue":  2.1,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 435",
+                          "VLT":  28.0,
+                          "SHGC":  0.27,
+                          "UValue":  3.9,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 450",
+                          "VLT":  37.0,
+                          "SHGC":  0.3,
+                          "UValue":  2.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 450",
+                          "VLT":  41.0,
+                          "SHGC":  0.39,
+                          "UValue":  5.0,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 451",
+                          "VLT":  38.0,
+                          "SHGC":  0.27,
+                          "UValue":  2.3,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 451",
+                          "VLT":  42.0,
+                          "SHGC":  0.35,
+                          "UValue":  4.3,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 725",
+                          "VLT":  16.0,
+                          "SHGC":  0.16,
+                          "UValue":  2.0,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 725",
+                          "VLT":  18.0,
+                          "SHGC":  0.23,
+                          "UValue":  3.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 735",
+                          "VLT":  19.0,
+                          "SHGC":  0.19,
+                          "UValue":  2.1,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 735",
+                          "VLT":  21.0,
+                          "SHGC":  0.26,
+                          "UValue":  3.9,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 750",
+                          "VLT":  29.0,
+                          "SHGC":  0.27,
+                          "UValue":  2.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 750",
+                          "VLT":  32.0,
+                          "SHGC":  0.36,
+                          "UValue":  5.0,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 751",
+                          "VLT":  29.0,
+                          "SHGC":  0.24,
+                          "UValue":  2.3,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 751",
+                          "VLT":  32.0,
+                          "SHGC":  0.32,
+                          "UValue":  4.3,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KBRZ 127",
+                          "VLT":  27.0,
+                          "SHGC":  0.22,
+                          "UValue":  1.6,
+                          "Shade":  "Bronze",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KBT 130",
+                          "VLT":  25.0,
+                          "SHGC":  0.22,
+                          "UValue":  1.7,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KBT 140",
+                          "VLT":  36.0,
+                          "SHGC":  0.3,
+                          "UValue":  1.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KG 122",
+                          "VLT":  22.0,
+                          "SHGC":  0.22,
+                          "UValue":  1.6,
+                          "Shade":  "Gold",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 130",
+                          "VLT":  30.0,
+                          "SHGC":  0.22,
+                          "UValue":  1.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 138",
+                          "VLT":  36.0,
+                          "SHGC":  0.26,
+                          "UValue":  1.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 146",
+                          "VLT":  42.0,
+                          "SHGC":  0.29,
+                          "UValue":  1.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 430",
+                          "VLT":  25.0,
+                          "SHGC":  0.18,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 438",
+                          "VLT":  30.0,
+                          "SHGC":  0.2,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 446",
+                          "VLT":  35.0,
+                          "SHGC":  0.23,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 730",
+                          "VLT":  19.0,
+                          "SHGC":  0.16,
+                          "UValue":  1.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 738",
+                          "VLT":  23.0,
+                          "SHGC":  0.18,
+                          "UValue":  1.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 746",
+                          "VLT":  27.0,
+                          "SHGC":  0.2,
+                          "UValue":  1.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 125",
+                          "VLT":  24.0,
+                          "SHGC":  0.21,
+                          "UValue":  1.7,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 130",
+                          "VLT":  31.0,
+                          "SHGC":  0.25,
+                          "UValue":  1.8,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 140",
+                          "VLT":  37.0,
+                          "SHGC":  0.29,
+                          "UValue":  1.8,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 155",
+                          "VLT":  47.0,
+                          "SHGC":  0.38,
+                          "UValue":  1.9,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 164",
+                          "VLT":  57.0,
+                          "SHGC":  0.47,
+                          "UValue":  1.9,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 425",
+                          "VLT":  20.0,
+                          "SHGC":  0.16,
+                          "UValue":  1.7,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 430",
+                          "VLT":  26.0,
+                          "SHGC":  0.2,
+                          "UValue":  1.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 440",
+                          "VLT":  31.0,
+                          "SHGC":  0.22,
+                          "UValue":  1.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 455",
+                          "VLT":  39.0,
+                          "SHGC":  0.27,
+                          "UValue":  1.9,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 464",
+                          "VLT":  47.0,
+                          "SHGC":  0.33,
+                          "UValue":  1.9,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 725",
+                          "VLT":  15.0,
+                          "SHGC":  0.15,
+                          "UValue":  1.7,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 730",
+                          "VLT":  20.0,
+                          "SHGC":  0.18,
+                          "UValue":  1.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 740",
+                          "VLT":  24.0,
+                          "SHGC":  0.2,
+                          "UValue":  1.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 755",
+                          "VLT":  30.0,
+                          "SHGC":  0.24,
+                          "UValue":  1.9,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 764",
+                          "VLT":  36.0,
+                          "SHGC":  0.29,
+                          "UValue":  1.9,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "PLT TB",
+                          "VLT":  48.0,
+                          "SHGC":  0.35,
+                          "UValue":  1.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "PLT TG",
+                          "VLT":  62.0,
+                          "SHGC":  0.4,
+                          "UValue":  1.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "PLTT",
+                          "VLT":  75.0,
+                          "SHGC":  0.57,
+                          "UValue":  1.8,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SBRZ 130",
+                          "VLT":  26.0,
+                          "SHGC":  0.26,
+                          "UValue":  2.6,
+                          "Shade":  "Bronze",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SBRZ 130",
+                          "VLT":  29.0,
+                          "SHGC":  0.34,
+                          "UValue":  5.1,
+                          "Shade":  "Bronze",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 125",
+                          "VLT":  26.0,
+                          "SHGC":  0.25,
+                          "UValue":  2.5,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 125",
+                          "VLT":  29.0,
+                          "SHGC":  0.31,
+                          "UValue":  4.8,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 145",
+                          "VLT":  40.0,
+                          "SHGC":  0.37,
+                          "UValue":  2.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 145",
+                          "VLT":  44.0,
+                          "SHGC":  0.45,
+                          "UValue":  5.0,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 150",
+                          "VLT":  48.0,
+                          "SHGC":  0.52,
+                          "UValue":  5.3,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 150",
+                          "VLT":  43.0,
+                          "SHGC":  0.43,
+                          "UValue":  2.7,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 425",
+                          "VLT":  22.0,
+                          "SHGC":  0.2,
+                          "UValue":  2.5,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 425",
+                          "VLT":  24.0,
+                          "SHGC":  0.28,
+                          "UValue":  4.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 445",
+                          "VLT":  33.0,
+                          "SHGC":  0.27,
+                          "UValue":  2.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 445",
+                          "VLT":  36.0,
+                          "SHGC":  0.36,
+                          "UValue":  5.0,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 725",
+                          "VLT":  16.0,
+                          "SHGC":  0.18,
+                          "UValue":  2.5,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 725",
+                          "VLT":  18.0,
+                          "SHGC":  0.27,
+                          "UValue":  4.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 745",
+                          "VLT":  25.0,
+                          "SHGC":  0.25,
+                          "UValue":  2.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 745",
+                          "VLT":  28.0,
+                          "SHGC":  0.34,
+                          "UValue":  5.0,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 133",
+                          "VLT":  30.0,
+                          "SHGC":  0.19,
+                          "UValue":  1.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 144",
+                          "VLT":  41.0,
+                          "SHGC":  0.24,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 146",
+                          "VLT":  40.0,
+                          "SHGC":  0.25,
+                          "UValue":  1.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 152",
+                          "VLT":  49.0,
+                          "SHGC":  0.27,
+                          "UValue":  1.6,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 165",
+                          "VLT":  60.0,
+                          "SHGC":  0.34,
+                          "UValue":  1.5,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 176",
+                          "VLT":  69.0,
+                          "SHGC":  0.37,
+                          "UValue":  1.5,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 183",
+                          "VLT":  73.0,
+                          "SHGC":  0.4,
+                          "UValue":  1.5,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 433",
+                          "VLT":  25.0,
+                          "SHGC":  0.16,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 444",
+                          "VLT":  34.0,
+                          "SHGC":  0.2,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 452",
+                          "VLT":  41.0,
+                          "SHGC":  0.22,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 465",
+                          "VLT":  49.0,
+                          "SHGC":  0.27,
+                          "UValue":  1.5,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 476",
+                          "VLT":  57.0,
+                          "SHGC":  0.3,
+                          "UValue":  1.5,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 733",
+                          "VLT":  19.0,
+                          "SHGC":  0.15,
+                          "UValue":  1.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 744",
+                          "VLT":  26.0,
+                          "SHGC":  0.18,
+                          "UValue":  1.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 752",
+                          "VLT":  31.0,
+                          "SHGC":  0.2,
+                          "UValue":  1.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 765",
+                          "VLT":  38.0,
+                          "SHGC":  0.24,
+                          "UValue":  1.5,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 776",
+                          "VLT":  44.0,
+                          "SHGC":  0.26,
+                          "UValue":  1.5,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 108",
+                          "VLT":  9.0,
+                          "SHGC":  0.14,
+                          "UValue":  3.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 108",
+                          "VLT":  8.0,
+                          "SHGC":  0.1,
+                          "UValue":  1.9,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 120",
+                          "VLT":  20.0,
+                          "SHGC":  0.29,
+                          "UValue":  5.2,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 120",
+                          "VLT":  18.0,
+                          "SHGC":  0.21,
+                          "UValue":  2.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 136",
+                          "VLT":  34.0,
+                          "SHGC":  0.35,
+                          "UValue":  2.7,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 136",
+                          "VLT":  37.0,
+                          "SHGC":  0.43,
+                          "UValue":  5.5,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 150",
+                          "VLT":  46.0,
+                          "SHGC":  0.47,
+                          "UValue":  2.8,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 150",
+                          "VLT":  51.0,
+                          "SHGC":  0.56,
+                          "UValue":  5.6,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 167",
+                          "VLT":  60.0,
+                          "SHGC":  0.6,
+                          "UValue":  2.8,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 167",
+                          "VLT":  67.0,
+                          "SHGC":  0.68,
+                          "UValue":  5.6,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 408",
+                          "VLT":  7.0,
+                          "SHGC":  0.09,
+                          "UValue":  1.9,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 408",
+                          "VLT":  7.0,
+                          "SHGC":  0.15,
+                          "UValue":  3.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 420",
+                          "VLT":  17.0,
+                          "SHGC":  0.27,
+                          "UValue":  5.2,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 420",
+                          "VLT":  15.0,
+                          "SHGC":  0.18,
+                          "UValue":  2.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 436",
+                          "VLT":  28.0,
+                          "SHGC":  0.26,
+                          "UValue":  2.7,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 436",
+                          "VLT":  31.0,
+                          "SHGC":  0.35,
+                          "UValue":  5.5,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 450",
+                          "VLT":  38.0,
+                          "SHGC":  0.33,
+                          "UValue":  2.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 450",
+                          "VLT":  42.0,
+                          "SHGC":  0.43,
+                          "UValue":  5.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 467",
+                          "VLT":  50.0,
+                          "SHGC":  0.4,
+                          "UValue":  2.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 467",
+                          "VLT":  55.0,
+                          "SHGC":  0.5,
+                          "UValue":  5.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 708",
+                          "VLT":  5.0,
+                          "SHGC":  0.09,
+                          "UValue":  1.9,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 708",
+                          "VLT":  6.0,
+                          "SHGC":  0.15,
+                          "UValue":  3.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 720",
+                          "VLT":  13.0,
+                          "SHGC":  0.26,
+                          "UValue":  5.2,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 720",
+                          "VLT":  12.0,
+                          "SHGC":  0.17,
+                          "UValue":  2.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 736",
+                          "VLT":  21.0,
+                          "SHGC":  0.24,
+                          "UValue":  2.7,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 736",
+                          "VLT":  23.0,
+                          "SHGC":  0.34,
+                          "UValue":  5.5,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 750",
+                          "VLT":  29.0,
+                          "SHGC":  0.29,
+                          "UValue":  2.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 750",
+                          "VLT":  32.0,
+                          "SHGC":  0.4,
+                          "UValue":  5.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 767",
+                          "VLT":  38.0,
+                          "SHGC":  0.36,
+                          "UValue":  2.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 767",
+                          "VLT":  42.0,
+                          "SHGC":  0.46,
+                          "UValue":  5.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STB 120",
+                          "VLT":  20.0,
+                          "SHGC":  0.24,
+                          "UValue":  2.7,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STB 120",
+                          "VLT":  22.0,
+                          "SHGC":  0.32,
+                          "UValue":  5.2,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STC 135",
+                          "VLT":  35.0,
+                          "SHGC":  0.39,
+                          "UValue":  2.6,
+                          "Shade":  "Copper",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STC 135",
+                          "VLT":  38.0,
+                          "SHGC":  0.47,
+                          "UValue":  5.2,
+                          "Shade":  "Copper",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STG 127",
+                          "VLT":  24.0,
+                          "SHGC":  0.26,
+                          "UValue":  2.6,
+                          "Shade":  "Gold",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STG 127",
+                          "VLT":  27.0,
+                          "SHGC":  0.33,
+                          "UValue":  5.0,
+                          "Shade":  "Gold",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STR 135",
+                          "VLT":  33.0,
+                          "SHGC":  0.39,
+                          "UValue":  2.6,
+                          "Shade":  "Rose Gold",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STR 135",
+                          "VLT":  36.0,
+                          "SHGC":  0.47,
+                          "UValue":  5.1,
+                          "Shade":  "Rose Gold",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 125",
+                          "VLT":  28.0,
+                          "SHGC":  0.33,
+                          "UValue":  3.0,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 125",
+                          "VLT":  25.0,
+                          "SHGC":  0.26,
+                          "UValue":  2.0,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 135",
+                          "VLT":  34.0,
+                          "SHGC":  0.38,
+                          "UValue":  3.2,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 135",
+                          "VLT":  31.0,
+                          "SHGC":  0.3,
+                          "UValue":  2.1,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 150",
+                          "VLT":  50.0,
+                          "SHGC":  0.53,
+                          "UValue":  4.4,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 150",
+                          "VLT":  45.0,
+                          "SHGC":  0.44,
+                          "UValue":  2.6,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 151",
+                          "VLT":  51.0,
+                          "SHGC":  0.45,
+                          "UValue":  3.6,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 151",
+                          "VLT":  46.0,
+                          "SHGC":  0.36,
+                          "UValue":  2.3,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 425",
+                          "VLT":  21.0,
+                          "SHGC":  0.21,
+                          "UValue":  2.0,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 425",
+                          "VLT":  23.0,
+                          "SHGC":  0.31,
+                          "UValue":  3.0,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 435",
+                          "VLT":  25.0,
+                          "SHGC":  0.24,
+                          "UValue":  2.1,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 435",
+                          "VLT":  28.0,
+                          "SHGC":  0.34,
+                          "UValue":  3.2,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 450",
+                          "VLT":  41.0,
+                          "SHGC":  0.45,
+                          "UValue":  4.4,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 450",
+                          "VLT":  37.0,
+                          "SHGC":  0.33,
+                          "UValue":  2.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 451",
+                          "VLT":  42.0,
+                          "SHGC":  0.4,
+                          "UValue":  3.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 451",
+                          "VLT":  38.0,
+                          "SHGC":  0.29,
+                          "UValue":  2.3,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 725",
+                          "VLT":  18.0,
+                          "SHGC":  0.31,
+                          "UValue":  3.0,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 725",
+                          "VLT":  16.0,
+                          "SHGC":  0.2,
+                          "UValue":  2.0,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 735",
+                          "VLT":  19.0,
+                          "SHGC":  0.22,
+                          "UValue":  2.1,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 735",
+                          "VLT":  21.0,
+                          "SHGC":  0.33,
+                          "UValue":  3.2,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 750",
+                          "VLT":  32.0,
+                          "SHGC":  0.43,
+                          "UValue":  4.4,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 750",
+                          "VLT":  29.0,
+                          "SHGC":  0.3,
+                          "UValue":  2.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 751",
+                          "VLT":  32.0,
+                          "SHGC":  0.38,
+                          "UValue":  3.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ET 751",
+                          "VLT":  29.0,
+                          "SHGC":  0.27,
+                          "UValue":  2.3,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KBRZ 127",
+                          "VLT":  27.0,
+                          "SHGC":  0.22,
+                          "UValue":  1.6,
+                          "Shade":  "Bronze",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KBT 130",
+                          "VLT":  25.0,
+                          "SHGC":  0.24,
+                          "UValue":  1.7,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KBT 140",
+                          "VLT":  36.0,
+                          "SHGC":  0.31,
+                          "UValue":  1.9,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KG 122",
+                          "VLT":  22.0,
+                          "SHGC":  0.23,
+                          "UValue":  1.6,
+                          "Shade":  "Gold",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 130",
+                          "VLT":  30.0,
+                          "SHGC":  0.21,
+                          "UValue":  1.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 138",
+                          "VLT":  36.0,
+                          "SHGC":  0.25,
+                          "UValue":  1.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 146",
+                          "VLT":  42.0,
+                          "SHGC":  0.28,
+                          "UValue":  1.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 430",
+                          "VLT":  25.0,
+                          "SHGC":  0.2,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 438",
+                          "VLT":  30.0,
+                          "SHGC":  0.22,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 446",
+                          "VLT":  35.0,
+                          "SHGC":  0.24,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 730",
+                          "VLT":  19.0,
+                          "SHGC":  0.18,
+                          "UValue":  1.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 738",
+                          "VLT":  23.0,
+                          "SHGC":  0.2,
+                          "UValue":  1.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KS 746",
+                          "VLT":  27.0,
+                          "SHGC":  0.22,
+                          "UValue":  1.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 125",
+                          "VLT":  24.0,
+                          "SHGC":  0.22,
+                          "UValue":  1.7,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 130",
+                          "VLT":  31.0,
+                          "SHGC":  0.26,
+                          "UValue":  1.8,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 140",
+                          "VLT":  37.0,
+                          "SHGC":  0.29,
+                          "UValue":  1.8,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 155",
+                          "VLT":  47.0,
+                          "SHGC":  0.37,
+                          "UValue":  1.8,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 164",
+                          "VLT":  57.0,
+                          "SHGC":  0.46,
+                          "UValue":  1.9,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 425",
+                          "VLT":  20.0,
+                          "SHGC":  0.2,
+                          "UValue":  1.7,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 430",
+                          "VLT":  26.0,
+                          "SHGC":  0.22,
+                          "UValue":  1.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 440",
+                          "VLT":  31.0,
+                          "SHGC":  0.24,
+                          "UValue":  1.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 455",
+                          "VLT":  39.0,
+                          "SHGC":  0.29,
+                          "UValue":  1.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 464",
+                          "VLT":  47.0,
+                          "SHGC":  0.34,
+                          "UValue":  1.9,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 725",
+                          "VLT":  15.0,
+                          "SHGC":  0.19,
+                          "UValue":  1.7,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 730",
+                          "VLT":  20.0,
+                          "SHGC":  0.21,
+                          "UValue":  1.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 740",
+                          "VLT":  24.0,
+                          "SHGC":  0.22,
+                          "UValue":  1.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 755",
+                          "VLT":  30.0,
+                          "SHGC":  0.26,
+                          "UValue":  1.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "KT 764",
+                          "VLT":  36.0,
+                          "SHGC":  0.31,
+                          "UValue":  1.9,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "PLT TB",
+                          "VLT":  48.0,
+                          "SHGC":  0.35,
+                          "UValue":  1.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "PLT TG",
+                          "VLT":  62.0,
+                          "SHGC":  0.39,
+                          "UValue":  1.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "PLTT",
+                          "VLT":  75.0,
+                          "SHGC":  0.55,
+                          "UValue":  1.8,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SBRZ 130",
+                          "VLT":  29.0,
+                          "SHGC":  0.39,
+                          "UValue":  4.6,
+                          "Shade":  "Bronze",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SBRZ 130",
+                          "VLT":  26.0,
+                          "SHGC":  0.29,
+                          "UValue":  2.6,
+                          "Shade":  "Bronze",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 125",
+                          "VLT":  29.0,
+                          "SHGC":  0.34,
+                          "UValue":  4.2,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 125",
+                          "VLT":  26.0,
+                          "SHGC":  0,
+                          "UValue":  2.5,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 145",
+                          "VLT":  44.0,
+                          "SHGC":  0.47,
+                          "UValue":  4.4,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 145",
+                          "VLT":  40.0,
+                          "SHGC":  0.38,
+                          "UValue":  2.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 150",
+                          "VLT":  50.0,
+                          "SHGC":  0.53,
+                          "UValue":  4.4,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 150",
+                          "VLT":  43.0,
+                          "SHGC":  0.45,
+                          "UValue":  2.7,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 425",
+                          "VLT":  22.0,
+                          "SHGC":  0.23,
+                          "UValue":  2.5,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 425",
+                          "VLT":  24.0,
+                          "SHGC":  0.35,
+                          "UValue":  4.2,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 445",
+                          "VLT":  36.0,
+                          "SHGC":  0.42,
+                          "UValue":  4.4,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 445",
+                          "VLT":  33.0,
+                          "SHGC":  0.3,
+                          "UValue":  2.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 725",
+                          "VLT":  18.0,
+                          "SHGC":  0.34,
+                          "UValue":  4.2,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 725",
+                          "VLT":  16.0,
+                          "SHGC":  0.22,
+                          "UValue":  2.5,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 745",
+                          "VLT":  25.0,
+                          "SHGC":  0.28,
+                          "UValue":  2.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SCN 745",
+                          "VLT":  28.0,
+                          "SHGC":  0.4,
+                          "UValue":  4.4,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 133",
+                          "VLT":  30.0,
+                          "SHGC":  0.2,
+                          "UValue":  1.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 144",
+                          "VLT":  41.0,
+                          "SHGC":  0.23,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 146",
+                          "VLT":  40.0,
+                          "SHGC":  0.25,
+                          "UValue":  1.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 152",
+                          "VLT":  49.0,
+                          "SHGC":  0.25,
+                          "UValue":  1.6,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 165",
+                          "VLT":  60.0,
+                          "SHGC":  0.31,
+                          "UValue":  1.6,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 176",
+                          "VLT":  69.0,
+                          "SHGC":  0.34,
+                          "UValue":  1.5,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 183",
+                          "VLT":  73.0,
+                          "SHGC":  0.36,
+                          "UValue":  1.5,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 433",
+                          "VLT":  25.0,
+                          "SHGC":  0.19,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 444",
+                          "VLT":  34.0,
+                          "SHGC":  0.22,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 452",
+                          "VLT":  41.0,
+                          "SHGC":  0.24,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 465",
+                          "VLT":  49.0,
+                          "SHGC":  0.28,
+                          "UValue":  1.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 476",
+                          "VLT":  57.0,
+                          "SHGC":  0.3,
+                          "UValue":  1.5,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 733",
+                          "VLT":  19.0,
+                          "SHGC":  0.18,
+                          "UValue":  1.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 744",
+                          "VLT":  26.0,
+                          "SHGC":  0.2,
+                          "UValue":  1.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 752",
+                          "VLT":  31.0,
+                          "SHGC":  0.21,
+                          "UValue":  1.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 765",
+                          "VLT":  38.0,
+                          "SHGC":  0.25,
+                          "UValue":  1.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "SKN 776",
+                          "VLT":  44.0,
+                          "SHGC":  0.27,
+                          "UValue":  1.5,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 108",
+                          "VLT":  9.0,
+                          "SHGC":  0.18,
+                          "UValue":  2.8,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 108",
+                          "VLT":  8.0,
+                          "SHGC":  0.12,
+                          "UValue":  1.9,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 120",
+                          "VLT":  20.0,
+                          "SHGC":  0.33,
+                          "UValue":  4.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 120",
+                          "VLT":  18.0,
+                          "SHGC":  0.24,
+                          "UValue":  2.6,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 136",
+                          "VLT":  37.0,
+                          "SHGC":  0.47,
+                          "UValue":  5.0,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 136",
+                          "VLT":  34.0,
+                          "SHGC":  0.37,
+                          "UValue":  2.8,
+                          "Shade":  "Grey",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 150",
+                          "VLT":  51.0,
+                          "SHGC":  0.59,
+                          "UValue":  5.2,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 150",
+                          "VLT":  46.0,
+                          "SHGC":  0.49,
+                          "UValue":  2.8,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 167",
+                          "VLT":  67.0,
+                          "SHGC":  0.7,
+                          "UValue":  5.2,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 167",
+                          "VLT":  60.0,
+                          "SHGC":  0.61,
+                          "UValue":  2.8,
+                          "Shade":  "Neutral",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 408",
+                          "VLT":  7.0,
+                          "SHGC":  0.23,
+                          "UValue":  2.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 408",
+                          "VLT":  7.0,
+                          "SHGC":  0.14,
+                          "UValue":  1.9,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 420",
+                          "VLT":  17.0,
+                          "SHGC":  0.34,
+                          "UValue":  4.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 420",
+                          "VLT":  15.0,
+                          "SHGC":  0.22,
+                          "UValue":  2.6,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 436",
+                          "VLT":  28.0,
+                          "SHGC":  0.29,
+                          "UValue":  2.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 436",
+                          "VLT":  31.0,
+                          "SHGC":  0.42,
+                          "UValue":  5.0,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 450",
+                          "VLT":  42.0,
+                          "SHGC":  0.48,
+                          "UValue":  5.2,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 450",
+                          "VLT":  38.0,
+                          "SHGC":  0.36,
+                          "UValue":  2.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 467",
+                          "VLT":  50.0,
+                          "SHGC":  0.42,
+                          "UValue":  2.8,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 467",
+                          "VLT":  55.0,
+                          "SHGC":  0.54,
+                          "UValue":  5.2,
+                          "Shade":  "Green",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 708",
+                          "VLT":  6.0,
+                          "SHGC":  0.24,
+                          "UValue":  2.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 708",
+                          "VLT":  5.0,
+                          "SHGC":  0.14,
+                          "UValue":  1.9,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 720",
+                          "VLT":  13.0,
+                          "SHGC":  0.35,
+                          "UValue":  4.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 720",
+                          "VLT":  12.0,
+                          "SHGC":  0.21,
+                          "UValue":  2.6,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 736",
+                          "VLT":  21.0,
+                          "SHGC":  0.27,
+                          "UValue":  2.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 736",
+                          "VLT":  23.0,
+                          "SHGC":  0.41,
+                          "UValue":  5.0,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 750",
+                          "VLT":  32.0,
+                          "SHGC":  0.46,
+                          "UValue":  5.2,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 750",
+                          "VLT":  29.0,
+                          "SHGC":  0.33,
+                          "UValue":  2.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 767",
+                          "VLT":  42.0,
+                          "SHGC":  0.51,
+                          "UValue":  5.2,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "ST 767",
+                          "VLT":  38.0,
+                          "SHGC":  0.38,
+                          "UValue":  2.8,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STB 120",
+                          "VLT":  20.0,
+                          "SHGC":  0.27,
+                          "UValue":  2.7,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STB 120",
+                          "VLT":  22.0,
+                          "SHGC":  0.38,
+                          "UValue":  4.7,
+                          "Shade":  "Blue",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STC 135",
+                          "VLT":  38.0,
+                          "SHGC":  0.5,
+                          "UValue":  4.7,
+                          "Shade":  "Copper",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STG 127",
+                          "VLT":  24.0,
+                          "SHGC":  0.28,
+                          "UValue":  2.6,
+                          "Shade":  "Copper",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STG 127",
+                          "VLT":  27.0,
+                          "SHGC":  0.36,
+                          "UValue":  4.4,
+                          "Shade":  "Gold",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STR 135",
+                          "VLT":  31.0,
+                          "SHGC":  0.47,
+                          "UValue":  4.4,
+                          "Shade":  "Gold",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STC 135",
+                          "VLT":  35.0,
+                          "SHGC":  0.41,
+                          "UValue":  2.7,
+                          "Shade":  "Rose Gold",
+                          "Brand":  "Saint-Gobain"
+                      },
+                      {
+                          "ProductName":  "STR 135",
+                          "VLT":  33.0,
+                          "SHGC":  0.41,
+                          "UValue":  2.6,
+                          "Shade":  "Rose Gold",
+                          "Brand":  "Saint-Gobain"
+                      }
+                  ],
     "items":  [
                   {
                       "Brand":  "Guardian",

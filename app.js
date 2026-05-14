@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const allChips = document.querySelectorAll('.chip');
 
     let allItems = [];
+    let sgCatalog = [];
     let filters = { brand: 'all', swot: 'all', shade: 'all' };
     let chartInstances = {};
 
@@ -13,7 +14,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             const response = await fetch('gap_data.json');
             const data = await response.json();
             allItems = data.items;
-            renderCharts(allItems);
+            sgCatalog = data.sgCatalog || [];
+            renderCharts(allItems, sgCatalog);
             filterData();
         } catch (err) {
             gapContainer.innerHTML = `<div class="loader">Failed to load SWOT data. Please run analyze.ps1 first.</div>`;
@@ -49,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         `;
     }
 
-    function renderCharts(items) {
+    function renderCharts(items, sgItems) {
         // 1. SWOT by Shade Stacked Chart
         const shades = ['Blue', 'Green', 'Grey', 'Neutral', 'Bronze'];
         const series = [
@@ -106,34 +108,44 @@ document.addEventListener('DOMContentLoaded', async () => {
         // 3. Performance Frontier Scatter Plot (VLT vs SHGC)
         const standardData = items.filter(i => i.SWOT !== 'Threat').map(i => ({ x: i.Target.VLT, y: i.Target.SHGC }));
         const outlierData = items.filter(i => i.SWOT === 'Threat').map(i => ({ x: i.Target.VLT, y: i.Target.SHGC }));
+        const sgData = sgItems.map(i => ({ x: i.VLT, y: i.SHGC }));
 
         const frontierOptions = {
             series: [
                 { name: 'Standard Performance', data: standardData },
-                { name: 'Market Outliers (Threats)', data: outlierData }
+                { name: 'Market Outliers (Threats)', data: outlierData },
+                { name: 'Saint-Gobain Catalog', data: sgData }
             ],
             chart: { type: 'scatter', height: 350, zoom: { enabled: true, type: 'xy' }, toolbar: { show: true } },
-            colors: ['#3b82f6', '#ef4444'],
+            colors: ['#3b82f6', '#ef4444', '#10b981'],
             xaxis: { 
                 title: { text: 'Visible Light Transmission (VLT %)', style: { color: '#94a3b8' } },
-                labels: { style: { colors: '#94a3b8' } },
-                tickAmount: 10
+                labels: { style: { colors: '#94a3b8' } }
             },
             yaxis: { 
                 title: { text: 'Solar Factor (SHGC / SF)', style: { color: '#94a3b8' } },
                 labels: { style: { colors: '#94a3b8' } }
             },
-            markers: { size: 6, strokeWidth: 1, hover: { size: 8 } },
+            markers: { 
+                size: [6, 8, 5], 
+                strokeWidth: 1, 
+                hover: { sizeOffset: 2 },
+                shape: ["circle", "circle", "square"] 
+            },
             legend: { position: 'top', labels: { colors: '#94a3b8' } },
             theme: { mode: 'dark' },
             tooltip: {
                 custom: function({series, seriesIndex, dataPointIndex, w}) {
-                    const item = (seriesIndex === 0) ? items.filter(i => i.SWOT !== 'Threat')[dataPointIndex] : items.filter(i => i.SWOT === 'Threat')[dataPointIndex];
+                    let item;
+                    if (seriesIndex === 0) item = items.filter(i => i.SWOT !== 'Threat')[dataPointIndex].Target;
+                    else if (seriesIndex === 1) item = items.filter(i => i.SWOT === 'Threat')[dataPointIndex].Target;
+                    else item = sgItems[dataPointIndex];
+
                     return '<div class="chart-tooltip">' +
-                        '<span><b>' + item.Product + '</b></span><br>' +
+                        '<span><b>' + (item.ProductName || item.Product) + '</b></span><br>' +
                         '<span>Brand: ' + item.Brand + '</span><br>' +
-                        '<span>VLT: ' + item.Target.VLT + '%</span><br>' +
-                        '<span>SHGC: ' + item.Target.SHGC + '</span>' +
+                        '<span>VLT: ' + item.VLT + '%</span><br>' +
+                        '<span>SHGC: ' + item.SHGC + '</span>' +
                         '</div>'
                 }
             }
