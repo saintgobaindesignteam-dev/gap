@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const gapContainer = document.getElementById('gap-container');
     const summaryStats = document.getElementById('summary-stats');
     const sgToggle = document.getElementById('toggle-sg');
+    const sfSearch = document.getElementById('sf-search');
     const allChips = document.querySelectorAll('.chip');
     
     // KPI elements
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     let allItems = [];
     let sgCatalog = [];
-    let filters = { brand: 'all', swot: 'all', shade: 'all' };
+    let filters = { brand: 'all', swot: 'all', shade: 'all', sf: null };
     let chartInstances = {};
 
     async function loadData() {
@@ -161,7 +162,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             chartInstances.rangeGap.updateSeries([{ data: avgGaps }]);
         }
 
-        // --- PERFORMANCE FRONTIER: VLT vs SF (By Company + Outliers) ---
+        // --- PERFORMANCE FRONTIER ---
         const guardianData = items.filter(i => i.Brand === 'Guardian').map(i => ({ x: i.Target.SHGC, y: i.Target.VLT, brand: 'Guardian', name: i.Product }));
         const asahiData = items.filter(i => i.Brand === 'Asahi').map(i => ({ x: i.Target.SHGC, y: i.Target.VLT, brand: 'Asahi', name: i.Product }));
         const threatData = items.filter(i => i.SWOT === 'Threat').map(i => ({ x: i.Target.SHGC, y: i.Target.VLT, brand: i.Brand, name: i.Product }));
@@ -182,31 +183,17 @@ document.addEventListener('DOMContentLoaded', async () => {
                 colors: ['#10b981', '#3b82f6', '#8b5cf6', '#ef4444'],
                 xaxis: { 
                     title: { text: 'Solar Factor (SF / SHGC)' }, 
-                    labels: { style: { colors: '#94a3b8' } },
+                    labels: { style: { colors: '#94a3b8' }, formatter: val => parseFloat(val).toFixed(2) },
                     tickAmount: 10
                 },
-                yaxis: { 
-                    title: { text: 'Visible Light Transmission (VLT %)' }, 
-                    labels: { style: { colors: '#94a3b8' } },
-                    min: 0, max: 100
-                },
-                markers: { 
-                    size: [5, 5, 5, 8], 
-                    strokeWidth: 0,
-                    hover: { size: 10 }
-                },
+                yaxis: { title: { text: 'Visible Light Transmission (VLT %)' }, labels: { style: { colors: '#94a3b8' } }, min: 0, max: 100 },
+                markers: { size: [5, 5, 5, 8], strokeWidth: 0, hover: { size: 10 } },
                 theme: { mode: 'dark' },
                 legend: { position: 'top', labels: { colors: '#94a3b8' } },
                 tooltip: {
                     custom: function({series, seriesIndex, dataPointIndex, w}) {
                         const point = w.config.series[seriesIndex].data[dataPointIndex];
-                        return `
-                        <div class="chart-tooltip" style="padding: 10px; background: #1e293b; border: 1px solid #334155; border-radius: 8px;">
-                            <div style="font-weight: 800; color: #fff; margin-bottom: 4px;">${point.name}</div>
-                            <div style="font-size: 0.75rem; color: #94a3b8;">Brand: ${point.brand}</div>
-                            <div style="font-size: 0.75rem; color: #3b82f6;">Solar Factor: ${point.x}</div>
-                            <div style="font-size: 0.75rem; color: #10b981;">VLT: ${point.y}%</div>
-                        </div>`;
+                        return `<div class="chart-tooltip"><b>${point.name}</b><br>Brand: ${point.brand}<br>SF: ${point.x}<br>VLT: ${point.y}%</div>`;
                     }
                 },
                 series: frontierSeries
@@ -223,7 +210,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             return;
         }
 
+        // Rank counters
+        const ranks = { Threat: 0, Weakness: 0, Strength: 0, Opportunity: 0 };
+
         gapContainer.innerHTML = items.map(item => {
+            ranks[item.SWOT]++;
+            const currentRank = ranks[item.SWOT];
+            
             const reasoning = getReasoning(item);
             const recommendation = getRecommendation(item);
             const tSel = (item.Target.VLT/100) / (item.Target.SHGC || 1);
@@ -237,7 +230,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <span class="brand-tag">${item.Brand}</span>
                         <span class="range-tag">${item.Range || 'Generic'}</span>
                     </div>
-                    <span class="swot-badge swot-${item.SWOT.toLowerCase()}">${item.SWOT}</span>
+                    <span class="swot-badge swot-${item.SWOT.toLowerCase()}">${item.SWOT.toUpperCase()} #${currentRank}</span>
                 </div>
                 <h3 class="product-name">${item.Product}</h3>
                 
@@ -260,7 +253,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <div class="spec-bar-container"><div class="spec-bar sg" style="width: ${item.BestMatch ? item.BestMatch.VLT : 0}%"></div></div>
                     </div>
 
-                    <div class="grid-label">SHGC</div>
+                    <div class="grid-label">SHGC (SF)</div>
                     <div class="grid-val-group">
                         <div class="grid-val">${item.Target.SHGC}</div>
                         <div class="spec-bar-container"><div class="spec-bar comp" style="width: ${item.Target.SHGC * 100}%"></div></div>
@@ -296,10 +289,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     function applyFilter(type, val) {
-        document.querySelectorAll(`.chip[data-filter="${type}"]`).forEach(c => {
-            c.classList.toggle('active', c.dataset.val === val);
-        });
-        filters[type] = val;
+        if (type === 'sf') {
+            filters.sf = val ? parseFloat(val) : null;
+        } else {
+            document.querySelectorAll(`.chip[data-filter="${type}"]`).forEach(c => {
+                c.classList.toggle('active', c.dataset.val === val);
+            });
+            filters[type] = val;
+        }
         filterData();
     }
 
@@ -307,7 +304,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         const segmentItems = allItems.filter(item => {
             const matchesBrand = filters.brand === 'all' || item.Brand === filters.brand;
             const matchesShade = filters.shade === 'all' || item.Target.Shade === filters.shade;
-            return matchesBrand && matchesShade;
+            const matchesSF = !filters.sf || (Math.abs(item.Target.SHGC - filters.sf) <= 0.05);
+            return matchesBrand && matchesShade && matchesSF;
         });
 
         updateSummary(segmentItems);
@@ -318,11 +316,22 @@ document.addEventListener('DOMContentLoaded', async () => {
             return filters.swot === 'all' || item.SWOT === filters.swot;
         });
 
-        visibleItems.sort((a, b) => a.Diff - b.Diff);
+        // Smart sorting for ranking
+        visibleItems.sort((a, b) => {
+            // For negative SWOT (Threat/Weakness), most negative (lowest Diff) is #1
+            // For positive SWOT (Strength), most positive (highest Diff) is #1
+            if (a.SWOT === b.SWOT) {
+                if (a.SWOT === 'Strength') return b.Diff - a.Diff;
+                return a.Diff - b.Diff;
+            }
+            return 0;
+        });
+
         renderItems(visibleItems);
     }
 
     sgToggle.addEventListener('change', filterData);
+    sfSearch.addEventListener('input', (e) => applyFilter('sf', e.target.value));
 
     allChips.forEach(chip => {
         chip.addEventListener('click', () => {
