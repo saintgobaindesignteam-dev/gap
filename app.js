@@ -13,31 +13,38 @@ document.addEventListener('DOMContentLoaded', async () => {
             const response = await fetch('gap_data.json');
             const data = await response.json();
             allItems = data.items;
-            renderSummary(data.summary);
+            // Summary will now be handled dynamically by filterData
             renderCharts(data.summary, allItems);
-            filterData(); // Initial render with ranking
+            filterData();
         } catch (err) {
             gapContainer.innerHTML = `<div class="loader">Failed to load SWOT data. Please run analyze.ps1 first.</div>`;
             console.error(err);
         }
     }
 
-    function renderSummary(summary) {
+    function updateSummary(filteredItems) {
+        const stats = {
+            strengths: filteredItems.filter(i => i.SWOT === 'Strength').length,
+            weaknesses: filteredItems.filter(i => i.SWOT === 'Weakness').length,
+            opportunities: filteredItems.filter(i => i.SWOT === 'Opportunity').length,
+            threats: filteredItems.filter(i => i.SWOT === 'Threat').length
+        };
+
         summaryStats.innerHTML = `
             <div class="stat-item">
-                <span class="stat-val strength-color">${summary.strengths || 0}</span>
+                <span class="stat-val strength-color">${stats.strengths}</span>
                 <span class="stat-label">Strengths</span>
             </div>
             <div class="stat-item">
-                <span class="stat-val weakness-color">${summary.weaknesses || 0}</span>
+                <span class="stat-val weakness-color">${stats.weaknesses}</span>
                 <span class="stat-label">Weaknesses</span>
             </div>
             <div class="stat-item">
-                <span class="stat-val opportunity-color">${summary.opportunities || 0}</span>
+                <span class="stat-val opportunity-color">${stats.opportunities}</span>
                 <span class="stat-label">Opportunities</span>
             </div>
             <div class="stat-item">
-                <span class="stat-val threat-color">${summary.threats || 0}</span>
+                <span class="stat-val threat-color">${stats.threats}</span>
                 <span class="stat-label">Threats</span>
             </div>
         `;
@@ -138,20 +145,27 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     function filterData() {
         const searchTerm = searchInput.value.toLowerCase();
-        let filtered = allItems.filter(item => {
-            const matchesSearch = item.Product.toLowerCase().includes(searchTerm) || 
-                                item.Brand.toLowerCase().includes(searchTerm) ||
-                                item.SWOT.toLowerCase().includes(searchTerm);
+        
+        // 1. First, filter by Brand and Shade to update the summary counts for that segment
+        const segmentItems = allItems.filter(item => {
             const matchesBrand = filters.brand === 'all' || item.Brand === filters.brand;
-            const matchesSwot = filters.swot === 'all' || item.SWOT === filters.swot;
             const matchesShade = filters.shade === 'all' || item.Target.Shade === filters.shade;
-            return matchesSearch && matchesBrand && matchesSwot && matchesShade;
+            const matchesSearch = item.Product.toLowerCase().includes(searchTerm);
+            return matchesBrand && matchesShade && matchesSearch;
         });
 
-        // Ranking Logic: Sort by Selectivity Difference (Biggest Gaps/Threats first)
-        filtered.sort((a, b) => a.Diff - b.Diff);
+        // Update the dynamic summary numbers based on the segment (before SWOT filter)
+        updateSummary(segmentItems);
 
-        renderItems(filtered);
+        // 2. Then apply the SWOT filter for the visible cards
+        let visibleItems = segmentItems.filter(item => {
+            return filters.swot === 'all' || item.SWOT === filters.swot;
+        });
+
+        // Ranking Logic: Sort by Selectivity Difference (Worst first)
+        visibleItems.sort((a, b) => a.Diff - b.Diff);
+
+        renderItems(visibleItems);
     }
 
     searchInput.addEventListener('input', filterData);
