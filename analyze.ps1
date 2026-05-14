@@ -122,6 +122,7 @@ foreach ($target in $competitionProducts) {
         BestMatch = $bestMatch
         Diff = [Math]::Round($ratioDiff * 100, 1)
         Range = $targetRange
+        Standard = $target.Standard
     })
 }
 
@@ -137,7 +138,7 @@ $summary = @{
 $jsonOutput = @{
     summary = $summary
     items = $results
-    sgCatalog = $sgProducts | Select-Object ProductName, VLT, SHGC, UValue, Shade, Brand
+    sgCatalog = $sgProducts | Select-Object ProductName, VLT, SHGC, UValue, Shade, Brand, Standard
 }
 
 $jsonOutput | ConvertTo-Json -Depth 5 | Out-File -FilePath "c:\Users\K7813444\OneDrive - Saint-Gobain\Desktop\2026\ACE\gap\gap_data.json" -Encoding utf8

@@ -4,7 +4,7 @@
                     "opportunities":  0,
                     "weaknesses":  42,
                     "total":  125,
-                    "timestamp":  "2026-05-14 23:17:00",
+                    "timestamp":  "2026-05-14 23:24:23",
                     "strengths":  59
                 },
     "sgCatalog":  [
@@ -14,7 +14,8 @@
                           "SHGC":  0.23,
                           "UValue":  2.0,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 125",
@@ -22,7 +23,8 @@
                           "SHGC":  0.29,
                           "UValue":  3.8,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 135",
@@ -30,7 +32,8 @@
                           "SHGC":  0.28,
                           "UValue":  2.1,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 135",
@@ -38,7 +41,8 @@
                           "SHGC":  0.34,
                           "UValue":  3.9,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 150",
@@ -46,7 +50,8 @@
                           "SHGC":  0.42,
                           "UValue":  2.6,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 150",
@@ -54,7 +59,8 @@
                           "SHGC":  0.5,
                           "UValue":  5.0,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 151",
@@ -62,7 +68,8 @@
                           "SHGC":  0.36,
                           "UValue":  2.3,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 151",
@@ -70,7 +77,8 @@
                           "SHGC":  0.43,
                           "UValue":  4.3,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 425",
@@ -78,7 +86,8 @@
                           "SHGC":  0.18,
                           "UValue":  2.0,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 425",
@@ -86,7 +95,8 @@
                           "SHGC":  0.25,
                           "UValue":  3.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 435",
@@ -94,7 +104,8 @@
                           "SHGC":  0.21,
                           "UValue":  2.1,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 435",
@@ -102,7 +113,8 @@
                           "SHGC":  0.27,
                           "UValue":  3.9,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 450",
@@ -110,7 +122,8 @@
                           "SHGC":  0.3,
                           "UValue":  2.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 450",
@@ -118,7 +131,8 @@
                           "SHGC":  0.39,
                           "UValue":  5.0,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 451",
@@ -126,7 +140,8 @@
                           "SHGC":  0.27,
                           "UValue":  2.3,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 451",
@@ -134,7 +149,8 @@
                           "SHGC":  0.35,
                           "UValue":  4.3,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 725",
@@ -142,7 +158,8 @@
                           "SHGC":  0.16,
                           "UValue":  2.0,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 725",
@@ -150,7 +167,8 @@
                           "SHGC":  0.23,
                           "UValue":  3.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 735",
@@ -158,7 +176,8 @@
                           "SHGC":  0.19,
                           "UValue":  2.1,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 735",
@@ -166,7 +185,8 @@
                           "SHGC":  0.26,
                           "UValue":  3.9,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 750",
@@ -174,7 +194,8 @@
                           "SHGC":  0.27,
                           "UValue":  2.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 750",
@@ -182,7 +203,8 @@
                           "SHGC":  0.36,
                           "UValue":  5.0,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 751",
@@ -190,7 +212,8 @@
                           "SHGC":  0.24,
                           "UValue":  2.3,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 751",
@@ -198,7 +221,8 @@
                           "SHGC":  0.32,
                           "UValue":  4.3,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KBRZ 127",
@@ -206,7 +230,8 @@
                           "SHGC":  0.22,
                           "UValue":  1.6,
                           "Shade":  "Bronze",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KBT 130",
@@ -214,7 +239,8 @@
                           "SHGC":  0.22,
                           "UValue":  1.7,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KBT 140",
@@ -222,7 +248,8 @@
                           "SHGC":  0.3,
                           "UValue":  1.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KG 122",
@@ -230,7 +257,8 @@
                           "SHGC":  0.22,
                           "UValue":  1.6,
                           "Shade":  "Gold",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KS 130",
@@ -238,7 +266,8 @@
                           "SHGC":  0.22,
                           "UValue":  1.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KS 138",
@@ -246,7 +275,8 @@
                           "SHGC":  0.26,
                           "UValue":  1.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KS 146",
@@ -254,7 +284,8 @@
                           "SHGC":  0.29,
                           "UValue":  1.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KS 430",
@@ -262,7 +293,8 @@
                           "SHGC":  0.18,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KS 438",
@@ -270,7 +302,8 @@
                           "SHGC":  0.2,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KS 446",
@@ -278,7 +311,8 @@
                           "SHGC":  0.23,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KS 730",
@@ -286,7 +320,8 @@
                           "SHGC":  0.16,
                           "UValue":  1.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KS 738",
@@ -294,7 +329,8 @@
                           "SHGC":  0.18,
                           "UValue":  1.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KS 746",
@@ -302,7 +338,8 @@
                           "SHGC":  0.2,
                           "UValue":  1.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 125",
@@ -310,7 +347,8 @@
                           "SHGC":  0.21,
                           "UValue":  1.7,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 130",
@@ -318,7 +356,8 @@
                           "SHGC":  0.25,
                           "UValue":  1.8,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 140",
@@ -326,7 +365,8 @@
                           "SHGC":  0.29,
                           "UValue":  1.8,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 155",
@@ -334,7 +374,8 @@
                           "SHGC":  0.38,
                           "UValue":  1.9,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 164",
@@ -342,7 +383,8 @@
                           "SHGC":  0.47,
                           "UValue":  1.9,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 425",
@@ -350,7 +392,8 @@
                           "SHGC":  0.16,
                           "UValue":  1.7,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 430",
@@ -358,7 +401,8 @@
                           "SHGC":  0.2,
                           "UValue":  1.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 440",
@@ -366,7 +410,8 @@
                           "SHGC":  0.22,
                           "UValue":  1.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 455",
@@ -374,7 +419,8 @@
                           "SHGC":  0.27,
                           "UValue":  1.9,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 464",
@@ -382,7 +428,8 @@
                           "SHGC":  0.33,
                           "UValue":  1.9,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 725",
@@ -390,7 +437,8 @@
                           "SHGC":  0.15,
                           "UValue":  1.7,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 730",
@@ -398,7 +446,8 @@
                           "SHGC":  0.18,
                           "UValue":  1.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 740",
@@ -406,7 +455,8 @@
                           "SHGC":  0.2,
                           "UValue":  1.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 755",
@@ -414,7 +464,8 @@
                           "SHGC":  0.24,
                           "UValue":  1.9,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "KT 764",
@@ -422,7 +473,8 @@
                           "SHGC":  0.29,
                           "UValue":  1.9,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "PLT TB",
@@ -430,7 +482,8 @@
                           "SHGC":  0.35,
                           "UValue":  1.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "PLT TG",
@@ -438,7 +491,8 @@
                           "SHGC":  0.4,
                           "UValue":  1.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "PLTT",
@@ -446,7 +500,8 @@
                           "SHGC":  0.57,
                           "UValue":  1.8,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SBRZ 130",
@@ -454,7 +509,8 @@
                           "SHGC":  0.26,
                           "UValue":  2.6,
                           "Shade":  "Bronze",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SBRZ 130",
@@ -462,7 +518,8 @@
                           "SHGC":  0.34,
                           "UValue":  5.1,
                           "Shade":  "Bronze",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SCN 125",
@@ -470,7 +527,8 @@
                           "SHGC":  0.25,
                           "UValue":  2.5,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SCN 125",
@@ -478,7 +536,8 @@
                           "SHGC":  0.31,
                           "UValue":  4.8,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SCN 145",
@@ -486,7 +545,8 @@
                           "SHGC":  0.37,
                           "UValue":  2.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SCN 145",
@@ -494,7 +554,8 @@
                           "SHGC":  0.45,
                           "UValue":  5.0,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SCN 150",
@@ -502,7 +563,8 @@
                           "SHGC":  0.52,
                           "UValue":  5.3,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SCN 150",
@@ -510,7 +572,8 @@
                           "SHGC":  0.43,
                           "UValue":  2.7,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SCN 425",
@@ -518,7 +581,8 @@
                           "SHGC":  0.2,
                           "UValue":  2.5,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SCN 425",
@@ -526,7 +590,8 @@
                           "SHGC":  0.28,
                           "UValue":  4.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SCN 445",
@@ -534,7 +599,8 @@
                           "SHGC":  0.27,
                           "UValue":  2.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SCN 445",
@@ -542,7 +608,8 @@
                           "SHGC":  0.36,
                           "UValue":  5.0,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SCN 725",
@@ -550,7 +617,8 @@
                           "SHGC":  0.18,
                           "UValue":  2.5,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SCN 725",
@@ -558,7 +626,8 @@
                           "SHGC":  0.27,
                           "UValue":  4.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SCN 745",
@@ -566,7 +635,8 @@
                           "SHGC":  0.25,
                           "UValue":  2.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SCN 745",
@@ -574,7 +644,8 @@
                           "SHGC":  0.34,
                           "UValue":  5.0,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 133",
@@ -582,7 +653,8 @@
                           "SHGC":  0.19,
                           "UValue":  1.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 144",
@@ -590,7 +662,8 @@
                           "SHGC":  0.24,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 146",
@@ -598,7 +671,8 @@
                           "SHGC":  0.25,
                           "UValue":  1.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 152",
@@ -606,7 +680,8 @@
                           "SHGC":  0.27,
                           "UValue":  1.6,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 165",
@@ -614,7 +689,8 @@
                           "SHGC":  0.34,
                           "UValue":  1.5,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 176",
@@ -622,7 +698,8 @@
                           "SHGC":  0.37,
                           "UValue":  1.5,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 183",
@@ -630,7 +707,8 @@
                           "SHGC":  0.4,
                           "UValue":  1.5,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 433",
@@ -638,7 +716,8 @@
                           "SHGC":  0.16,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 444",
@@ -646,7 +725,8 @@
                           "SHGC":  0.2,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 452",
@@ -654,7 +734,8 @@
                           "SHGC":  0.22,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 465",
@@ -662,7 +743,8 @@
                           "SHGC":  0.27,
                           "UValue":  1.5,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 476",
@@ -670,7 +752,8 @@
                           "SHGC":  0.3,
                           "UValue":  1.5,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 733",
@@ -678,7 +761,8 @@
                           "SHGC":  0.15,
                           "UValue":  1.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 744",
@@ -686,7 +770,8 @@
                           "SHGC":  0.18,
                           "UValue":  1.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 752",
@@ -694,7 +779,8 @@
                           "SHGC":  0.2,
                           "UValue":  1.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 765",
@@ -702,7 +788,8 @@
                           "SHGC":  0.24,
                           "UValue":  1.5,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "SKN 776",
@@ -710,7 +797,8 @@
                           "SHGC":  0.26,
                           "UValue":  1.5,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 108",
@@ -718,7 +806,8 @@
                           "SHGC":  0.14,
                           "UValue":  3.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 108",
@@ -726,7 +815,8 @@
                           "SHGC":  0.1,
                           "UValue":  1.9,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 120",
@@ -734,7 +824,8 @@
                           "SHGC":  0.29,
                           "UValue":  5.2,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 120",
@@ -742,7 +833,8 @@
                           "SHGC":  0.21,
                           "UValue":  2.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 136",
@@ -750,7 +842,8 @@
                           "SHGC":  0.35,
                           "UValue":  2.7,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 136",
@@ -758,7 +851,8 @@
                           "SHGC":  0.43,
                           "UValue":  5.5,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 150",
@@ -766,7 +860,8 @@
                           "SHGC":  0.47,
                           "UValue":  2.8,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 150",
@@ -774,7 +869,8 @@
                           "SHGC":  0.56,
                           "UValue":  5.6,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 167",
@@ -782,7 +878,8 @@
                           "SHGC":  0.6,
                           "UValue":  2.8,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 167",
@@ -790,7 +887,8 @@
                           "SHGC":  0.68,
                           "UValue":  5.6,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 408",
@@ -798,7 +896,8 @@
                           "SHGC":  0.09,
                           "UValue":  1.9,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 408",
@@ -806,7 +905,8 @@
                           "SHGC":  0.15,
                           "UValue":  3.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 420",
@@ -814,7 +914,8 @@
                           "SHGC":  0.27,
                           "UValue":  5.2,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 420",
@@ -822,7 +923,8 @@
                           "SHGC":  0.18,
                           "UValue":  2.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 436",
@@ -830,7 +932,8 @@
                           "SHGC":  0.26,
                           "UValue":  2.7,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 436",
@@ -838,7 +941,8 @@
                           "SHGC":  0.35,
                           "UValue":  5.5,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 450",
@@ -846,7 +950,8 @@
                           "SHGC":  0.33,
                           "UValue":  2.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 450",
@@ -854,7 +959,8 @@
                           "SHGC":  0.43,
                           "UValue":  5.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 467",
@@ -862,7 +968,8 @@
                           "SHGC":  0.4,
                           "UValue":  2.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 467",
@@ -870,7 +977,8 @@
                           "SHGC":  0.5,
                           "UValue":  5.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 708",
@@ -878,7 +986,8 @@
                           "SHGC":  0.09,
                           "UValue":  1.9,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 708",
@@ -886,7 +995,8 @@
                           "SHGC":  0.15,
                           "UValue":  3.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 720",
@@ -894,7 +1004,8 @@
                           "SHGC":  0.26,
                           "UValue":  5.2,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 720",
@@ -902,7 +1013,8 @@
                           "SHGC":  0.17,
                           "UValue":  2.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 736",
@@ -910,7 +1022,8 @@
                           "SHGC":  0.24,
                           "UValue":  2.7,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 736",
@@ -918,7 +1031,8 @@
                           "SHGC":  0.34,
                           "UValue":  5.5,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 750",
@@ -926,7 +1040,8 @@
                           "SHGC":  0.29,
                           "UValue":  2.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 750",
@@ -934,7 +1049,8 @@
                           "SHGC":  0.4,
                           "UValue":  5.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 767",
@@ -942,7 +1058,8 @@
                           "SHGC":  0.36,
                           "UValue":  2.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ST 767",
@@ -950,7 +1067,8 @@
                           "SHGC":  0.46,
                           "UValue":  5.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "STB 120",
@@ -958,7 +1076,8 @@
                           "SHGC":  0.24,
                           "UValue":  2.7,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "STB 120",
@@ -966,7 +1085,8 @@
                           "SHGC":  0.32,
                           "UValue":  5.2,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "STC 135",
@@ -974,7 +1094,8 @@
                           "SHGC":  0.39,
                           "UValue":  2.6,
                           "Shade":  "Copper",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "STC 135",
@@ -982,7 +1103,8 @@
                           "SHGC":  0.47,
                           "UValue":  5.2,
                           "Shade":  "Copper",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "STG 127",
@@ -990,7 +1112,8 @@
                           "SHGC":  0.26,
                           "UValue":  2.6,
                           "Shade":  "Gold",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "STG 127",
@@ -998,7 +1121,8 @@
                           "SHGC":  0.33,
                           "UValue":  5.0,
                           "Shade":  "Gold",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "STR 135",
@@ -1006,7 +1130,8 @@
                           "SHGC":  0.39,
                           "UValue":  2.6,
                           "Shade":  "Rose Gold",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "STR 135",
@@ -1014,7 +1139,8 @@
                           "SHGC":  0.47,
                           "UValue":  5.1,
                           "Shade":  "Rose Gold",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "EN"
                       },
                       {
                           "ProductName":  "ET 125",
@@ -1022,7 +1148,8 @@
                           "SHGC":  0.33,
                           "UValue":  3.0,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 125",
@@ -1030,7 +1157,8 @@
                           "SHGC":  0.26,
                           "UValue":  2.0,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 135",
@@ -1038,7 +1166,8 @@
                           "SHGC":  0.38,
                           "UValue":  3.2,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 135",
@@ -1046,7 +1175,8 @@
                           "SHGC":  0.3,
                           "UValue":  2.1,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 150",
@@ -1054,7 +1184,8 @@
                           "SHGC":  0.53,
                           "UValue":  4.4,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 150",
@@ -1062,7 +1193,8 @@
                           "SHGC":  0.44,
                           "UValue":  2.6,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 151",
@@ -1070,7 +1202,8 @@
                           "SHGC":  0.45,
                           "UValue":  3.6,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 151",
@@ -1078,7 +1211,8 @@
                           "SHGC":  0.36,
                           "UValue":  2.3,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 425",
@@ -1086,7 +1220,8 @@
                           "SHGC":  0.21,
                           "UValue":  2.0,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 425",
@@ -1094,7 +1229,8 @@
                           "SHGC":  0.31,
                           "UValue":  3.0,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 435",
@@ -1102,7 +1238,8 @@
                           "SHGC":  0.24,
                           "UValue":  2.1,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 435",
@@ -1110,7 +1247,8 @@
                           "SHGC":  0.34,
                           "UValue":  3.2,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 450",
@@ -1118,7 +1256,8 @@
                           "SHGC":  0.45,
                           "UValue":  4.4,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 450",
@@ -1126,7 +1265,8 @@
                           "SHGC":  0.33,
                           "UValue":  2.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 451",
@@ -1134,7 +1274,8 @@
                           "SHGC":  0.4,
                           "UValue":  3.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 451",
@@ -1142,7 +1283,8 @@
                           "SHGC":  0.29,
                           "UValue":  2.3,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 725",
@@ -1150,7 +1292,8 @@
                           "SHGC":  0.31,
                           "UValue":  3.0,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 725",
@@ -1158,7 +1301,8 @@
                           "SHGC":  0.2,
                           "UValue":  2.0,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 735",
@@ -1166,7 +1310,8 @@
                           "SHGC":  0.22,
                           "UValue":  2.1,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 735",
@@ -1174,7 +1319,8 @@
                           "SHGC":  0.33,
                           "UValue":  3.2,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 750",
@@ -1182,7 +1328,8 @@
                           "SHGC":  0.43,
                           "UValue":  4.4,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 750",
@@ -1190,7 +1337,8 @@
                           "SHGC":  0.3,
                           "UValue":  2.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 751",
@@ -1198,7 +1346,8 @@
                           "SHGC":  0.38,
                           "UValue":  3.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ET 751",
@@ -1206,7 +1355,8 @@
                           "SHGC":  0.27,
                           "UValue":  2.3,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KBRZ 127",
@@ -1214,7 +1364,8 @@
                           "SHGC":  0.22,
                           "UValue":  1.6,
                           "Shade":  "Bronze",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KBT 130",
@@ -1222,7 +1373,8 @@
                           "SHGC":  0.24,
                           "UValue":  1.7,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KBT 140",
@@ -1230,7 +1382,8 @@
                           "SHGC":  0.31,
                           "UValue":  1.9,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KG 122",
@@ -1238,7 +1391,8 @@
                           "SHGC":  0.23,
                           "UValue":  1.6,
                           "Shade":  "Gold",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KS 130",
@@ -1246,7 +1400,8 @@
                           "SHGC":  0.21,
                           "UValue":  1.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KS 138",
@@ -1254,7 +1409,8 @@
                           "SHGC":  0.25,
                           "UValue":  1.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KS 146",
@@ -1262,7 +1418,8 @@
                           "SHGC":  0.28,
                           "UValue":  1.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KS 430",
@@ -1270,7 +1427,8 @@
                           "SHGC":  0.2,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KS 438",
@@ -1278,7 +1436,8 @@
                           "SHGC":  0.22,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KS 446",
@@ -1286,7 +1445,8 @@
                           "SHGC":  0.24,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KS 730",
@@ -1294,7 +1454,8 @@
                           "SHGC":  0.18,
                           "UValue":  1.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KS 738",
@@ -1302,7 +1463,8 @@
                           "SHGC":  0.2,
                           "UValue":  1.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KS 746",
@@ -1310,7 +1472,8 @@
                           "SHGC":  0.22,
                           "UValue":  1.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 125",
@@ -1318,7 +1481,8 @@
                           "SHGC":  0.22,
                           "UValue":  1.7,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 130",
@@ -1326,7 +1490,8 @@
                           "SHGC":  0.26,
                           "UValue":  1.8,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 140",
@@ -1334,7 +1499,8 @@
                           "SHGC":  0.29,
                           "UValue":  1.8,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 155",
@@ -1342,7 +1508,8 @@
                           "SHGC":  0.37,
                           "UValue":  1.8,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 164",
@@ -1350,7 +1517,8 @@
                           "SHGC":  0.46,
                           "UValue":  1.9,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 425",
@@ -1358,7 +1526,8 @@
                           "SHGC":  0.2,
                           "UValue":  1.7,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 430",
@@ -1366,7 +1535,8 @@
                           "SHGC":  0.22,
                           "UValue":  1.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 440",
@@ -1374,7 +1544,8 @@
                           "SHGC":  0.24,
                           "UValue":  1.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 455",
@@ -1382,7 +1553,8 @@
                           "SHGC":  0.29,
                           "UValue":  1.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 464",
@@ -1390,7 +1562,8 @@
                           "SHGC":  0.34,
                           "UValue":  1.9,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 725",
@@ -1398,7 +1571,8 @@
                           "SHGC":  0.19,
                           "UValue":  1.7,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 730",
@@ -1406,7 +1580,8 @@
                           "SHGC":  0.21,
                           "UValue":  1.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 740",
@@ -1414,7 +1589,8 @@
                           "SHGC":  0.22,
                           "UValue":  1.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 755",
@@ -1422,7 +1598,8 @@
                           "SHGC":  0.26,
                           "UValue":  1.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "KT 764",
@@ -1430,7 +1607,8 @@
                           "SHGC":  0.31,
                           "UValue":  1.9,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "PLT TB",
@@ -1438,7 +1616,8 @@
                           "SHGC":  0.35,
                           "UValue":  1.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "PLT TG",
@@ -1446,7 +1625,8 @@
                           "SHGC":  0.39,
                           "UValue":  1.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "PLTT",
@@ -1454,7 +1634,8 @@
                           "SHGC":  0.55,
                           "UValue":  1.8,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SBRZ 130",
@@ -1462,7 +1643,8 @@
                           "SHGC":  0.39,
                           "UValue":  4.6,
                           "Shade":  "Bronze",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SBRZ 130",
@@ -1470,7 +1652,8 @@
                           "SHGC":  0.29,
                           "UValue":  2.6,
                           "Shade":  "Bronze",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SCN 125",
@@ -1478,7 +1661,8 @@
                           "SHGC":  0.34,
                           "UValue":  4.2,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SCN 125",
@@ -1486,7 +1670,8 @@
                           "SHGC":  0.25,
                           "UValue":  2.5,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SCN 145",
@@ -1494,7 +1679,8 @@
                           "SHGC":  0.47,
                           "UValue":  4.4,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SCN 145",
@@ -1502,7 +1688,8 @@
                           "SHGC":  0.38,
                           "UValue":  2.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SCN 150",
@@ -1510,7 +1697,8 @@
                           "SHGC":  0.53,
                           "UValue":  4.4,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SCN 150",
@@ -1518,7 +1706,8 @@
                           "SHGC":  0.45,
                           "UValue":  2.7,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SCN 425",
@@ -1526,7 +1715,8 @@
                           "SHGC":  0.23,
                           "UValue":  2.5,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SCN 425",
@@ -1534,7 +1724,8 @@
                           "SHGC":  0.35,
                           "UValue":  4.2,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SCN 445",
@@ -1542,7 +1733,8 @@
                           "SHGC":  0.42,
                           "UValue":  4.4,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SCN 445",
@@ -1550,7 +1742,8 @@
                           "SHGC":  0.3,
                           "UValue":  2.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SCN 725",
@@ -1558,7 +1751,8 @@
                           "SHGC":  0.34,
                           "UValue":  4.2,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SCN 725",
@@ -1566,7 +1760,8 @@
                           "SHGC":  0.22,
                           "UValue":  2.5,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SCN 745",
@@ -1574,7 +1769,8 @@
                           "SHGC":  0.28,
                           "UValue":  2.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SCN 745",
@@ -1582,7 +1778,8 @@
                           "SHGC":  0.4,
                           "UValue":  4.4,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 133",
@@ -1590,7 +1787,8 @@
                           "SHGC":  0.2,
                           "UValue":  1.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 144",
@@ -1598,7 +1796,8 @@
                           "SHGC":  0.23,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 146",
@@ -1606,7 +1805,8 @@
                           "SHGC":  0.25,
                           "UValue":  1.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 152",
@@ -1614,7 +1814,8 @@
                           "SHGC":  0.25,
                           "UValue":  1.6,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 165",
@@ -1622,7 +1823,8 @@
                           "SHGC":  0.31,
                           "UValue":  1.6,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 176",
@@ -1630,7 +1832,8 @@
                           "SHGC":  0.34,
                           "UValue":  1.5,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 183",
@@ -1638,7 +1841,8 @@
                           "SHGC":  0.36,
                           "UValue":  1.5,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 433",
@@ -1646,7 +1850,8 @@
                           "SHGC":  0.19,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 444",
@@ -1654,7 +1859,8 @@
                           "SHGC":  0.22,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 452",
@@ -1662,7 +1868,8 @@
                           "SHGC":  0.24,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 465",
@@ -1670,7 +1877,8 @@
                           "SHGC":  0.28,
                           "UValue":  1.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 476",
@@ -1678,7 +1886,8 @@
                           "SHGC":  0.3,
                           "UValue":  1.5,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 733",
@@ -1686,7 +1895,8 @@
                           "SHGC":  0.18,
                           "UValue":  1.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 744",
@@ -1694,7 +1904,8 @@
                           "SHGC":  0.2,
                           "UValue":  1.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 752",
@@ -1702,7 +1913,8 @@
                           "SHGC":  0.21,
                           "UValue":  1.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 765",
@@ -1710,7 +1922,8 @@
                           "SHGC":  0.25,
                           "UValue":  1.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "SKN 776",
@@ -1718,7 +1931,8 @@
                           "SHGC":  0.27,
                           "UValue":  1.5,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 108",
@@ -1726,7 +1940,8 @@
                           "SHGC":  0.18,
                           "UValue":  2.8,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 108",
@@ -1734,7 +1949,8 @@
                           "SHGC":  0.12,
                           "UValue":  1.9,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 120",
@@ -1742,7 +1958,8 @@
                           "SHGC":  0.33,
                           "UValue":  4.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 120",
@@ -1750,7 +1967,8 @@
                           "SHGC":  0.24,
                           "UValue":  2.6,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 136",
@@ -1758,7 +1976,8 @@
                           "SHGC":  0.47,
                           "UValue":  5.0,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 136",
@@ -1766,7 +1985,8 @@
                           "SHGC":  0.37,
                           "UValue":  2.8,
                           "Shade":  "Grey",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 150",
@@ -1774,7 +1994,8 @@
                           "SHGC":  0.59,
                           "UValue":  5.2,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 150",
@@ -1782,7 +2003,8 @@
                           "SHGC":  0.49,
                           "UValue":  2.8,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 167",
@@ -1790,7 +2012,8 @@
                           "SHGC":  0.7,
                           "UValue":  5.2,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 167",
@@ -1798,7 +2021,8 @@
                           "SHGC":  0.61,
                           "UValue":  2.8,
                           "Shade":  "Neutral",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 408",
@@ -1806,7 +2030,8 @@
                           "SHGC":  0.23,
                           "UValue":  2.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 408",
@@ -1814,7 +2039,8 @@
                           "SHGC":  0.14,
                           "UValue":  1.9,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 420",
@@ -1822,7 +2048,8 @@
                           "SHGC":  0.34,
                           "UValue":  4.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 420",
@@ -1830,7 +2057,8 @@
                           "SHGC":  0.22,
                           "UValue":  2.6,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 436",
@@ -1838,7 +2066,8 @@
                           "SHGC":  0.29,
                           "UValue":  2.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 436",
@@ -1846,7 +2075,8 @@
                           "SHGC":  0.42,
                           "UValue":  5.0,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 450",
@@ -1854,7 +2084,8 @@
                           "SHGC":  0.48,
                           "UValue":  5.2,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 450",
@@ -1862,7 +2093,8 @@
                           "SHGC":  0.36,
                           "UValue":  2.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 467",
@@ -1870,7 +2102,8 @@
                           "SHGC":  0.42,
                           "UValue":  2.8,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 467",
@@ -1878,7 +2111,8 @@
                           "SHGC":  0.54,
                           "UValue":  5.2,
                           "Shade":  "Green",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 708",
@@ -1886,7 +2120,8 @@
                           "SHGC":  0.24,
                           "UValue":  2.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 708",
@@ -1894,7 +2129,8 @@
                           "SHGC":  0.14,
                           "UValue":  1.9,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 720",
@@ -1902,7 +2138,8 @@
                           "SHGC":  0.35,
                           "UValue":  4.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 720",
@@ -1910,7 +2147,8 @@
                           "SHGC":  0.21,
                           "UValue":  2.6,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 736",
@@ -1918,7 +2156,8 @@
                           "SHGC":  0.27,
                           "UValue":  2.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 736",
@@ -1926,7 +2165,8 @@
                           "SHGC":  0.41,
                           "UValue":  5.0,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 750",
@@ -1934,7 +2174,8 @@
                           "SHGC":  0.46,
                           "UValue":  5.2,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 750",
@@ -1942,7 +2183,8 @@
                           "SHGC":  0.33,
                           "UValue":  2.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 767",
@@ -1950,7 +2192,8 @@
                           "SHGC":  0.51,
                           "UValue":  5.2,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "ST 767",
@@ -1958,7 +2201,8 @@
                           "SHGC":  0.38,
                           "UValue":  2.8,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "STB 120",
@@ -1966,7 +2210,8 @@
                           "SHGC":  0.27,
                           "UValue":  2.7,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "STB 120",
@@ -1974,7 +2219,8 @@
                           "SHGC":  0.38,
                           "UValue":  4.7,
                           "Shade":  "Blue",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "STC 135",
@@ -1982,7 +2228,8 @@
                           "SHGC":  0.5,
                           "UValue":  4.7,
                           "Shade":  "Copper",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "STG 127",
@@ -1990,7 +2237,8 @@
                           "SHGC":  0.28,
                           "UValue":  2.6,
                           "Shade":  "Copper",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "STG 127",
@@ -1998,7 +2246,8 @@
                           "SHGC":  0.36,
                           "UValue":  4.4,
                           "Shade":  "Gold",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "STR 135",
@@ -2006,7 +2255,8 @@
                           "SHGC":  0.47,
                           "UValue":  4.4,
                           "Shade":  "Gold",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "STC 135",
@@ -2014,7 +2264,8 @@
                           "SHGC":  0.41,
                           "UValue":  2.7,
                           "Shade":  "Rose Gold",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       },
                       {
                           "ProductName":  "STR 135",
@@ -2022,7 +2273,8 @@
                           "SHGC":  0.41,
                           "UValue":  2.6,
                           "Shade":  "Rose Gold",
-                          "Brand":  "Saint-Gobain"
+                          "Brand":  "Saint-Gobain",
+                          "Standard":  "NFRC"
                       }
                   ],
     "items":  [
@@ -2056,7 +2308,8 @@
                                         "UValue":  3.2
                                     },
                       "Diff":  -32.8,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2088,7 +2341,8 @@
                                         "UValue":  3.2
                                     },
                       "Diff":  -14.1,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2120,7 +2374,8 @@
                                         "UValue":  3.0
                                     },
                       "Diff":  -11.6,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2152,7 +2407,8 @@
                                         "UValue":  3.0
                                     },
                       "Diff":  -11.6,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2184,7 +2440,8 @@
                                         "UValue":  3.6
                                     },
                       "Diff":  -31.6,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2216,7 +2473,8 @@
                                         "UValue":  3.6
                                     },
                       "Diff":  -10.7,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2248,7 +2506,8 @@
                                         "UValue":  3.6
                                     },
                       "Diff":  -37.2,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2280,7 +2539,8 @@
                                         "UValue":  3.2
                                     },
                       "Diff":  -32.4,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2312,7 +2572,8 @@
                                         "UValue":  3.6
                                     },
                       "Diff":  -17.7,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2344,7 +2605,8 @@
                                         "UValue":  4.4
                                     },
                       "Diff":  -32.1,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2376,7 +2638,8 @@
                                         "UValue":  3.6
                                     },
                       "Diff":  -6.4,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2408,7 +2671,8 @@
                                         "UValue":  5.0
                                     },
                       "Diff":  9.2,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2440,7 +2704,8 @@
                                         "UValue":  5.2
                                     },
                       "Diff":  -4.1,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2472,7 +2737,8 @@
                                         "UValue":  5.0
                                     },
                       "Diff":  -13.8,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2504,7 +2770,8 @@
                                         "UValue":  5.2
                                     },
                       "Diff":  0.1,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2536,7 +2803,8 @@
                                         "UValue":  4.7
                                     },
                       "Diff":  -6.8,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2568,7 +2836,8 @@
                                         "UValue":  4.6
                                     },
                       "Diff":  -6.1,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2600,7 +2869,8 @@
                                         "UValue":  5.0
                                     },
                       "Diff":  4.3,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2632,7 +2902,8 @@
                                         "UValue":  5.0
                                     },
                       "Diff":  0.3,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2664,7 +2935,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  -47.8,
-                      "Range":  "KT|KS|PLT"
+                      "Range":  "KT|KS|PLT",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2696,7 +2968,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  39,
-                      "Range":  "KT|KS|PLT"
+                      "Range":  "KT|KS|PLT",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2728,7 +3001,8 @@
                                         "UValue":  1.9
                                     },
                       "Diff":  -10.2,
-                      "Range":  "KT|KS|PLT"
+                      "Range":  "KT|KS|PLT",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2760,7 +3034,8 @@
                                         "UValue":  1.8
                                     },
                       "Diff":  3.7,
-                      "Range":  "KT|KS|PLT"
+                      "Range":  "KT|KS|PLT",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2792,7 +3067,8 @@
                                         "UValue":  1.8
                                     },
                       "Diff":  1.4,
-                      "Range":  "KT|KS|PLT"
+                      "Range":  "KT|KS|PLT",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2824,7 +3100,8 @@
                                         "UValue":  1.9
                                     },
                       "Diff":  -14.9,
-                      "Range":  "KT|KS|PLT"
+                      "Range":  "KT|KS|PLT",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2856,7 +3133,8 @@
                                         "UValue":  1.7
                                     },
                       "Diff":  4.5,
-                      "Range":  "KT|KS|PLT"
+                      "Range":  "KT|KS|PLT",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2888,7 +3166,8 @@
                                         "UValue":  1.8
                                     },
                       "Diff":  -6.9,
-                      "Range":  "KT|KS|PLT"
+                      "Range":  "KT|KS|PLT",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2920,7 +3199,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  4.5,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2952,7 +3232,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  9.5,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -2984,7 +3265,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  -6.3,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3016,7 +3298,8 @@
                                         "UValue":  1.5
                                     },
                       "Diff":  -2.6,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3048,7 +3331,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  12.9,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3080,7 +3364,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  14.8,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3112,7 +3397,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  2.6,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3144,7 +3430,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  -5.2,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3176,7 +3463,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  29.3,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3208,7 +3496,8 @@
                                         "UValue":  2.6
                                     },
                       "Diff":  -25,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3240,7 +3529,8 @@
                                         "UValue":  2.1
                                     },
                       "Diff":  -10.1,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3272,7 +3562,8 @@
                                         "UValue":  2.0
                                     },
                       "Diff":  -18.1,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3304,7 +3595,8 @@
                                         "UValue":  2.0
                                     },
                       "Diff":  -18.1,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3336,7 +3628,8 @@
                                         "UValue":  2.3
                                     },
                       "Diff":  -22.6,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3368,7 +3661,8 @@
                                         "UValue":  2.3
                                     },
                       "Diff":  -0.5,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3400,7 +3694,8 @@
                                         "UValue":  2.3
                                     },
                       "Diff":  -21.2,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3432,7 +3727,8 @@
                                         "UValue":  2.1
                                     },
                       "Diff":  -32.7,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3464,7 +3760,8 @@
                                         "UValue":  2.3
                                     },
                       "Diff":  1.3,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3496,7 +3793,8 @@
                                         "UValue":  2.6
                                     },
                       "Diff":  -29.2,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3528,7 +3826,8 @@
                                         "UValue":  2.6
                                     },
                       "Diff":  -11.4,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3560,7 +3859,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  9,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3592,7 +3892,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  -3.3,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3624,7 +3925,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  -8.1,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3656,7 +3958,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  -8.2,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3688,7 +3991,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  0,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3720,7 +4024,8 @@
                                         "UValue":  1.9
                                     },
                       "Diff":  -9.8,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3752,7 +4057,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  4,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3784,7 +4090,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  4.1,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3816,7 +4123,8 @@
                                         "UValue":  4.7
                                     },
                       "Diff":  -10.7,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Guardian",
@@ -3848,7 +4156,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  0,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "NFRC"
                   },
                   {
                       "Brand":  "Asahi",
@@ -3880,7 +4189,8 @@
                                         "UValue":  5.6
                                     },
                       "Diff":  0,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -3912,7 +4222,8 @@
                                         "UValue":  5.6
                                     },
                       "Diff":  -0.5,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -3944,7 +4255,8 @@
                                         "UValue":  5.6
                                     },
                       "Diff":  -0.3,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -3976,7 +4288,8 @@
                                         "UValue":  5.5
                                     },
                       "Diff":  3.8,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4008,7 +4321,8 @@
                                         "UValue":  5.5
                                     },
                       "Diff":  18.6,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4040,7 +4354,8 @@
                                         "UValue":  5.2
                                     },
                       "Diff":  1.3,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4072,7 +4387,8 @@
                                         "UValue":  5.2
                                     },
                       "Diff":  8.4,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4104,7 +4420,8 @@
                                         "UValue":  3.6
                                     },
                       "Diff":  7.1,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4136,7 +4453,8 @@
                                         "UValue":  5.6
                                     },
                       "Diff":  -6.4,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4168,7 +4486,8 @@
                                         "UValue":  5.6
                                     },
                       "Diff":  6.8,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4200,7 +4519,8 @@
                                         "UValue":  5.2
                                     },
                       "Diff":  2.1,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4232,7 +4552,8 @@
                                         "UValue":  5.6
                                     },
                       "Diff":  -6.7,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4264,7 +4585,8 @@
                                         "UValue":  5.6
                                     },
                       "Diff":  17.3,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4296,7 +4618,8 @@
                                         "UValue":  5.6
                                     },
                       "Diff":  2,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4328,7 +4651,8 @@
                                         "UValue":  5.6
                                     },
                       "Diff":  6.2,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4360,7 +4684,8 @@
                                         "UValue":  5.5
                                     },
                       "Diff":  4.8,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4392,7 +4717,8 @@
                                         "UValue":  5.5
                                     },
                       "Diff":  13.6,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4424,7 +4750,8 @@
                                         "UValue":  5.6
                                     },
                       "Diff":  6.6,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4456,7 +4783,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  -1.7,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4488,7 +4816,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  -6.5,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4520,7 +4849,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  0,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4552,7 +4882,8 @@
                                         "UValue":  2.7
                                     },
                       "Diff":  5.7,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4584,7 +4915,8 @@
                                         "UValue":  2.7
                                     },
                       "Diff":  18.4,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4616,7 +4948,8 @@
                                         "UValue":  2.6
                                     },
                       "Diff":  10.7,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4648,7 +4981,8 @@
                                         "UValue":  2.6
                                     },
                       "Diff":  5.7,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4680,7 +5014,8 @@
                                         "UValue":  1.9
                                     },
                       "Diff":  2.2,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4712,7 +5047,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  -3.3,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4744,7 +5080,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  12.9,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4776,7 +5113,8 @@
                                         "UValue":  2.7
                                     },
                       "Diff":  3.5,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4808,7 +5146,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  -0.6,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4840,7 +5179,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  22.7,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4872,7 +5212,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  3.7,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4904,7 +5245,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  15.2,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4936,7 +5278,8 @@
                                         "UValue":  2.7
                                     },
                       "Diff":  3.8,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -4968,7 +5311,8 @@
                                         "UValue":  2.7
                                     },
                       "Diff":  18.8,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5000,7 +5344,8 @@
                                         "UValue":  2.8
                                     },
                       "Diff":  6.2,
-                      "Range":  "ST"
+                      "Range":  "ST",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5032,7 +5377,8 @@
                                         "UValue":  5.0
                                     },
                       "Diff":  -9.4,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5064,7 +5410,8 @@
                                         "UValue":  3.9
                                     },
                       "Diff":  0,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5096,7 +5443,8 @@
                                         "UValue":  3.8
                                     },
                       "Diff":  3.2,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5128,7 +5476,8 @@
                                         "UValue":  2.6
                                     },
                       "Diff":  -13.1,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5160,7 +5509,8 @@
                                         "UValue":  2.1
                                     },
                       "Diff":  -9.3,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5192,7 +5542,8 @@
                                         "UValue":  2.0
                                     },
                       "Diff":  4.5,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5224,7 +5575,8 @@
                                         "UValue":  4.3
                                     },
                       "Diff":  -1.4,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5256,7 +5608,8 @@
                                         "UValue":  4.3
                                     },
                       "Diff":  -6.4,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5288,7 +5641,8 @@
                                         "UValue":  4.3
                                     },
                       "Diff":  -2.4,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5320,7 +5674,8 @@
                                         "UValue":  2.3
                                     },
                       "Diff":  -6.3,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5352,7 +5707,8 @@
                                         "UValue":  2.3
                                     },
                       "Diff":  -16.3,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5384,7 +5740,8 @@
                                         "UValue":  2.6
                                     },
                       "Diff":  -38.3,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5416,7 +5773,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  39.4,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5448,7 +5806,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  47.2,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5480,7 +5839,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  17.1,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5512,7 +5872,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  25.5,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5544,7 +5905,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  7.9,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5576,7 +5938,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  21.5,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5608,7 +5971,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  32.9,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5640,7 +6004,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  29.3,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5672,7 +6037,8 @@
                                         "UValue":  1.5
                                     },
                       "Diff":  39.8,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5704,7 +6070,8 @@
                                         "UValue":  1.5
                                     },
                       "Diff":  42.2,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5736,7 +6103,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  30.8,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5768,7 +6136,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  32.9,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5800,7 +6169,8 @@
                                         "UValue":  1.6
                                     },
                       "Diff":  0,
-                      "Range":  "SKN"
+                      "Range":  "SKN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5832,7 +6202,8 @@
                                         "UValue":  1.8
                                     },
                       "Diff":  -2.4,
-                      "Range":  "KT|KS|PLT"
+                      "Range":  "KT|KS|PLT",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5864,7 +6235,8 @@
                                         "UValue":  4.3
                                     },
                       "Diff":  -8.6,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5896,7 +6268,8 @@
                                         "UValue":  4.3
                                     },
                       "Diff":  -8.6,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5928,7 +6301,8 @@
                                         "UValue":  4.3
                                     },
                       "Diff":  1.2,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5960,7 +6334,8 @@
                                         "UValue":  2.6
                                     },
                       "Diff":  -17.8,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -5992,7 +6367,8 @@
                                         "UValue":  2.3
                                     },
                       "Diff":  -2.1,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   },
                   {
                       "Brand":  "Asahi",
@@ -6024,7 +6400,8 @@
                                         "UValue":  2.6
                                     },
                       "Diff":  -19.4,
-                      "Range":  "ET|SCN"
+                      "Range":  "ET|SCN",
+                      "Standard":  "EN"
                   }
               ]
 }

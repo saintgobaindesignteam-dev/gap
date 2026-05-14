@@ -160,7 +160,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         const filteredSg = allSgItems.filter(i => {
             const matchesShade = filters.shade === 'all' || i.Shade === filters.shade;
-            const matchesStd = filters.standard === 'all' || i.Standard === filters.standard;
+            const itemStd = (i.Standard || "").toUpperCase();
+            const filterStd = filters.standard.toUpperCase();
+            const matchesStd = filters.standard === 'all' || itemStd === filterStd;
             return matchesShade && matchesStd;
         });
         const sgData = sgToggle.checked ? filteredSg.map(i => ({ x: i.SHGC, y: i.VLT, brand: 'Saint-Gobain', name: i.ProductName })) : [];
@@ -296,9 +298,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     function filterData() {
         const segmentItems = allItems.filter(item => {
             const matchesBrand = filters.brand === 'all' || item.Brand === filters.brand;
-            const matchesShade = filters.shade === 'all' || item.Target.Shade === filters.shade;
-            const matchesStd = filters.standard === 'all' || item.Standard === filters.standard;
-            const matchesSF = !filters.sf || (Math.abs(item.Target.SHGC - filters.sf) <= 0.02); // Tighter tolerance for direct count
+            const matchesShade = filters.shade === 'all' || (item.Target && item.Target.Shade === filters.shade);
+            
+            // Robust Standard Match (check root and target, handle casing)
+            const itemStd = (item.Standard || (item.Target && item.Target.Standard) || "").toUpperCase();
+            const filterStd = filters.standard.toUpperCase();
+            const matchesStd = filters.standard === 'all' || itemStd === filterStd;
+            
+            // SF Match with precision
+            const itemSF = item.Target ? parseFloat(item.Target.SHGC) : 0;
+            const matchesSF = !filters.sf || (Math.abs(itemSF - filters.sf) <= 0.02);
+            
             return matchesBrand && matchesShade && matchesStd && matchesSF;
         });
 
