@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const gapContainer = document.getElementById('gap-container');
+    const innovationContainer = document.getElementById('innovation-targets');
     const summaryStats = document.getElementById('summary-stats');
     const sgToggle = document.getElementById('toggle-sg');
     const allChips = document.querySelectorAll('.chip');
     
-    // KPI elements
     const leadershipEl = document.getElementById('leadership-index');
     const vulnerabilityEl = document.getElementById('vulnerability-score');
     const avgGapEl = document.getElementById('avg-gap');
@@ -20,11 +20,61 @@ document.addEventListener('DOMContentLoaded', async () => {
             const data = await response.json();
             allItems = data.items;
             sgCatalog = data.sgCatalog || [];
+            renderInnovationRoadmap(allItems);
             filterData();
         } catch (err) {
             gapContainer.innerHTML = `<div class="loader">Failed to load SWOT data. Please run analyze.ps1 first.</div>`;
             console.error(err);
         }
+    }
+
+    function renderInnovationRoadmap(items) {
+        // Top 3 threats by worst selectivity diff
+        const topThreats = items
+            .filter(i => i.SWOT === 'Threat')
+            .sort((a, b) => a.Diff - b.Diff)
+            .slice(0, 3);
+
+        innovationContainer.innerHTML = topThreats.map(item => `
+            <div class="roadmap-card">
+                <span class="brand-tag">${item.Brand}</span>
+                <h4 class="product-name" style="margin: 0.5rem 0">${item.Product}</h4>
+                <div class="comparison-grid" style="margin-bottom: 0">
+                    <div class="grid-header">Metric</div>
+                    <div class="grid-header">Target</div>
+                    <div class="grid-header">SG Best</div>
+                    
+                    <div class="grid-label">VLT</div>
+                    <div class="grid-val">${item.Target.VLT}%</div>
+                    <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.VLT + '%' : '-'}</div>
+
+                    <div class="grid-label">SHGC</div>
+                    <div class="grid-val">${item.Target.SHGC}</div>
+                    <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.SHGC : '-'}</div>
+                    
+                    <div class="grid-label">U-Value</div>
+                    <div class="grid-val">${item.Target.UValue}</div>
+                    <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.UValue : '-'}</div>
+                </div>
+                <div class="recommendation-box" style="background: rgba(245, 158, 11, 0.1); border-color: var(--threat)">
+                    <span class="rec-title" style="color: var(--threat)">R&D TARGET</span>
+                    Competitive advantage of ${Math.abs(item.Diff)}%. Urgent requirement for high-selectivity ${item.Range} development in ${item.Target.Shade} shade.
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function getRecommendation(item) {
+        if (item.SWOT === 'Strength') return "Leverage this technical advantage in sales pitches. Highlight SG efficiency.";
+        if (item.SWOT === 'Opportunity') return "Identify potential project specifications where this competitor range is used and propose a custom SG solution.";
+        
+        if (item.SWOT === 'Threat' || item.SWOT === 'Weakness') {
+            if (item.BestMatch && item.BestMatch.SHGC > item.Target.SHGC) {
+                return `Strategic Action: Propose a range upgrade (e.g. SKN) to meet the thermal requirement, or highlight SG's superior U-Value if applicable.`;
+            }
+            return `Strategic Action: Focus on aesthetics or lead-time benefits while R&D bridge is assessed for the ${item.Range} range.`;
+        }
+        return "Monitor competitor performance trends in this segment.";
     }
 
     function updateKPIs(filteredItems) {
@@ -75,7 +125,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             { name: 'Threats', data: shades.map(s => items.filter(i => i.Target.Shade === s && i.SWOT === 'Threat').length), color: '#f59e0b' }
         ];
 
-        // Interaction: DataPointSelection
         const chartEvents = {
             dataPointSelection: (event, chartContext, config) => {
                 const shade = shades[config.dataPointIndex];
@@ -155,7 +204,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (!item.BestMatch) return 'No compatible SG range found.';
         
         const reasons = [];
-        if (item.BestMatch.SHGC > item.Target.SHGC + 0.05) reasons.push(`SHGC is ${Math.round((item.BestMatch.SHGC - item.Target.SHGC)*100)} points too high`);
+        if (item.BestMatch.SHGC > item.Target.SHGC + 0.05) reasons.push(`SHGC is ${Math.round((item.BestMatch.SHGC - item.Target.SHGC)*100)} pts too high`);
         if (item.BestMatch.VLT < item.Target.VLT - 5) reasons.push(`VLT is ${Math.round(item.Target.VLT - item.BestMatch.VLT)}% lower`);
         
         return reasons.length > 0 ? reasons.join(' and ') + '.' : item.Reason;
@@ -169,6 +218,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         gapContainer.innerHTML = items.map(item => {
             const reasoning = getReasoning(item);
+            const recommendation = getRecommendation(item);
+            const tSel = (item.Target.VLT/100) / (item.Target.SHGC || 1);
+            const pSel = item.BestMatch ? (item.BestMatch.VLT/100) / (item.BestMatch.SHGC || 1) : 0;
+
             return `
             <div class="gap-card ${item.SWOT.toLowerCase()}-card">
                 <div class="card-header">
@@ -181,7 +234,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <h3 class="product-name">${item.Product}</h3>
                 
                 <div class="comparison-grid">
-                    <div class="grid-header"></div>
+                    <div class="grid-header">Metric</div>
                     <div class="grid-header comp-color">${item.Brand}</div>
                     <div class="grid-header sg-color">Saint-Gobain</div>
                     
@@ -204,12 +257,24 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.SHGC : '-'}</div>
                         <div class="spec-bar-container"><div class="spec-bar sg" style="width: ${item.BestMatch ? item.BestMatch.SHGC * 100 : 0}%"></div></div>
                     </div>
+
+                    <div class="grid-label">U-Value</div>
+                    <div class="grid-val">${item.Target.UValue}</div>
+                    <div class="grid-val highlight-val">${item.BestMatch ? item.BestMatch.UValue : '-'}</div>
+
+                    <div class="grid-label">Selectivity</div>
+                    <div class="grid-val">${tSel.toFixed(2)}</div>
+                    <div class="grid-val highlight-val">${pSel > 0 ? pSel.toFixed(2) : '-'}</div>
                 </div>
 
                 <div class="comparison">
                     <div class="comp-label">STRATEGIC ANALYSIS</div>
                     <div class="gap-indicator swot-${item.SWOT.toLowerCase()}">${reasoning}</div>
-                    <div class="diff-info">Selectivity Delta: ${item.Diff > 0 ? '+' : ''}${item.Diff}%</div>
+                    <div class="recommendation-box">
+                        <span class="rec-title">Recommended Action</span>
+                        ${recommendation}
+                    </div>
+                    <div class="diff-info">Efficiency Delta: ${item.Diff > 0 ? '+' : ''}${item.Diff}%</div>
                 </div>
             </div>
         `}).join('');

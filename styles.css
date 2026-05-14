@@ -50,6 +50,30 @@ header {
 .overview-charts { display: grid; grid-template-columns: 1fr 1.5fr; gap: 1.5rem; padding: 2rem 5%; }
 .chart-card { background: var(--card-bg); border: 1px solid var(--card-border); padding: 1.5rem; border-radius: 20px; backdrop-filter: blur(10px); }
 
+.section-header { margin-bottom: 1.5rem; }
+.section-header h3 { font-size: 1.2rem; font-weight: 800; color: var(--text-main); }
+.section-header p { font-size: 0.8rem; color: var(--text-muted); }
+
+.innovation-roadmap { padding: 0 5% 2rem 5%; }
+.roadmap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.roadmap-card { 
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(239, 68, 68, 0.1)); 
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    padding: 1.5rem; border-radius: 20px; position: relative; overflow: hidden;
+}
+.roadmap-card::after { 
+    content: "TARGET"; position: absolute; top: 1rem; right: -1rem; 
+    background: var(--threat); color: black; font-size: 0.5rem; font-weight: 900; 
+    padding: 0.2rem 1.5rem; transform: rotate(45deg);
+}
+
+.recommendation-box { 
+    margin-top: 1rem; padding: 1rem; background: rgba(59, 130, 246, 0.1); 
+    border-radius: 12px; border-left: 3px solid var(--accent-blue);
+    font-size: 0.75rem; color: var(--text-main); line-height: 1.4;
+}
+.rec-title { font-weight: 800; font-size: 0.65rem; color: var(--accent-blue); text-transform: uppercase; margin-bottom: 0.3rem; display: block; }
+
 .kpi-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; padding: 0 5% 1rem 5%; }
 .kpi-card { padding: 1.5rem; border-radius: 16px; display: flex; flex-direction: column; gap: 0.5rem; }
 .kpi-label { font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
