@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     let sgCatalog = [];
     let filters = { brand: 'all', swot: 'all', shade: 'all', standard: 'all', sf: null };
     let chartInstances = {};
+    let currentFilteredItems = [];
 
     async function loadData() {
         try {
@@ -335,6 +336,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             return 0;
         });
 
+        currentFilteredItems = visibleItems;
         renderItems(visibleItems);
     }
 
@@ -348,6 +350,61 @@ document.addEventListener('DOMContentLoaded', async () => {
             applyFilter(filterType, filterVal);
         });
     });
+
+    const exportBtn = document.getElementById('export-excel-btn');
+    if (exportBtn) {
+        exportBtn.addEventListener('click', () => {
+            if (!currentFilteredItems || currentFilteredItems.length === 0) {
+                alert('No data to export!');
+                return;
+            }
+
+            const dataToExport = currentFilteredItems.map(item => {
+                const reasoning = getReasoning(item);
+                const recommendation = getRecommendation(item);
+                const tSel = (item.Target.VLT/100) / (item.Target.SHGC || 1);
+                const pSel = item.BestMatch ? (item.BestMatch.VLT/100) / (item.BestMatch.SHGC || 1) : 0;
+
+                return {
+                    'Competitor Brand': item.Brand || '-',
+                    'Competitor Product': item.Product || '-',
+                    'Glazing Type': item.Target ? item.Target.GlazingType : '-',
+                    'Standard': item.Standard || (item.Target && item.Target.Standard) || '-',
+                    'Shade': item.Target ? item.Target.Shade : '-',
+                    'SWOT Category': item.SWOT || '-',
+                    'Competitor VLT (%)': item.Target ? item.Target.VLT : '-',
+                    'Competitor SHGC (SF)': item.Target ? item.Target.SHGC : '-',
+                    'Competitor U-Value': item.Target ? item.Target.UValue : '-',
+                    'Competitor Selectivity': parseFloat(tSel.toFixed(2)) || '-',
+                    'Matched SG Product': item.BestMatch ? item.BestMatch.ProductName : 'NO MATCH',
+                    'SG VLT (%)': item.BestMatch ? item.BestMatch.VLT : '-',
+                    'SG SHGC (SF)': item.BestMatch ? item.BestMatch.SHGC : '-',
+                    'SG U-Value': item.BestMatch ? item.BestMatch.UValue : '-',
+                    'SG Selectivity': pSel > 0 ? parseFloat(pSel.toFixed(2)) : '-',
+                    'Efficiency Delta (%)': item.Diff !== undefined ? item.Diff : '-',
+                    'Strategic Analysis': reasoning,
+                    'Recommended Action': recommendation
+                };
+            });
+
+            const worksheet = XLSX.utils.json_to_sheet(dataToExport);
+            const workbook = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(workbook, worksheet, "Gap Analysis");
+
+            // Auto-fit column widths
+            const max_len = dataToExport.reduce((w, r) => {
+                Object.keys(r).forEach((key, i) => {
+                    const val = r[key] ? r[key].toString() : '';
+                    w[i] = Math.max(w[i] || 0, val.length, key.length);
+                });
+                return w;
+            }, []);
+            worksheet['!cols'] = max_len.map(l => ({ wch: l + 3 }));
+
+            // Add basic style/colors if desired (note: basic SheetJS xlsx-only has limited styling, but autofit works)
+            XLSX.writeFile(workbook, `SG_Gap_Analysis_${new Date().toISOString().slice(0,10)}.xlsx`);
+        });
+    }
 
     loadData();
 });

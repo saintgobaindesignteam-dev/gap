@@ -142,4 +142,28 @@ $jsonOutput = @{
 }
 
 $jsonOutput | ConvertTo-Json -Depth 5 | Out-File -FilePath "c:\Users\K7813444\OneDrive - Saint-Gobain\Desktop\2026\ACE\gap\gap_data.json" -Encoding utf8
+
+$csvPath = "c:\Users\K7813444\OneDrive - Saint-Gobain\Desktop\2026\ACE\gap\gap_analysis.csv"
+$results | ForEach-Object {
+    [PSCustomObject]@{
+        "Competitor Brand"     = $_.Brand
+        "Competitor Product"   = $_.Product
+        "SWOT Category"        = $_.SWOT
+        "Strategic Reason"     = $_.Reason
+        "Glazing Range"        = $_.Range
+        "Standard"             = $_.Standard
+        "Efficiency Delta (%)" = $_.Diff
+        "Competitor VLT (%)"   = $_.Target.VLT
+        "Competitor SHGC (SF)" = $_.Target.SHGC
+        "Competitor U-Value"   = $_.Target.UValue
+        "Competitor Shade"     = $_.Target.Shade
+        "Matched SG Product"   = if ($_.BestMatch) { $_.BestMatch.ProductName } else { "NO MATCH" }
+        "SG VLT (%)"           = if ($_.BestMatch) { $_.BestMatch.VLT } else { $null }
+        "SG SHGC (SF)"         = if ($_.BestMatch) { $_.BestMatch.SHGC } else { $null }
+        "SG U-Value"           = if ($_.BestMatch) { $_.BestMatch.UValue } else { $null }
+        "SG Shade"             = if ($_.BestMatch) { $_.BestMatch.Shade } else { $null }
+    }
+} | Export-Csv -Path $csvPath -NoTypeInformation -Encoding utf8
+
 Write-Host "SWOT Analysis with Bridge Logic complete."
+Write-Host "CSV gap report exported to $csvPath"
